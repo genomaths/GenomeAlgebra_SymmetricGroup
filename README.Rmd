@@ -17,7 +17,7 @@ knitr::opts_chunk$set(echo = TRUE)
   Department of Biology. Eberly College of Science.  
   Pennsylvania State University, University Park, PA 16802  
   rus547@psu.edu  
-  ORCID: orcid.org/0000-0002-5246-1453  
+  [ORCID: orcid.org/0000-0002-5246-1453](https://orcid.org/0000-0002-5246-1453)  
 
 # Overview 
 <img src="fig/vacc.png" align="center" />
@@ -62,10 +62,10 @@ these notebooks users can download Wolfram Player, freely available (for Windows
 and Linux OS) at ,https://www.wolfram.com/player/>, which permit the user
 interaction with the document. That is, this notebooks are something similar to
 a PDF with the fundamental difference that readers can perform by
-himself/herself the computations discussed in the text. A Wolfram Player is
-can be used to interact with a Mathematica notebook, in the same way that, for
-example, Adobe Reader is required to open a PDF. The installation of Wolfram
-Player is straightforward.
+himself/herself the computations discussed in the text. A Wolfram Player can be
+used to interact with a Mathematica noteboo in the same way that, for example,
+Adobe Reader is required to open a PDF. The installation of Wolfram Player is
+straightforward.
 
 # 2. Introduction to $Z_5$-Genetic-Code vector space
 An interactive introduction to $Z_5$-Genetic-Code vector space is given in the

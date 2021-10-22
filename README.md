@@ -6,7 +6,8 @@ Robersy Sanchez
 Department of Biology. Eberly College of Science.  
 Pennsylvania State University, University Park, PA 16802  
 <rus547@psu.edu>  
-ORCID: orcid.org/0000-0002-5246-1453
+[ORCID:
+orcid.org/0000-0002-5246-1453](https://orcid.org/0000-0002-5246-1453)
 
 # Overview
 
@@ -58,9 +59,9 @@ available (for Windows and Linux OS) at
 interaction with the document. That is, this notebooks are something
 similar to a PDF with the fundamental difference that readers can
 perform by himself/herself the computations discussed in the text. A
-Wolfram Player is can be used to interact with a Mathematica notebook,
-in the same way that, for example, Adobe Reader is required to open a
-PDF. The installation of Wolfram Player is straightforward.
+Wolfram Player can be used to interact with a Mathematica noteboo in the
+same way that, for example, Adobe Reader is required to open a PDF. The
+installation of Wolfram Player is straightforward.
 
 # 2. Introduction to *Z*<sub>5</sub>-Genetic-Code vector space
 
