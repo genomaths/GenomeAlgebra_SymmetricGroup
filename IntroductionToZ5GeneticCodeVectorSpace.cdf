@@ -23,10 +23,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[      1064,         20]
-NotebookDataLength[   1133638,      27895]
-NotebookOptionsPosition[   1110911,      27472]
-NotebookOutlinePosition[   1118305,      27620]
-CellTagsIndexPosition[   1117121,      27592]
+NotebookDataLength[   1139178,      27740]
+NotebookOptionsPosition[   1116084,      27310]
+NotebookOutlinePosition[   1123530,      27459]
+CellTagsIndexPosition[   1122346,      27431]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -259,7 +259,7 @@ Cell[BoxData[
     RowBox[{
      RowBox[{"encoding", "[", 
       RowBox[{"enc_", ",", 
-       RowBox[{"t_:", "1"}]}], "]"}], ":=", 
+       RowBox[{"t_", ":", "1"}]}], "]"}], ":=", 
      RowBox[{"Switch", "[", 
       RowBox[{"t", ",", "\[IndentingNewLine]", "1", ",", 
        RowBox[{"Flatten", "[", 
@@ -360,14 +360,14 @@ Cell[BoxData[
                   "]"}], "[", 
                 RowBox[{"[", 
                  RowBox[{"1", ",", "1"}], "]"}], "]"}], "]"}], "]"}]}]}], 
-           "}"}]}], "]"}], "]"}]}], "]"}]}], ";"}], "\n", 
-   "\[IndentingNewLine]", 
+           "}"}]}], "]"}], "]"}]}], "]"}]}], ";"}], "\[IndentingNewLine]", 
+   "\n", 
    RowBox[{
     RowBox[{
      RowBox[{"decoding", "[", 
       RowBox[{
-       RowBox[{"enc_:", "\"\<ACGU\>\""}], ",", 
-       RowBox[{"t_:", "1"}]}], "]"}], ":=", 
+       RowBox[{"enc_", ":", "\"\<ACGU\>\""}], ",", 
+       RowBox[{"t_", ":", "1"}]}], "]"}], ":=", 
      RowBox[{"Switch", "[", 
       RowBox[{"t", ",", "\[IndentingNewLine]", "1", ",", 
        RowBox[{"Prepend", "[", 
@@ -415,20 +415,21 @@ Cell[BoxData[
      "**", "**", "**", "**", "**", "**", "**", "**", "**", "**", "**", "**", "**",
        "**", "**", "**", "**", "**", "**", "**"}], "*", "Codon", " ", 
      "sequence", " ", "coordinates"}], 
-    "********************************************)"}], "\[IndentingNewLine]", 
+    "********************************************)"}], "\n", 
    RowBox[{"(*", 
     RowBox[{
     "##", "##", "##", "##", "##", "##", "##", "##", "##", "##", "##", "##", 
      "##", "##", "##", "##", "##", "##", "##", "##", "##", "##", "##", "##", 
      "##", "##", "##", "##", "##", "##", "##", "##", "##", "##", "##", "##", 
      "##", "##", "##", "##", "##", "##", "##", "##", "##", "##", "##", "##", 
-     "##", "##", "##", "##", "##", "##", "##"}], "*)"}], "\n", 
+     "##", "##", "##", "##", "##", "##", "##"}], "*)"}], 
+   "\[IndentingNewLine]", 
    RowBox[{
     RowBox[{
      RowBox[{"points", "[", 
       RowBox[{"s_", ",", 
-       RowBox[{"enc_:", "\"\<ACGU\>\""}], ",", 
-       RowBox[{"t_:", "2"}]}], "]"}], ":=", 
+       RowBox[{"enc_", ":", "\"\<ACGU\>\""}], ",", 
+       RowBox[{"t_", ":", "2"}]}], "]"}], ":=", 
      RowBox[{
       RowBox[{
        RowBox[{
@@ -441,8 +442,8 @@ Cell[BoxData[
     RowBox[{
      RowBox[{"tripletes", "[", 
       RowBox[{"tr_", ",", 
-       RowBox[{"enc_:", "\"\<ACGU\>\""}], ",", 
-       RowBox[{"t_:", "2"}]}], "]"}], ":=", 
+       RowBox[{"enc_", ":", "\"\<ACGU\>\""}], ",", 
+       RowBox[{"t_", ":", "2"}]}], "]"}], ":=", 
      RowBox[{
       RowBox[{
        RowBox[{"#", "/.", 
@@ -509,8 +510,8 @@ Cell[BoxData[
       RowBox[{"x_", ",", "y_"}], "]"}], ":=", 
      RowBox[{"Mod", "[", 
       RowBox[{
-       RowBox[{"x", "+", "y"}], ",", "5"}], "]"}]}], ";"}], "\n", 
-   "\[IndentingNewLine]", 
+       RowBox[{"x", "+", "y"}], ",", "5"}], "]"}]}], ";"}], 
+   "\[IndentingNewLine]", "\n", 
    RowBox[{
     RowBox[{
      RowBox[{"Add", "[", 
@@ -525,16 +526,16 @@ Cell[BoxData[
             RowBox[{"Mod", "[", 
              RowBox[{
               RowBox[{"#", "+", "b"}], ",", "5"}], "]"}], "&"}], "/@", 
-           "x"}]}], "]"}], "/@", "y"}], ",", "1"}], "]"}]}], ";"}], "\n", 
-   "\[IndentingNewLine]", 
+           "x"}]}], "]"}], "/@", "y"}], ",", "1"}], "]"}]}], ";"}], 
+   "\[IndentingNewLine]", "\n", 
    RowBox[{
     RowBox[{
      RowBox[{"Multiplication", "[", 
       RowBox[{"x_", ",", "y_"}], "]"}], ":=", 
      RowBox[{"Mod", "[", 
       RowBox[{
-       RowBox[{"x", "*", "y"}], ",", "5"}], "]"}]}], ";"}], "\n", 
-   "\[IndentingNewLine]", 
+       RowBox[{"x", "*", "y"}], ",", "5"}], "]"}]}], ";"}], 
+   "\[IndentingNewLine]", "\n", 
    RowBox[{
     RowBox[{
      RowBox[{"Productos", "[", 
@@ -549,12 +550,12 @@ Cell[BoxData[
             RowBox[{"Mod", "[", 
              RowBox[{
               RowBox[{"#", "*", "b"}], ",", "5"}], "]"}], "&"}], "/@", 
-           "x"}]}], "]"}], "/@", "y"}], ",", "1"}], "]"}]}], ";"}], 
-   "\[IndentingNewLine]", "\n", "\[IndentingNewLine]", 
+           "x"}]}], "]"}], "/@", "y"}], ",", "1"}], "]"}]}], ";"}], "\n", 
+   "\[IndentingNewLine]", "\[IndentingNewLine]", 
    RowBox[{
     RowBox[{
      RowBox[{"operations", "[", 
-      RowBox[{"enc_:", "\"\<ACGU\>\""}], "]"}], ":=", 
+      RowBox[{"enc_", ":", "\"\<ACGU\>\""}], "]"}], ":=", 
      RowBox[{"DynamicModule", "[", 
       RowBox[{
        RowBox[{"{", 
@@ -568,21 +569,21 @@ Cell[BoxData[
         RowBox[{
          RowBox[{"encode", "[", 
           RowBox[{"X_", ",", 
-           RowBox[{"enco_:", "enc"}]}], "]"}], ":=", 
+           RowBox[{"enco_", ":", "enc"}]}], "]"}], ":=", 
          RowBox[{"X", "/.", 
           RowBox[{"encoding", "[", 
            RowBox[{"enco", ",", "2"}], "]"}]}]}], ";", "\[IndentingNewLine]", 
         RowBox[{
          RowBox[{"decode", "[", 
           RowBox[{"X_", ",", 
-           RowBox[{"enco_:", "enc"}]}], "]"}], ":=", 
+           RowBox[{"enco_", ":", "enc"}]}], "]"}], ":=", 
          RowBox[{"X", "/.", 
           RowBox[{"decoding", "[", 
            RowBox[{"enco", ",", "2"}], "]"}]}]}], ";", "\[IndentingNewLine]", 
         RowBox[{
          RowBox[{"sum", "[", 
           RowBox[{"X_", ",", "Y_", ",", 
-           RowBox[{"enco_:", "enc"}]}], "]"}], ":=", 
+           RowBox[{"enco_", ":", "enc"}]}], "]"}], ":=", 
          RowBox[{"Module", "[", 
           RowBox[{
            RowBox[{"{", 
@@ -601,7 +602,7 @@ Cell[BoxData[
         RowBox[{
          RowBox[{"product", "[", 
           RowBox[{"W_", ",", "Z_", ",", 
-           RowBox[{"enco_:", "enc"}]}], "]"}], ":=", 
+           RowBox[{"enco_", ":", "enc"}]}], "]"}], ":=", 
          RowBox[{"Module", "[", 
           RowBox[{
            RowBox[{"{", 
@@ -620,7 +621,7 @@ Cell[BoxData[
         RowBox[{
          RowBox[{"suma", "[", 
           RowBox[{"X_", ",", "Y_", ",", 
-           RowBox[{"enco_:", "enc"}]}], "]"}], ":=", 
+           RowBox[{"enco_", ":", "enc"}]}], "]"}], ":=", 
          RowBox[{"Text", "@", 
           RowBox[{"Style", "[", 
            RowBox[{
@@ -635,7 +636,7 @@ Cell[BoxData[
         RowBox[{
          RowBox[{"producto", "[", 
           RowBox[{"W_", ",", "Z_", ",", 
-           RowBox[{"enco_:", "enc"}]}], "]"}], ":=", 
+           RowBox[{"enco_", ":", "enc"}]}], "]"}], ":=", 
          RowBox[{"Text", "@", 
           RowBox[{"Style", "[", 
            RowBox[{
@@ -829,14 +830,14 @@ Cell[BoxData[
              RowBox[{"{", 
               RowBox[{"Cyan", ",", "LightGray"}], "}"}]}], "}"}]}], ",", 
           RowBox[{"Alignment", "\[Rule]", "Right"}]}], "]"}]}]}], "]"}]}], 
-    ";"}], "\[IndentingNewLine]", "\[IndentingNewLine]", 
+    ";"}], "\[IndentingNewLine]", "\n", 
    RowBox[{"(*", 
     RowBox[{
     "##", "##", "##", "##", "##", "##", "##", "##", "##", "##", "##", "##", 
      "##", "##", "##", "##", "##", "##", "##", "##", "##", "##", "##", "##", 
      "##", "##", "##", "##", "##", "##", "##", "##", "##", "##", "##", "##", 
      "##", "##", "##", "##", "##", "##", "##", "##", "##", "##", "##", "##", 
-     "##", "##", "##", "##", "##", "##", "#"}], "*)"}], "\n", 
+     "##", "##", "##", "##", "##", "##", "#"}], "*)"}], "\[IndentingNewLine]", 
    RowBox[{"(*", 
     RowBox[{
      RowBox[{
@@ -928,14 +929,15 @@ Cell[BoxData[
        ",", 
        RowBox[{"{", 
         RowBox[{"k", ",", "0", ",", "63"}], "}"}]}], "]"}]}], ";"}], 
-   "\[IndentingNewLine]", "\[IndentingNewLine]", 
+   "\[IndentingNewLine]", "\n", 
    RowBox[{"(*", 
     RowBox[{
     "##", "##", "##", "##", "##", "##", "##", "##", "##", "##", "##", "##", 
      "##", "##", "##", "##", "##", "##", "##", "##", "##", "##", "##", "##", 
      "##", "##", "##", "##", "##", "##", "##", "##", "##", "##", "##", "##", 
      "##", "##", "##", "##", "##", "##", "##", "##", "##", "##", "##", "##", 
-     "##", "##", "##", "##", "##", "##", "##", "##"}], "*)"}], "\n", 
+     "##", "##", "##", "##", "##", "##", "##", "##"}], "*)"}], 
+   "\[IndentingNewLine]", 
    RowBox[{"(*", 
     RowBox[{
      RowBox[{
@@ -1021,15 +1023,15 @@ Cell[BoxData[
         "\"\<AAA\>\"", ",", "\"\<TCT\>\"", ",", "\"\<TTA\>\"", ",", 
         "\"\<TCC\>\"", ",", "\"\<GTC\>\"", ",", "\"\<ATC\>\"", ",", 
         "\"\<TTG\>\"", ",", "\"\<TGT\>\"", ",", "\"\<TTG\>\"", ",", 
-        "\"\<TGT\>\""}], "}"}], "]"}]}], ";"}], "\[IndentingNewLine]", 
-   "\[IndentingNewLine]", 
+        "\"\<TGT\>\""}], "}"}], "]"}]}], ";"}], "\[IndentingNewLine]", "\n", 
    RowBox[{"(*", 
     RowBox[{
     "##", "##", "##", "##", "##", "##", "##", "##", "##", "##", "##", "##", 
      "##", "##", "##", "##", "##", "##", "##", "##", "##", "##", "##", "##", 
      "##", "##", "##", "##", "##", "##", "##", "##", "##", "##", "##", "##", 
      "##", "##", "##", "##", "##", "##", "##", "##", "##", "##", "##", "##", 
-     "##", "##", "##", "##", "##", "##", "##", "##"}], "*)"}], "\n", 
+     "##", "##", "##", "##", "##", "##", "##", "##"}], "*)"}], 
+   "\[IndentingNewLine]", 
    RowBox[{"(*", 
     RowBox[{
      RowBox[{
@@ -1154,7 +1156,7 @@ Cell[BoxData[
          RowBox[{"x", ",", "0", ",", "4"}], "}"}], ",", 
         RowBox[{"{", 
          RowBox[{"z", ",", "0", ",", "4"}], "}"}]}], "]"}], "]"}]}], ";"}], 
-   "\n", "\[IndentingNewLine]", 
+   "\[IndentingNewLine]", "\n", 
    RowBox[{
     RowBox[{"PlaneDYZ", "=", 
      RowBox[{"Flatten", "[", 
@@ -1259,11 +1261,11 @@ Cell[BoxData[
          RowBox[{"y", ",", "0", ",", "4"}], "}"}], ",", 
         RowBox[{"{", 
          RowBox[{"z", ",", "0", ",", "4"}], "}"}]}], "]"}], "]"}]}], ";"}], 
-   "\[IndentingNewLine]", "\[IndentingNewLine]", 
+   "\[IndentingNewLine]", "\n", 
    RowBox[{"(*", 
     RowBox[{
-     RowBox[{"**", "HORIZONTAL"}], " ", "PLANES"}], "***)"}], "\n", 
-   "\[IndentingNewLine]", 
+     RowBox[{"**", "HORIZONTAL"}], " ", "PLANES"}], "***)"}], 
+   "\[IndentingNewLine]", "\[IndentingNewLine]", 
    RowBox[{
     RowBox[{"PlaneXYD", "=", 
      RowBox[{"Flatten", "[", 
@@ -1368,10 +1370,11 @@ Cell[BoxData[
          RowBox[{"x", ",", "0", ",", "4"}], "}"}], ",", 
         RowBox[{"{", 
          RowBox[{"y", ",", "0", ",", "4"}], "}"}]}], "]"}], "]"}]}], ";"}], 
-   "\[IndentingNewLine]", "\[IndentingNewLine]", 
+   "\[IndentingNewLine]", "\n", 
    RowBox[{"(*", 
     RowBox[{
-     RowBox[{"**", "OBLIQUE"}], " ", "PLANES"}], "***)"}], "\n", 
+     RowBox[{"**", "OBLIQUE"}], " ", "PLANES"}], "***)"}], 
+   "\[IndentingNewLine]", 
    RowBox[{
     RowBox[{"PlaneXNN", "=", 
      RowBox[{"Flatten", "[", 
@@ -1437,10 +1440,11 @@ Cell[BoxData[
          RowBox[{"i", ",", "0", ",", "4"}], "}"}], ",", 
         RowBox[{"{", 
          RowBox[{"k", ",", "0", ",", "4"}], "}"}]}], "]"}], "]"}]}], ";"}], 
-   "\[IndentingNewLine]", "\[IndentingNewLine]", 
+   "\[IndentingNewLine]", "\n", 
    RowBox[{"(*", 
     RowBox[{
-     RowBox[{"**", "GENETIC"}], " ", "CODE", " ", "PLANES"}], "***)"}], "\n", 
+     RowBox[{"**", "GENETIC"}], " ", "CODE", " ", "PLANES"}], "***)"}], 
+   "\[IndentingNewLine]", 
    RowBox[{
     RowBox[{"GCplaneXAZ", "=", 
      RowBox[{"StdCode", "[", 
@@ -1460,8 +1464,8 @@ Cell[BoxData[
     RowBox[{"GCplaneXUZ", "=", 
      RowBox[{"StdCode", "[", 
       RowBox[{"[", 
-       RowBox[{"49", ";;", "64"}], "]"}], "]"}]}], ";"}], "\n", 
-   "\[IndentingNewLine]", 
+       RowBox[{"49", ";;", "64"}], "]"}], "]"}]}], ";"}], 
+   "\[IndentingNewLine]", "\n", 
    RowBox[{
     RowBox[{"GCplaneAYZ", "=", 
      RowBox[{"Codons", "[", 
@@ -1481,8 +1485,8 @@ Cell[BoxData[
     RowBox[{"GCplaneUYZ", "=", 
      RowBox[{"Codons", "[", 
       RowBox[{"[", 
-       RowBox[{"49", ";;", "64"}], "]"}], "]"}]}], ";"}], "\n", 
-   "\[IndentingNewLine]", 
+       RowBox[{"49", ";;", "64"}], "]"}], "]"}]}], ";"}], 
+   "\[IndentingNewLine]", "\n", 
    RowBox[{
     RowBox[{"GCplaneXYA", "=", 
      RowBox[{"Codones", "[", 
@@ -1503,9 +1507,10 @@ Cell[BoxData[
      RowBox[{"Codones", "[", 
       RowBox[{"[", 
        RowBox[{"49", ";;", "64"}], "]"}], "]"}]}], ";"}], 
-   "\[IndentingNewLine]", "\[IndentingNewLine]", 
+   "\[IndentingNewLine]", "\n", 
    RowBox[{"(*", 
-    RowBox[{"Stop", " ", "codons", " ", "coordinates"}], "*)"}], "\n", 
+    RowBox[{"Stop", " ", "codons", " ", "coordinates"}], "*)"}], 
+   "\[IndentingNewLine]", 
    RowBox[{
     RowBox[{
      RowBox[{"StopCoord", "[", "enc_", "]"}], ":=", 
@@ -1518,9 +1523,9 @@ Cell[BoxData[
            RowBox[{"{", "#", "}"}], ",", "enc"}], "]"}], ",", "1"}], "]"}], 
        "&"}], "/@", 
       RowBox[{"f", "[", "\"\<Stop\>\"", "]"}]}]}], ";"}], 
-   "\[IndentingNewLine]", "\[IndentingNewLine]", 
+   "\[IndentingNewLine]", "\n", 
    RowBox[{"(*", 
-    RowBox[{"Ancient", " ", "codons"}], "*)"}], "\n", 
+    RowBox[{"Ancient", " ", "codons"}], "*)"}], "\[IndentingNewLine]", 
    RowBox[{
     RowBox[{"AncientCodons", "=", 
      RowBox[{
@@ -1531,11 +1536,11 @@ Cell[BoxData[
           RowBox[{"{", "#", "}"}], "]"}], ",", "1"}], "]"}], "&"}], "/@", 
       RowBox[{"Union", "[", 
        RowBox[{"PlaneXDZ", ",", "PlaneDYZ", ",", "PlaneXYD"}], "]"}]}]}], 
-    ";"}], "\[IndentingNewLine]", "\[IndentingNewLine]", 
+    ";"}], "\[IndentingNewLine]", "\n", 
    RowBox[{"(*", 
     RowBox[{
      RowBox[{"**", "VERTICAL"}], " ", "LINES", " ", "LABELS"}], "***)"}], 
-   "\n", "\[IndentingNewLine]", 
+   "\[IndentingNewLine]", "\[IndentingNewLine]", 
    RowBox[{
     RowBox[{"VlineLabels", "=", 
      RowBox[{"{", 
@@ -1552,12 +1557,12 @@ Cell[BoxData[
        "\"\<Vertical Line GGZ\>\"", ",", "\"\<Vertical Line GUZ\>\"", ",", 
        "\"\<Vertical Line UDZ\>\"", ",", "\"\<Vertical Line UAZ\>\"", ",", 
        "\"\<Vertical Line UCZ\>\"", ",", "\"\<Vertical Line UGZ\>\"", ",", 
-       "\"\<Vertical Line UUZ\>\""}], "}"}]}], ";"}], "\[IndentingNewLine]", 
-   "\n", 
+       "\"\<Vertical Line UUZ\>\""}], "}"}]}], ";"}], "\n", 
+   "\[IndentingNewLine]", 
    RowBox[{
     RowBox[{
      RowBox[{"Proline", "[", 
-      RowBox[{"enc_:", "\"\<ACGU\>\""}], "]"}], ":=", 
+      RowBox[{"enc_", ":", "\"\<ACGU\>\""}], "]"}], ":=", 
      RowBox[{"points", "[", 
       RowBox[{
        RowBox[{"{", 
@@ -1587,7 +1592,7 @@ Cell[BoxData[
      "**", "**", "**", "**", "**", "**", "**", "**", "**", "**", "**", "**", "**",
        "**", "It"}], " ", "is", " ", "used", " ", "to", " ", "draws", " ", 
      "vertical", " ", "lines", " ", "and", " ", "vertical", " ", "planes"}], 
-    " ", "*********************************)"}], "\[IndentingNewLine]", "\n", 
+    " ", "*********************************)"}], "\n", "\[IndentingNewLine]", 
    RowBox[{
     RowBox[{
      RowBox[{"VerticalLines", "[", "X_", "]"}], ":=", 
@@ -1605,12 +1610,12 @@ Cell[BoxData[
          RowBox[{"[", 
           RowBox[{"initial", ";;", 
            RowBox[{"initial", "+", "4"}]}], "]"}], "]"}]}]}], "]"}]}], ";"}], 
-   "\[IndentingNewLine]", "\n", 
+   "\n", "\[IndentingNewLine]", 
    RowBox[{
     RowBox[{
      RowBox[{"V", "[", 
       RowBox[{"X_", ",", 
-       RowBox[{"t_:", "1"}]}], "]"}], ":=", 
+       RowBox[{"t_", ":", "1"}]}], "]"}], ":=", 
      RowBox[{"If", "[", 
       RowBox[{
        RowBox[{"t", "\[Equal]", "1"}], ",", 
@@ -1645,12 +1650,12 @@ Cell[BoxData[
              RowBox[{"\"\<C\>\"", "\[Rule]", "2"}], ",", 
              RowBox[{"\"\<G\>\"", "\[Rule]", "3"}], ",", 
              RowBox[{"\"\<U\>\"", "\[Rule]", "4"}]}], "}"}]}], "]"}]}], 
-        "}"}]}], "]"}]}], ";"}], "\[IndentingNewLine]", "\n", 
+        "}"}]}], "]"}]}], ";"}], "\n", "\[IndentingNewLine]", 
    RowBox[{
     RowBox[{
      RowBox[{"VerticalPlaneCoordinatesX", "[", 
       RowBox[{"x_", ",", "c_", ",", 
-       RowBox[{"t_:", "1"}]}], "]"}], ":=", 
+       RowBox[{"t_", ":", "1"}]}], "]"}], ":=", 
      RowBox[{"If", "[", 
       RowBox[{
        RowBox[{"t", "\[Equal]", "1"}], ",", 
@@ -1698,12 +1703,12 @@ Cell[BoxData[
           RowBox[{"y", ",", "0", ",", "c"}], "}"}], ",", 
          RowBox[{"{", 
           RowBox[{"z", ",", "0", ",", "c"}], "}"}]}], "]"}]}], "]"}]}], ";"}],
-    "\[IndentingNewLine]", "\n", 
+    "\n", "\[IndentingNewLine]", 
    RowBox[{
     RowBox[{
      RowBox[{"VerticalPlaneCoordinatesY", "[", 
       RowBox[{"y_", ",", "c_", ",", 
-       RowBox[{"t_:", "1"}]}], "]"}], ":=", 
+       RowBox[{"t_", ":", "1"}]}], "]"}], ":=", 
      RowBox[{"If", "[", 
       RowBox[{
        RowBox[{"t", "\[Equal]", "1"}], ",", 
@@ -1753,12 +1758,12 @@ Cell[BoxData[
           RowBox[{"x", ",", "0", ",", "c"}], "}"}], ",", 
          RowBox[{"{", 
           RowBox[{"z", ",", "0", ",", "c"}], "}"}]}], "]"}]}], "]"}]}], ";"}],
-    "\[IndentingNewLine]", "\n", 
+    "\n", "\[IndentingNewLine]", 
    RowBox[{
     RowBox[{
      RowBox[{"HorizontalPlaneCoordinates", "[", 
       RowBox[{"z_", ",", "c_", ",", 
-       RowBox[{"t_:", "1"}]}], "]"}], ":=", 
+       RowBox[{"t_", ":", "1"}]}], "]"}], ":=", 
      RowBox[{"If", "[", 
       RowBox[{
        RowBox[{"t", "\[Equal]", "1"}], ",", 
@@ -1808,7 +1813,7 @@ Cell[BoxData[
           RowBox[{"x", ",", "0", ",", "c"}], "}"}], ",", 
          RowBox[{"{", 
           RowBox[{"y", ",", "0", ",", "c"}], "}"}]}], "]"}], ","}], "]"}]}], 
-    ";"}], "\[IndentingNewLine]", "\n", 
+    ";"}], "\n", "\[IndentingNewLine]", 
    RowBox[{
     RowBox[{
      RowBox[{"TripletCoordinates", "[", 
@@ -1826,10 +1831,11 @@ Cell[BoxData[
             "font"}], "]"}], ",", "#2"}], "]"}], "&"}], ",", 
        RowBox[{"{", 
         RowBox[{"trd", ",", "crd"}], "}"}]}], "]"}]}], ";"}], 
-   "\[IndentingNewLine]", "\[IndentingNewLine]", 
+   "\[IndentingNewLine]", "\n", 
    RowBox[{"(*", 
     RowBox[{
-     RowBox[{"**", "VERTICAL"}], " ", "LINES"}], "***)"}], "\n", 
+     RowBox[{"**", "VERTICAL"}], " ", "LINES"}], "***)"}], 
+   "\[IndentingNewLine]", 
    RowBox[{
     RowBox[{"LineDDZ", "=", 
      RowBox[{"V", "[", "\"\<DDD\>\"", "]"}]}], ";", 
@@ -1891,15 +1897,14 @@ Cell[BoxData[
      "##", "##", "##", "##", "##", "##", "##", "##", "##", "##", "##", "##", 
      "##", "##", "##", "##", "##", "##", "##", "##", "##", "##", "##", "##", 
      "##", "##", "##", "##", "##", "##", "##", "##", "##", "##", "##", "##", 
-     "##", "##", "##", "##", "##", "##", "##", "##", "##"}], "*)"}], 
-   "\[IndentingNewLine]", 
+     "##", "##", "##", "##", "##", "##", "##", "##", "##"}], "*)"}], "\n", 
    RowBox[{"(*", 
     RowBox[{
      RowBox[{
      "**", "**", "**", "**", "**", "**", "**", "**", "**", "**", "**", "**", "**",
        "**", "**", "**", "**", "**", "**", "**", "**", "**", "**", "**", 
       "**"}], "*", "SELECTION", " ", "FUNCTION"}], 
-    "*******************************************)"}], "\n", 
+    "*******************************************)"}], "\[IndentingNewLine]", 
    RowBox[{"(*", 
     RowBox[{
      RowBox[{
@@ -1912,7 +1917,7 @@ Cell[BoxData[
     RowBox[{
      RowBox[{"f", "[", 
       RowBox[{"t_", ",", 
-       RowBox[{"wildseq_:", "\"\<Lysozyme\>\""}]}], "]"}], ":=", 
+       RowBox[{"wildseq_", ":", "\"\<Lysozyme\>\""}]}], "]"}], ":=", 
      RowBox[{"Switch", "[", 
       RowBox[{
       "t", ",", "\[IndentingNewLine]", "\"\<Wild DNA Sequence\>\"", ",", 
@@ -2405,8 +2410,8 @@ Cell[BoxData[
    "\[IndentingNewLine]"}]}]], "Input",
  CellMargins->{{46, 46}, {10, 30}},
  InitializationCell->True,
- InitializationGroup->
-  True,ExpressionUUID->"45c31a99-b229-4293-b591-cff3dcd8a534"]
+ InitializationGroup->True,
+ CellLabel->"In[1]:=",ExpressionUUID->"45c31a99-b229-4293-b591-cff3dcd8a534"]
 }, Closed]],
 
 Cell[CellGroupData[{
@@ -2450,8 +2455,8 @@ Cell[BoxData[
     RowBox[{
      RowBox[{"GC", "[", 
       RowBox[{"x_", ",", 
-       RowBox[{"enc_:", "\"\<ACGU\>\""}], ",", 
-       RowBox[{"t_:", "1"}]}], "]"}], ":=", 
+       RowBox[{"enc_", ":", "\"\<ACGU\>\""}], ",", 
+       RowBox[{"t_", ":", "1"}]}], "]"}], ":=", 
      RowBox[{"Which", "[", "\[IndentingNewLine]", 
       RowBox[{
        RowBox[{"MemberQ", "[", 
@@ -2756,14 +2761,14 @@ Cell[BoxData[
            RowBox[{"PlaneXDZ", ",", "PlaneDYZ", ",", "PlaneXYD"}], "]"}]}], 
          ",", "x"}], "]"}], ",", "\"\<-\>\""}], "  ", 
       RowBox[{"(*", 
-       RowBox[{"Ancient", " ", "codons"}], "*)"}], "]"}]}], ";"}], 
-   "\[IndentingNewLine]", "\n", 
+       RowBox[{"Ancient", " ", "codons"}], "*)"}], "]"}]}], ";"}], "\n", 
+   "\[IndentingNewLine]", 
    RowBox[{
     RowBox[{
      RowBox[{"iGC", "[", 
       RowBox[{"x_", ",", 
-       RowBox[{"enc_:", "\"\<ACGU\>\""}], ",", 
-       RowBox[{"t_:", "2"}]}], "]"}], ":=", 
+       RowBox[{"enc_", ":", "\"\<ACGU\>\""}], ",", 
+       RowBox[{"t_", ":", "2"}]}], "]"}], ":=", 
      RowBox[{"Which", "[", 
       RowBox[{
        RowBox[{"MemberQ", "[", 
@@ -2998,8 +3003,8 @@ Cell[BoxData[
            RowBox[{"f", "[", "\"\<Stop\>\"", "]"}], ",", "1"}], "]"}], ",", 
          "enc", ",", "t"}], "]"}]}], "]"}]}], ";"}]}]}]], "Input",
  InitializationCell->True,
- InitializationGroup->
-  True,ExpressionUUID->"15477c73-8a2a-4ba7-ad8d-56b6d42271d0"]
+ InitializationGroup->True,
+ CellLabel->"In[66]:=",ExpressionUUID->"15477c73-8a2a-4ba7-ad8d-56b6d42271d0"]
 }, Closed]],
 
 Cell[CellGroupData[{
@@ -3007,6 +3012,8 @@ Cell[CellGroupData[{
 Cell["CUBE FUNCTION", "Subsection",
  InitializationGroup->
   True,ExpressionUUID->"b63f003b-ad32-4d74-bb20-8736087e9fc1"],
+
+Cell[CellGroupData[{
 
 Cell[BoxData[
  RowBox[{
@@ -3728,8 +3735,28 @@ Cell[BoxData[
        RowBox[{"puntos", ",", "puntos2", ",", "t"}], "]"}]}]}], 
     "\[IndentingNewLine]", "]"}]}]}]], "Input",
  InitializationCell->True,
- InitializationGroup->
-  True,ExpressionUUID->"a0eab6a0-3a66-4907-a710-100314d0c3e5"]
+ InitializationGroup->True,
+ CellLabel->"In[68]:=",ExpressionUUID->"a0eab6a0-3a66-4907-a710-100314d0c3e5"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "SetDelayed", "write", 
+   "\"Tag \\!\\(\\*RowBox[{\\\"Cube\\\"}]\\) in \
+\\!\\(\\*RowBox[{\\\"Cube\\\", \\\"[\\\", RowBox[{\\\"opacities_\\\", \\\",\\\
+\", \\\"Member1_\\\", \\\",\\\", \\\"mcolor1_\\\", \\\",\\\", \
+\\\"Member2_\\\", \\\",\\\", \\\"mcolor2_\\\", \\\",\\\", \\\"Suma_\\\", \
+\\\",\\\", \\\"sumcolor_\\\", \\\",\\\", \\\"Producto_\\\", \\\",\\\", \
+\\\"timecolor_\\\", \\\",\\\", \\\"Size_\\\", \\\",\\\", RowBox[{\\\"\
+\[LeftSkeleton]\\\", \\\"8\\\", \\\"\[RightSkeleton]\\\"}]}], \\\"]\\\"}]\\) \
+is Protected.\"", 2, 68, 1, 25297395184514604929, "Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellLabel->
+  "During evaluation of \
+In[68]:=",ExpressionUUID->"8c90b959-7add-49ab-9e44-1e3363c9013d"],
+
+Cell[BoxData["$Failed"], "Output",
+ CellLabel->"Out[68]=",ExpressionUUID->"e7ce2e09-1ddf-4fa8-837c-5f63f6ddb6c0"]
+}, Open  ]]
 }, Closed]],
 
 Cell[CellGroupData[{
@@ -3822,8 +3849,8 @@ Cell[BoxData[{
    RowBox[{
     RowBox[{"Coord", "[", 
      RowBox[{"s_", ",", 
-      RowBox[{"enc_:", "\"\<ACGU\>\""}], ",", 
-      RowBox[{"t_:", "2"}]}], "]"}], ":=", 
+      RowBox[{"enc_", ":", "\"\<ACGU\>\""}], ",", 
+      RowBox[{"t_", ":", "2"}]}], "]"}], ":=", 
     RowBox[{"Module", "[", 
      RowBox[{
       RowBox[{"{", 
@@ -4142,9 +4169,9 @@ Cell[BoxData[{
    RowBox[{
     RowBox[{"Cycle2Cube", "[", 
      RowBox[{"cycle_", ",", " ", 
-      RowBox[{"baseorder_:", "\"\<ACGU\>\""}], ",", 
-      RowBox[{"family_:", "\"\<Helvetica\>\""}], " ", ",", 
-      RowBox[{"size_:", "12"}]}], "]"}], ":=", " ", 
+      RowBox[{"baseorder_", ":", "\"\<ACGU\>\""}], ",", 
+      RowBox[{"family_", ":", "\"\<Helvetica\>\""}], " ", ",", 
+      RowBox[{"size_", ":", "12"}]}], "]"}], ":=", " ", 
     RowBox[{"Module", "[", 
      RowBox[{
       RowBox[{"{", "cube", "}"}], ",", "\[IndentingNewLine]", 
@@ -4210,7 +4237,7 @@ Cell[BoxData[{
    RowBox[{
     RowBox[{"Cube2Cycle", "[", 
      RowBox[{"cube_", ",", " ", 
-      RowBox[{"baseorder_:", "\"\<ACGU\>\""}]}], "]"}], ":=", 
+      RowBox[{"baseorder_", ":", "\"\<ACGU\>\""}]}], "]"}], ":=", 
     RowBox[{"PermutationCycles", "[", 
      RowBox[{
       RowBox[{"Characters", "[", "cube", "]"}], "/.", " ", 
@@ -4238,7 +4265,7 @@ Cell[BoxData[{
    RowBox[{
     RowBox[{"CubeProduct", "[", 
      RowBox[{"cube1_", ",", "cube2_", ",", " ", 
-      RowBox[{"baseorder_:", "\"\<ACGU\>\""}]}], "]"}], ":=", 
+      RowBox[{"baseorder_", ":", "\"\<ACGU\>\""}]}], "]"}], ":=", 
     RowBox[{"Cycle2Cube", "[", " ", 
      RowBox[{
       RowBox[{"PermutationProduct", "[", " ", 
@@ -4253,8 +4280,8 @@ Cell[BoxData[{
   RowBox[{
    RowBox[{"CubePower", "[", 
     RowBox[{"cube_", ",", 
-     RowBox[{"power_:", "1"}], ",", " ", 
-     RowBox[{"baseorder_:", "\"\<ACGU\>\""}]}], "]"}], ":=", 
+     RowBox[{"power_", ":", "1"}], ",", " ", 
+     RowBox[{"baseorder_", ":", "\"\<ACGU\>\""}]}], "]"}], ":=", 
    RowBox[{"Module", "[", 
     RowBox[{
      RowBox[{"{", 
@@ -4397,8 +4424,8 @@ Cell[BoxData[{
        "\[IndentingNewLine]", "]"}]}]}], "\[IndentingNewLine]", "]"}]}], 
   ";"}]}], "Input",
  InitializationCell->True,
- InitializationGroup->
-  True,ExpressionUUID->"04fa6d37-7ce8-4524-a3a1-816fe7119b17"]
+ InitializationGroup->True,
+ CellLabel->"In[69]:=",ExpressionUUID->"04fa6d37-7ce8-4524-a3a1-816fe7119b17"]
 }, Closed]]
 }, Closed]],
 
@@ -5169,8 +5196,8 @@ cubes\>\"", ",", "\"\<6. Dihedral groups\>\"", ",",
        ",", "\"\<References\>\""}], "}"}]}], "}"}], ",", 
    RowBox[{"Paneled", "\[Rule]", "False"}], ",", 
    RowBox[{"SaveDefinitions", "\[Rule]", "True"}]}], "]"}]}], "Input",
- InitializationCell->
-  True,ExpressionUUID->"bafee5ed-c01e-4994-b411-ddea599a6d14"],
+ InitializationCell->True,
+ CellLabel->"In[91]:=",ExpressionUUID->"bafee5ed-c01e-4994-b411-ddea599a6d14"],
 
 Cell[BoxData[
  TagBox[
@@ -5192,14 +5219,13 @@ Cell[BoxData[
        "5.1. The multiplication of two genetic-code cubes", 
        "5.2. Cayley multiplications table for all pairs of cubes", 
        "6. Dihedral groups", "7. Klein four groups", "8. Concluding remarks", 
-       "References"}}}, Typeset`size$$ = {0., {0., 7.}}, Typeset`update$$ = 0,
-     Typeset`initDone$$, Typeset`skipInitDone$$ = 
-    False, $CellContext`tag$42041$$ = 0}, 
+       "References"}}}, Typeset`size$$ = {0., {0., 5.}}, Typeset`update$$ = 0,
+     Typeset`initDone$$, Typeset`skipInitDone$$ = False}, 
     DynamicBox[Manipulate`ManipulateBoxes[
      1, StandardForm, 
       "Variables" :> {$CellContext`tag$$ = 
-        "1.1. Biological - Algebraic Background"}, "ControllerVariables" :> {
-        Hold[$CellContext`tag$$, $CellContext`tag$42041$$, 0]}, 
+        "1.1. Biological - Algebraic Background"}, 
+      "ControllerVariables" :> {}, 
       "OtherVariables" :> {
        Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
         Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
@@ -5221,13 +5247,13 @@ Cell[BoxData[
           "6. Dihedral groups", "7. Klein four groups", 
           "8. Concluding remarks", "References"}}}, 
       "Options" :> {Paneled -> False}, "DefaultOptions" :> {}],
-     ImageSizeCache->{474., {46., 53.}},
+     ImageSizeCache->{257., {32.35052490234375, 36.64947509765625}},
      SingleEvaluation->True],
     Deinitialization:>None,
     DynamicModuleValues:>{},
-    Initialization:>({$CellContext`content[
-         Pattern[$CellContext`tag, 
-          Blank[]]] := Module[{}, NotebookLocate[$CellContext`tag]; ""]}; 
+    Initialization:>($CellContext`content[
+        Pattern[$CellContext`tag, 
+         Blank[]]] := Module[{}, NotebookLocate[$CellContext`tag]; ""]; 
      Typeset`initDone$$ = True),
     SynchronousInitialization->True,
     UndoTrackedVariables:>{Typeset`show$$, Typeset`bookmarkMode$$},
@@ -5235,9 +5261,9 @@ Cell[BoxData[
     UntrackedVariables:>{Typeset`size$$}], "Manipulate",
    Deployed->True,
    StripOnInput->False],
-  Manipulate`InterpretManipulate[1]]], "Output",ExpressionUUID->"a31deb6c-\
-9253-48a7-a175-550fe5523a6f"]
-}, {2}]],
+  Manipulate`InterpretManipulate[1]]], "Output",
+ CellLabel->"Out[92]=",ExpressionUUID->"21fb0caa-0a59-47a0-9f25-1dc4cdaaa800"]
+}, Open  ]],
 
 Cell[CellGroupData[{
 
@@ -5475,7 +5501,7 @@ Cell[BoxData[
     RowBox[{
      RowBox[{"encoding", "[", 
       RowBox[{"enc_", ",", 
-       RowBox[{"t_:", "1"}]}], "]"}], ":=", 
+       RowBox[{"t_", ":", "1"}]}], "]"}], ":=", 
      RowBox[{"Switch", "[", 
       RowBox[{"t", ",", "\[IndentingNewLine]", "1", ",", 
        RowBox[{"Flatten", "[", 
@@ -5580,8 +5606,8 @@ Cell[BoxData[
     RowBox[{
      RowBox[{"decoding", "[", 
       RowBox[{
-       RowBox[{"enc_:", "\"\<ACGU\>\""}], ",", 
-       RowBox[{"t_:", "1"}]}], "]"}], ":=", 
+       RowBox[{"enc_", ":", "\"\<ACGU\>\""}], ",", 
+       RowBox[{"t_", ":", "1"}]}], "]"}], ":=", 
      RowBox[{"Switch", "[", 
       RowBox[{"t", ",", "\[IndentingNewLine]", "1", ",", 
        RowBox[{"Prepend", "[", 
@@ -5618,14 +5644,14 @@ Cell[BoxData[
     RowBox[{
      RowBox[{"encode", "[", 
       RowBox[{"X_", ",", 
-       RowBox[{"enco_:", "\"\<ACGU\>\""}]}], "]"}], ":=", 
+       RowBox[{"enco_", ":", "\"\<ACGU\>\""}]}], "]"}], ":=", 
      RowBox[{"X", "/.", 
       RowBox[{"encoding", "[", 
        RowBox[{"enco", ",", "2"}], "]"}]}]}], ";", "\[IndentingNewLine]", 
     RowBox[{
      RowBox[{"decode", "[", 
       RowBox[{"X_", ",", 
-       RowBox[{"enco_:", "\"\<ACGU\>\""}]}], "]"}], ":=", 
+       RowBox[{"enco_", ":", "\"\<ACGU\>\""}]}], "]"}], ":=", 
      RowBox[{"X", "/.", 
       RowBox[{"decoding", "[", 
        RowBox[{"enco", ",", "2"}], "]"}]}]}], ";", "\[IndentingNewLine]", 
@@ -5633,7 +5659,7 @@ Cell[BoxData[
     RowBox[{
      RowBox[{"sum", "[", 
       RowBox[{"X_", ",", "Y_", ",", 
-       RowBox[{"enco_:", "\"\<ACGU\>\""}]}], "]"}], ":=", 
+       RowBox[{"enco_", ":", "\"\<ACGU\>\""}]}], "]"}], ":=", 
      RowBox[{"Module", "[", 
       RowBox[{
        RowBox[{"{", 
@@ -5652,7 +5678,7 @@ Cell[BoxData[
     RowBox[{
      RowBox[{"product", "[", 
       RowBox[{"W_", ",", "Z_", ",", 
-       RowBox[{"enco_:", "\"\<ACGU\>\""}]}], "]"}], ":=", 
+       RowBox[{"enco_", ":", "\"\<ACGU\>\""}]}], "]"}], ":=", 
      RowBox[{"Module", "[", 
       RowBox[{
        RowBox[{"{", 
@@ -5671,7 +5697,7 @@ Cell[BoxData[
     RowBox[{
      RowBox[{"suma", "[", 
       RowBox[{"X_", ",", "Y_", ",", 
-       RowBox[{"enco_:", "\"\<ACGU\>\""}]}], "]"}], ":=", 
+       RowBox[{"enco_", ":", "\"\<ACGU\>\""}]}], "]"}], ":=", 
      RowBox[{"Text", "@", 
       RowBox[{"Style", "[", 
        RowBox[{
@@ -5685,7 +5711,7 @@ Cell[BoxData[
     RowBox[{
      RowBox[{"producto", "[", 
       RowBox[{"W_", ",", "Z_", ",", 
-       RowBox[{"enco_:", "\"\<ACGU\>\""}]}], "]"}], ":=", 
+       RowBox[{"enco_", ":", "\"\<ACGU\>\""}]}], "]"}], ":=", 
      RowBox[{"Text", "@", 
       RowBox[{"Style", "[", 
        RowBox[{
@@ -5879,12 +5905,12 @@ Cell[BoxData[
           RowBox[{"Cyan", ",", "LightGray"}], "}"}]}], "}"}]}], ",", 
       RowBox[{"Alignment", "\[Rule]", "Right"}]}], "]"}]}], ",", 
    RowBox[{"SaveDefinitions", "\[Rule]", "True"}]}], "]"}]], "Input",
- InitializationCell->
-  True,ExpressionUUID->"b0854210-1da7-43a4-b110-77aa15fed720"],
+ InitializationCell->True,
+ CellLabel->"In[93]:=",ExpressionUUID->"b0854210-1da7-43a4-b110-77aa15fed720"],
 
 Cell[BoxData[
  DynamicModuleBox[{$CellContext`X$$ = "A", $CellContext`Y$$ = 
-  "U", $CellContext`W$$ = "G", $CellContext`Z$$ = 
+  "G", $CellContext`W$$ = "G", $CellContext`Z$$ = 
   "C", $CellContext`encode$$, $CellContext`decode$$, $CellContext`encoding$$, \
 $CellContext`sum$$, $CellContext`product$$, $CellContext`decoding$$, \
 $CellContext`suma$$, $CellContext`producto$$}, 
@@ -5895,7 +5921,7 @@ $CellContext`suma$$, $CellContext`producto$$},
          StyleBox["\<\"Sum operation: \"\>", "Times New Roman",
           StripOnInput->False,
           FontSize->20], TextForm]], "InlineText",ExpressionUUID->
-        "b9f24c26-845c-4655-b17a-75d5ee60db28"],
+        "4dacfa18-22f0-420a-aeb1-59966fcf7c72"],
        Text[
         Style["Sum operation: ", FontSize -> 20, "Times New Roman"]]], 
       PopupMenuBox[Dynamic[$CellContext`X$$, Automatic], {"D"->"\<\"D\"\>", 
@@ -5909,13 +5935,13 @@ $CellContext`suma$$, $CellContext`producto$$},
       DynamicBox[ToBoxes[
         $CellContext`suma$$[$CellContext`X$$, $CellContext`Y$$, "ACGU"], 
         StandardForm], Automatic,
-       ImageSizeCache->{16., {5., 20.}}], 
+       ImageSizeCache->{10.83251953125, {3.1787109375, 13.5791015625}}], 
       InterpretationBox[Cell[BoxData[
         FormBox[
          StyleBox["\<\"\[DoubleLongLeftRightArrow] (\"\>", "Times New Roman",
           StripOnInput->False,
           FontWeight->Bold], TextForm]], "InlineText",ExpressionUUID->
-        "83375246-343c-4671-8f38-668ca9f25aa2"],
+        "9de69b5a-33ae-4039-862b-092ffd775ba9"],
        Text[
         Style["\[DoubleLongLeftRightArrow] (", "Times New Roman", Bold]]], 
       InterpretationBox[Cell[BoxData[
@@ -5924,10 +5950,10 @@ $CellContext`suma$$, $CellContext`producto$$},
           DynamicBox[ToBoxes[
             $CellContext`encode$$[$CellContext`X$$, "ACGU"], StandardForm], 
            Automatic,
-           ImageSizeCache->{12., {0., 16.}}], "Times New Roman",
+           ImageSizeCache->{8.34228515625, {0., 11.}}], "Times New Roman",
           StripOnInput->False,
           FontWeight->Bold], TextForm]], "InlineText",ExpressionUUID->
-        "c36e256e-e6e3-4d9c-af04-6dfbfb3505c5"],
+        "013187ab-414d-4b0c-bf7a-59960a219ab1"],
        Text[
         Style[
          Dynamic[
@@ -5939,10 +5965,10 @@ $CellContext`suma$$, $CellContext`producto$$},
           DynamicBox[ToBoxes[
             $CellContext`encode$$[$CellContext`Y$$, "ACGU"], StandardForm], 
            Automatic,
-           ImageSizeCache->{12., {0., 16.}}], "Times New Roman",
+           ImageSizeCache->{8.34228515625, {1., 11.}}], "Times New Roman",
           StripOnInput->False,
           FontWeight->Bold], TextForm]], "InlineText",ExpressionUUID->
-        "7b83b5a6-4a7c-47de-a782-0d50cc6b263f"],
+        "7045a8aa-d7e2-4271-afde-3ef626c4efd1"],
        Text[
         Style[
          Dynamic[
@@ -5953,7 +5979,7 @@ $CellContext`suma$$, $CellContext`producto$$},
          StyleBox["\<\") mod 5 =\"\>", "Times New Roman",
           StripOnInput->False,
           FontWeight->Bold], TextForm]], "InlineText",ExpressionUUID->
-        "fd452297-9485-4b81-be08-a766d37ca8e3"],
+        "0b07f2c3-f065-409d-9863-c60862eb63f1"],
        Text[
         Style[") mod 5 =", "Times New Roman", Bold]]], 
       InterpretationBox[Cell[BoxData[
@@ -5962,10 +5988,10 @@ $CellContext`suma$$, $CellContext`producto$$},
           DynamicBox[ToBoxes[
             $CellContext`sum$$[$CellContext`X$$, $CellContext`Y$$, "ACGU"], 
             StandardForm], Automatic,
-           ImageSizeCache->{12., {0., 16.}}], "Times New Roman",
+           ImageSizeCache->{8.34228515625, {0., 11.}}], "Times New Roman",
           StripOnInput->False,
           FontWeight->Bold], TextForm]], "InlineText",ExpressionUUID->
-        "9ff48b42-99ab-4dd0-a850-8a667a5e07b6"],
+        "0e89c772-db88-4d39-b333-2615905ccb2a"],
        Text[
         Style[
          Dynamic[
@@ -5977,7 +6003,7 @@ $CellContext`suma$$, $CellContext`producto$$},
          StyleBox["\<\"Product operation: \"\>", "Times New Roman",
           StripOnInput->False,
           FontSize->20], TextForm]], "InlineText",ExpressionUUID->
-        "499b4a80-adfe-4573-a06c-a59f268a7e65"],
+        "712b2c67-76d9-4045-b4aa-984556a84c36"],
        Text[
         Style["Product operation: ", FontSize -> 20, "Times New Roman"]]], 
       PopupMenuBox[Dynamic[$CellContext`W$$, Automatic], {"D"->"\<\"D\"\>", 
@@ -5991,13 +6017,13 @@ $CellContext`suma$$, $CellContext`producto$$},
       DynamicBox[ToBoxes[
         $CellContext`producto$$[$CellContext`W$$, $CellContext`Z$$, "ACGU"], 
         StandardForm], Automatic,
-       ImageSizeCache->{16., {5., 20.}}], 
+       ImageSizeCache->{10.048828125, {3.1787109375, 13.5791015625}}], 
       InterpretationBox[Cell[BoxData[
         FormBox[
          StyleBox["\<\"\[DoubleLongLeftRightArrow] (\"\>", "Times New Roman",
           StripOnInput->False,
           FontWeight->Bold], TextForm]], "InlineText",ExpressionUUID->
-        "842ed970-1931-47a8-970a-af808c55f7fe"],
+        "1c810990-4fd8-45d9-97be-3e8d33b21d89"],
        Text[
         Style["\[DoubleLongLeftRightArrow] (", "Times New Roman", Bold]]], 
       InterpretationBox[Cell[BoxData[
@@ -6006,10 +6032,10 @@ $CellContext`suma$$, $CellContext`producto$$},
           DynamicBox[ToBoxes[
             $CellContext`encode$$[$CellContext`W$$, "ACGU"], StandardForm], 
            Automatic,
-           ImageSizeCache->{12., {0., 16.}}], "Times New Roman",
+           ImageSizeCache->{8.34228515625, {1., 11.}}], "Times New Roman",
           StripOnInput->False,
           FontWeight->Bold], TextForm]], "InlineText",ExpressionUUID->
-        "3a67c959-ab63-4528-983a-0d56502dd5d9"],
+        "b3f12ea1-e220-421b-90cf-b39758a745d3"],
        Text[
         Style[
          Dynamic[
@@ -6021,10 +6047,10 @@ $CellContext`suma$$, $CellContext`producto$$},
           DynamicBox[ToBoxes[
             $CellContext`encode$$[$CellContext`Z$$, "ACGU"], StandardForm], 
            Automatic,
-           ImageSizeCache->{12., {0., 16.}}], "Times New Roman",
+           ImageSizeCache->{8.34228515625, {0., 11.}}], "Times New Roman",
           StripOnInput->False,
           FontWeight->Bold], TextForm]], "InlineText",ExpressionUUID->
-        "e596dd0f-4c46-4820-99ce-5cae87bb1e2e"],
+        "6a2d790e-5169-45df-990e-03c45d0d68d2"],
        Text[
         Style[
          Dynamic[
@@ -6035,7 +6061,7 @@ $CellContext`suma$$, $CellContext`producto$$},
          StyleBox["\<\") mod 5 =\"\>", "Times New Roman",
           StripOnInput->False,
           FontWeight->Bold], TextForm]], "InlineText",ExpressionUUID->
-        "fb05fa1e-0432-4b37-980e-5f80d9272799"],
+        "484c82cb-2021-41bf-83ac-de28a7d9d6e2"],
        Text[
         Style[") mod 5 =", "Times New Roman", Bold]]], 
       InterpretationBox[Cell[BoxData[
@@ -6044,10 +6070,10 @@ $CellContext`suma$$, $CellContext`producto$$},
           DynamicBox[ToBoxes[
             $CellContext`product$$[$CellContext`W$$, $CellContext`Z$$, 
              "ACGU"], StandardForm], Automatic,
-           ImageSizeCache->{12., {0., 16.}}], "Times New Roman",
+           ImageSizeCache->{8.34228515625, {0., 11.}}], "Times New Roman",
           StripOnInput->False,
           FontWeight->Bold], TextForm]], "InlineText",ExpressionUUID->
-        "6af77b14-b16c-44ad-a1f4-26e9b5ac2cb9"],
+        "b75958cc-7514-442e-87a9-e037a5b6a2f5"],
        Text[
         Style[
          Dynamic[
@@ -6224,8 +6250,9 @@ $CellContext`enco$], $CellContext`enco$], FontSize -> 20,
       Prepend[
        MapThread[# -> #2& , {{1, 2, 3, 4}, 
          Characters[$CellContext`enc]}], 0 -> "D"]]}]], "Output",
- TextAlignment->Center,ExpressionUUID->"a43192c6-0b6f-4860-90bd-f0872cfce86b"]
-}, {2}]],
+ TextAlignment->Center,
+ CellLabel->"Out[93]=",ExpressionUUID->"418eb805-f222-4f59-bffa-1dab4929fa5f"]
+}, Open  ]],
 
 Cell[TextData[{
  "Readers can check the whole sum and product operation tables changing the ",
@@ -6512,14 +6539,15 @@ cubes\>\"", ",", "\"\<6. Dihedral groups\>\"", ",",
        ",", "\"\<References\>\""}], "}"}]}], "}"}], ",", 
    RowBox[{"Paneled", "\[Rule]", "False"}], ",", 
    RowBox[{"SaveDefinitions", "\[Rule]", "True"}]}], "]"}]}], "Input",
- InitializationCell->
-  True,ExpressionUUID->"8cf4a4af-c2fd-437a-bf4b-141fd4efe628"],
+ InitializationCell->True,
+ CellLabel->"In[94]:=",ExpressionUUID->"8cf4a4af-c2fd-437a-bf4b-141fd4efe628"],
 
 Cell[BoxData[
  TagBox[
   StyleBox[
-   DynamicModuleBox[{$CellContext`tag$$ = "4.2. Codon norm", Typeset`show$$ = 
-    True, Typeset`bookmarkList$$ = {}, Typeset`bookmarkMode$$ = "Menu", 
+   DynamicModuleBox[{$CellContext`tag$$ = 
+    "1.2. Physicochemical classification of DNA bases", Typeset`show$$ = True,
+     Typeset`bookmarkList$$ = {}, Typeset`bookmarkMode$$ = "Menu", 
     Typeset`animator$$, Typeset`animvar$$ = 1, Typeset`name$$ = 
     "\"untitled\"", Typeset`specs$$ = {{{
        Hold[$CellContext`tag$$], 
@@ -6535,15 +6563,13 @@ Cell[BoxData[
        "5.1. The multiplication of two genetic-code cubes", 
        "5.2. Cayley multiplications table for all pairs of cubes", 
        "6. Dihedral groups", "7. Klein four groups", "8. Concluding remarks", 
-       "References"}}}, Typeset`size$$ = {0., {0., 7.}}, Typeset`update$$ = 0,
-     Typeset`initDone$$, Typeset`skipInitDone$$ = 
-    False, $CellContext`tag$42085$$ = 0}, 
+       "References"}}}, Typeset`size$$ = {0., {0., 5.}}, Typeset`update$$ = 0,
+     Typeset`initDone$$, Typeset`skipInitDone$$ = False}, 
     DynamicBox[Manipulate`ManipulateBoxes[
      1, StandardForm, 
       "Variables" :> {$CellContext`tag$$ = 
         "1.2. Physicochemical classification of DNA bases"}, 
-      "ControllerVariables" :> {
-        Hold[$CellContext`tag$$, $CellContext`tag$42085$$, 0]}, 
+      "ControllerVariables" :> {}, 
       "OtherVariables" :> {
        Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
         Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
@@ -6565,13 +6591,13 @@ Cell[BoxData[
           "6. Dihedral groups", "7. Klein four groups", 
           "8. Concluding remarks", "References"}}}, 
       "Options" :> {Paneled -> False}, "DefaultOptions" :> {}],
-     ImageSizeCache->{474., {46., 53.}},
+     ImageSizeCache->{257., {32.35052490234375, 36.64947509765625}},
      SingleEvaluation->True],
     Deinitialization:>None,
     DynamicModuleValues:>{},
-    Initialization:>({$CellContext`content[
-         Pattern[$CellContext`tag, 
-          Blank[]]] := Module[{}, NotebookLocate[$CellContext`tag]; ""]}; 
+    Initialization:>($CellContext`content[
+        Pattern[$CellContext`tag, 
+         Blank[]]] := Module[{}, NotebookLocate[$CellContext`tag]; ""]; 
      Typeset`initDone$$ = True),
     SynchronousInitialization->True,
     UndoTrackedVariables:>{Typeset`show$$, Typeset`bookmarkMode$$},
@@ -6579,9 +6605,9 @@ Cell[BoxData[
     UntrackedVariables:>{Typeset`size$$}], "Manipulate",
    Deployed->True,
    StripOnInput->False],
-  Manipulate`InterpretManipulate[1]]], "Output",ExpressionUUID->"cd81976c-\
-5ac1-4622-994a-7ba7b9075b99"]
-}, {2}]]
+  Manipulate`InterpretManipulate[1]]], "Output",
+ CellLabel->"Out[95]=",ExpressionUUID->"93344a73-6051-448d-bd7b-592030ed8fd5"]
+}, Open  ]]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -6767,8 +6793,8 @@ cubes\>\"", ",", "\"\<6. Dihedral groups\>\"", ",",
        ",", "\"\<References\>\""}], "}"}]}], "}"}], ",", 
    RowBox[{"Paneled", "\[Rule]", "False"}], ",", 
    RowBox[{"SaveDefinitions", "\[Rule]", "True"}]}], "]"}]}], "Input",
- InitializationCell->
-  True,ExpressionUUID->"05728f89-aaeb-492b-8043-4d6d2cc0e171"],
+ InitializationCell->True,
+ CellLabel->"In[96]:=",ExpressionUUID->"05728f89-aaeb-492b-8043-4d6d2cc0e171"],
 
 Cell[BoxData[
  TagBox[
@@ -6790,14 +6816,13 @@ Cell[BoxData[
        "5.1. The multiplication of two genetic-code cubes", 
        "5.2. Cayley multiplications table for all pairs of cubes", 
        "6. Dihedral groups", "7. Klein four groups", "8. Concluding remarks", 
-       "References"}}}, Typeset`size$$ = {0., {0., 7.}}, Typeset`update$$ = 0,
-     Typeset`initDone$$, Typeset`skipInitDone$$ = 
-    False, $CellContext`tag$42108$$ = 0}, 
+       "References"}}}, Typeset`size$$ = {0., {0., 5.}}, Typeset`update$$ = 0,
+     Typeset`initDone$$, Typeset`skipInitDone$$ = False}, 
     DynamicBox[Manipulate`ManipulateBoxes[
      1, StandardForm, 
       "Variables" :> {$CellContext`tag$$ = 
-        "2. The 24 possible algebraic structures"}, "ControllerVariables" :> {
-        Hold[$CellContext`tag$$, $CellContext`tag$42108$$, 0]}, 
+        "2. The 24 possible algebraic structures"}, 
+      "ControllerVariables" :> {}, 
       "OtherVariables" :> {
        Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
         Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
@@ -6819,13 +6844,13 @@ Cell[BoxData[
           "6. Dihedral groups", "7. Klein four groups", 
           "8. Concluding remarks", "References"}}}, 
       "Options" :> {Paneled -> False}, "DefaultOptions" :> {}],
-     ImageSizeCache->{474., {45., 52.}},
+     ImageSizeCache->{257., {32.35052490234375, 36.64947509765625}},
      SingleEvaluation->True],
     Deinitialization:>None,
     DynamicModuleValues:>{},
-    Initialization:>({$CellContext`content[
-         Pattern[$CellContext`tag, 
-          Blank[]]] := Module[{}, NotebookLocate[$CellContext`tag]; ""]}; 
+    Initialization:>($CellContext`content[
+        Pattern[$CellContext`tag, 
+         Blank[]]] := Module[{}, NotebookLocate[$CellContext`tag]; ""]; 
      Typeset`initDone$$ = True),
     SynchronousInitialization->True,
     UndoTrackedVariables:>{Typeset`show$$, Typeset`bookmarkMode$$},
@@ -6833,9 +6858,9 @@ Cell[BoxData[
     UntrackedVariables:>{Typeset`size$$}], "Manipulate",
    Deployed->True,
    StripOnInput->False],
-  Manipulate`InterpretManipulate[1]]], "Output",ExpressionUUID->"37ec6e7a-\
-8ddc-4970-97ac-dcb1e0cfd464"]
-}, {2}]]
+  Manipulate`InterpretManipulate[1]]], "Output",
+ CellLabel->"Out[97]=",ExpressionUUID->"e6c38076-ea01-487e-be64-8b7abd4b9463"]
+}, Open  ]]
 }, Open  ]]
 }, Open  ]],
 
@@ -8643,7 +8668,1024 @@ Cell[BoxData[
    Boxed->False,
    ImageSize->385,
    SphericalRegion->True,
-   ViewPoint->{3, 1.5, 0.1}], " ", 
+   ViewPoint->{3, 1.5, 0.1},
+   ImageCache->GraphicsData["CompressedBitmap", "\<\
+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
+LvmIrW3NepSzZlsZASbhgCfp2EgbD+4d1VlumZOAB3H85Fk6cfwI5S1RSPvq
+qiOTj+L5Lgql0IeBKfQhOxoFXtuHruR96KJPepVwpKWfn9ynZ0/uUWiHwlSr
+QnaqUChQcNh1XE90Cu396oj8bNLGuUnK0XGrHJnesNt8Uui2bqrb3vGaU9BO
+mNfEmNPOZX2tPfa1Vb738M9ruOnUfr3RpcNYMVTlfivH/daAXZ2Uup3LKXV7
+Wond0u09G+huVz9ziFpy/a41Tv873nF4SAlIRKRiSeyhiJBiNK5nYdq6XHlB
+UaNqo2zRnCkNGPkrorsiR19f2S/NyHdqWYTmTWtMoV3ep8kzR1Kfib1/I8Jv
+H/xAT3/9JfMbSs+MwEPbdTbKQ49nXye25kq2ObzmkryNx6tpv6AkIxjviU1v
+O2DcBO0GsCiNUXClYOCNCH47GvbYYvY2+j/dT3RRbRErtsUrtlDL3iG09/gh
+GGpH4RRgkE5zEOblyJ6jtHb9JlEtxiYk9yNwWrETGDP4JLEP3oYdYAkyhp01
+GdBVpUwWLjEc3JC8L2Rs0U93LysMBAkGIH/IHnls8TujbBysXNSdvr56gMYP
+r0o7ti9DM/cGI0FPqwIbgMGbUtlX4ozeo1YBxsyVm6nrthu22+Y9d+jt3nnL
+1AzweZ+m3oh5ZY3UeFdNOqU09PcepnqPlV+zr+OVJ5FW22yIKPnkox7cayQF
+Ubue4wEQO3Rgsa/afp2msZdhUqNQxJjxoCclw6dg4093byba7iTChEET5Srh
+ThrI2N6Cr+3nJHMpRJ/xrmbGCpNYxqlwInZrX8Jo8vq13uVLEAB9eSyWG4AT
+ziF1KDw5BUOoO3Z4G8YCu2cxa4AhztGZE2spdslYWrwqiqJWz8jyltofkMHG
+sOGSMqeADiwCJi211XT80SjXnpfgfT9KihsvLNi4ScGrTDp3wuN7zJeaPKyJ
+meOHRYGGeVf3cb5SrQ0KWI6InSL1Kh+3kn7Pn4LUgyV2irLAxtJ3qGGgR3zU
+Kyfu0DFGEQYU2NhXcSo3F0f0S+K71OvciNZttX0XY6hZFSlRsIhFE0CWWbVE
+jSbgwGdE7BRt0KtnFerUt8FbG3H4kaJlNm+z/aHNK9cokcw67XjTORlo8j8U
+X3CK4vMvlpMG9FWepveoyfvpATZmTIEUJBeE2ILgFFGM2+jI9VrSKmUJUYU3
+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
+0e3DsMcgNpru3vDhnbmRL3fhsOxSd2JbWprSKTNN7pWT1vCYfurgbDSubzZ6
+wmw9fSiABnfEyjK8pyMbfXPNhwawuV8zXymBuI1ppe5poosmjPajlR0DaHbN
+IPpilB+taJSG4j9VahzpnFLBUvfTOfbQw9gp7xVI8eG6ndM5pbm9cRq44R0D
+WWQFg7l/xGHY6qEiGf1YLQTT/FH+kmK4h7apYUAek5hvsmf1qobW+tO0aYx1
+t51mmGiki8OV/MB1lL+7llXqNOctVGAJQK4K0+v6QiXs3JYJCyo6Ne2xziIW
+IuWAlVgW1HP/OX2Qkpn3L5aTSg1sIeX1R+No6hb1HeOmEf3TiQ/gFB8dW/fw
+Lnyo91sWYccO2/bD21CiBRv/f3vvHVdFsnUNn/cEQAQFxZwwjmmMmBPmnHPG
+nEdMmAVzABMGREVUFMwZQQyYc86Oc8cZRxF1gs7M+/f+9trV1R4cdOaG93vu
+vc85v191pT7dfbrW2rWruk8ttbh7i84BVKtTSUp7/YJu3L8saajT4TNyZm/J
+z12Vh9N1qdPwQMlv3JGDxk1Viur9hla2Qm3bovB1+lR+6ta5Ka1cuZDitm2g
+pcvmIoYD0Qrrc+/auYEO7N1AMZGz6PDe9TRr2mC+2PETB2Mpsh1QAQ6lq9e2
+U/Kxg7QmahR9842I5fL3sU8WLq/C+9WnxH3KrJ88WZ6mT+9Je/bUVOODjY15
+Xy7ho4aHt5OyM8fRuc6d0o3PwWmkaOv6QF3HlsZBNxIgHXxk+jAeo3Ba6hC4
+hDa0X0zRzSbSq/tFle7pzMG0udN8Or21Kv2Y5kHhI2rSlA6NKHZORUqOVVxO
+3VaSQlu2puEN6nPjL8R6ecvGVqDDsarTPcg+w9jWGCkqw7F5hrJuZ3ahi5/b
+tbobjWiMXvzIFqUOsmw8uiqUuUvZjF4VUSZ1T257U/MK2WlZX6hc3Tjkg3s5
+pYAIastvCM9DG4YUkbK0xxBE5Bx3sbyn1K0OKkIXDftx/4wXbQguQEt7F5E4
+eR2P/fd40vOHqn1HtyxErav5UeiAAqL8eHS7j8Rivx54YETRsxiff0lQMVo9
+TAXlScCPqEb7p0AXa9+SqmxyH55XQshnE0rRnpX56NGF/OwgqPMciKgGbwEW
+KWV9BXYiikrAmABKw9eXsTNxZkoePgr2hgrkQ74SBOQRx9bxo+vL/cQ6WZFi
+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
+eSq3d2k4HjNAEtWd4rbWFNlUHbiO1KBxG592bWSMxZcN0GMxYGsj64k08cP7
+j+ntm2sUs7IWDe0eZDTPOZo6eiI3zVtuokdGuYUOcTcF+W+bIf8dNzJOXcuR
+mxwwGIyl72/OskKVi23Pu7SfBX6bB46iZ9ce0+2DF/gyZlfAWPT02ki5jHdp
+EbSz7xJKnDhdaKZ0VXkUaMxBH4opKlqq6Q+L0G9vfHiMqCZOoAEJifB7e+tJ
+j+4QnUg7vX7YTy7pcvQepQ4JxaGsIruqpFaDJA3FobdPb4niEKRUr8e3kEvl
+Mky6ivAq5MOPhPeTGCF6QHG6dSA7/5zC9OqxO/3Gw78dU4tAWhyX/KMdw+dl
++WnzyHwiI46wd2YhenxbOV9nt+amXTMxhIR4cQ5ON5BLffX1Iqk7uzVE8kdX
+9Oa0kqW7mbjSFDlOmFuETsfnpsOrlbbjq28u06Ru+a20bTqGv3dO5kSKjm9U
+vQLHFlXnRcO7+tKlBd4SPpYe391JGaSHhzzYe8pF80tlFwk9S15KnGo8CJjo
+RqH+nuxVnqV3L76jRaU8aWl5H3r/8rlcSVTzyhJDYM9ZbfLX12mmBjI+L+8t
+45Cd8+Vp+7AAK+9UkknGSTnNY3aW2pQuJPqTkCHfNKKupKF/LK64Uabz799k
+QVopl2c1ixE3KqsUyw+tqSzxndOFTWOUuC2Wb0xtL4vYOaIbFy8aBusGpb1I
+M/Vf2Zw4K78a7pGlkpNBsin/SQ0EteFSTpL6IsyQ9naUTXHoR0SmJ4QnvdoG
+OTlPhtnylv0xw/yxHWL7ImlMK8PuQPJc2aEI81kT9ll6NdZ81lSiKx41qKdI
+WgmTY6Msu6nxp58wQdQPn76DllD665/pzt2/0cSpvTmdnbbG15X0ylVt6N59
+PD9v35ktHuQyvSg50Q9ifzR+1GRaEKZW2T+wZzz9+NaLDu+tQk8ePqYff7pB
+F8+WhMqfFZp/mEpdrtSSEvccoFG9BtLXD/NS2ks3Gy2tv5xd+g3dZtLOr4w1
++zdd4tCc9GTaruB46P/R+1fvhMq7xgwWFUB8LsVe5DBU0tCC2NR9OqUs7MED
+u5GUGDqc4oeqwd7dQ+VoUdWJNGdAGf45x5c0YIicWlafXtzOTb+mZ6V1LXrQ
+9v5t6eWd3LI/520U27aHJSdt7hBEW7qMoNQVs+U0qSu2QF9TYuf8y3vrOUyj
+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
+V9O5ms7VdK6mczWdq+lcTedqOlfTuZru/4+mMxdX6TKKWvXpL43m4Wq6/6Sm
+q9Golck6V9O5ms7VdK6mczWdq+lcTedqOlfTuZrO1XSupnM1navpXE3najpX
+07maztV0rqZzNZ2r6VxN52o6V9O5ms7VdK6mczWdq+lcTedqOlfTuZrO1XSu
+pnM1navpXE3nbTQdVG510wW4ms7VdK6mczXdf3vTLalSyNV0rqb7N2s6WajD
+igVfuAIrdGDpl1Wdw81VOrA6x8X4KyrefAErc1hsxpovWKUDq3PolToQc9l/
+6kId/yXNLPLRVqx8lVlb869AE+ODxVn0ij9oXlAX616Zeabui7tp5npXaHor
+crLmj/XPlvfxNJe5ipJlfbCG1emoRGhLn1Nr/0gVVvvRy1yN6AgV0hRZ1ufU
+6kmCkCNz+vFZ7yfFWdQqc8aSP5bPrfWjUbMnrPkfUDNvQhNZgep/FWoc1KHX
+AFl7NHR1jF4oCmuP/vQL3wSsFLUr+aQ0fOrVm7JaFJYwxIpRWv4WC6lheUOs
+GsXl9DItje6mPFErR+XOgCng7U7iDclnhimYCr1UlHNaYWyxYO59+m/IY1G1
+xXz14zs1oq0jZ5j42jxgIF9ZwpjJekE0rKV2eM5Q0bdXZb4COnz0Mod6jSm9
+rCHQp1FnrGeoEWeuZajXN/z9p3Rdb8n6Z6tM8e3CeoV63UKsjWYsm2Y11ppC
+8Zu/3TbXm7p5boux1pSbrDWFZQuP7V8tyxW+en4Hy6X9Xaul2bFYmlqp0N0Z
+tRKwGmHCkK60bRbE5xeYK4dyXgfH/yyQ9dreei1PrO0tS/VKESpCNpgIl+V5
+ZUHeaAqPPSphYsQONydziSXQGPh8DMA+iwl0EAGEwAf7wIwC5CTr/MKCukkd
+lkszzCtdu3ETKwjqJdM+Bv6ZjcIjK1BvyalwvyiJltVbhBU7JX8p9hI9SHog
+6c19tpm4f3h8uvAA3SrkoGU5++N1BPxXdzU3lvR00N4pXaROi6Arfefru5tA
+0M3gAer1Ep8GDyxq/c7sYnGdeYF68AELrRmLCgoPgHd8wIcPlpiZwNeg8vVl
+jU9jaUGLrPhpKK471xtrfaoVBm3mCoNHF0Fc+9qusmw2scqg89KeqAdlsKSg
+87KfxlKfQhWrrNDm5rzMp7gDT+/Jbf6rfHFga8USntxcxyYHyfKCt7etMWkD
+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
+tkn6/TMqSpqJj+fUI6rzkbVRmN+9HJcNbezPTvfoZv40vqU/XTqmJl1CenIP
+1cSfvmruT/O7laMdkyvSyn48fnyi6mOGVaExzZnBG4ZVxQTEtC+RkqonF3Pa
+pNhmFiOndnXQ6c3+dGW/Lx1PKEKR4yvT5nm4Ck7xVXCadrDf8+Ibb/r1ZzdK
+PeBHX99zp+XTctPIdoVp64qcdCQ+uzKgq9wpdYU7beyRlUdzhbOzHVlU25t/
+tLuEXeOz0PXdbpIOzp0Fe0haLr6HF80u7uOglfWzWdRMacJyDyrlk0XsQ3yk
+l7yBilg8mln1QHsb+M9n+f6+H909VVj/80AsweFVVcU6YHfUacvAvoGzW8DD
+FG0MhP+cdzfsBDyNv/Bqdz6nd1XwLIiDRTTl1YjE4Vwhg5fRUfO4fT68zwZq
+62D09H+d5W5/YDnyL9642YW4bnTjSQkhuUFoIXfixeqOv/ifGq20syu5vpx5
+Ytgw818QG7e1kpfA3/6k2h/pSjXq2Iw/wN1NqS3FUf0XGv+2sTv/KY5G1hpr
+pealWvGuzYs2o5Yl2yFwDlsHBQU2oaWTK5shpHdto86DtkV+QTPH5aVtq4tT
+SL8KNKFvKWpasgw1L12Z+jWGxzC1CO88qV9JKeKAk5SubKU7V7ysks+BHWWP
+FWNqyHVe2lFZCDu8XV46vLYAHdriQ7GL/ShxqxpXLJ+QlwY29BciblniR0fj
+fCguzN9BGwdX58P99qM73ThYADkJ4OfXF/yEo4lLS8ohEDNHhYFg4o3D+SQN
+Bgrmp31pNYiKqiNLSxk5tV0VVEwICmraZWuj+SPVQ9xH13LyXV49Efud2OGP
+lOSsoC6XtarNp6pbiE7PzwHi1y1kpbSb7pLiRr4Ro4abG5r50MZ6henMAvV2
+3Irx8BLbMZe9qWPJXDQsMIcZox7vqOpXw29sU/GZpWqyhxlovFvmZfbTmpmI
+QWKUI9blvZqUAA3lFTOr8Q6afr9MB3TWfydHP/1SuFumHOOe0iYks0mWUxle
+24AfrTtIq1OnCZ4xt7hs7pbeRuf6uY707yOcl0m4RZE9pA6x/k8bs4zhFcQu
+6wQDakFWg4irOo+mi/Gt/qF/ospf0xgqD4qpP0x8+FPF2nFt5ETxa4pR2/JN
+qGzBHBb5KyP6+bnK8+SYHXdV1rFaERrchm34OkxUrQj1tUrSg1pU9KF2Aflo
+cNvcFB/tRXNCsnC1j6SnDs1ppbZV83E7cZJOHFJVx+JzCmeYIPa/wI0rx/IZ
+3PB15oZ0aOjYnLhBCV2Yd2PU5cdz79SWe6lB3Iud2O0mZZM6eeKhekm8oIUX
+Mb857iNvYqv3sT10Xl7YzIQh+o9y717adZdl0S9lOnVhfJ8//T72Pw16mzPo
+/6m/XLrJll2BuaMp9aoaYzmj9NHTQkCw5FGOriJqQyFB6bm4toJYoBf5d+k5
+pQzpMxvr0YMTNez/JFq9TbSqv7z50pPTVSWt/3Lr/LcdgUo8nFrzDzzm33I9
+P/M3Nw/jD5aze1albnWLITAEsbVRhxq5qX2Toghchi2bipbKeCZs9cVEVtPi
+/Jvw34C2gUUEiulpjIWbblSykLfAb0ZvHxrWIAdFhqi5pAtL89vlvzt5nf+7
+I4gD+oA4/FHgwrIC5qvCyOOr6Xez0uDAXLQjqCx9fTwHJYaUEGRGt8kn8NN2
+Gbb43WvPLP8ZKPzc/7tbdQgw//NrV//vhkOi/p+/cdDsf4lV9BWMnY7qKtjS
+fzlDDJwBW6+f5jDxxBiTf6U4/zWM83/pT7yZ/fV73oQSajR9Hg8/8V8TDzp/
+tLz+Ozj99i4LvXrua/7561iIvxX/NDHmem/H5RI0WY3/g+E/KAauLDb1fzCG
+ltsn//VrN//1a4zIs/7no+ZfvaCDp1PnCZggaLNkpI1/JLrJPvi3IjpRQMWA
+iNVAB9CC/zOhCgF/M/zXIcfzz5Aj8JB/L6Xf8bQZkAGENrTJIxDJ+i/4e/j/
+UpT8K9eDSNiQX5rv6b38eIUhup5F0tK8yQkBZtPOmJBfmhb/OuNmNKyAmzQp
+t7AulzQ3sZerdf8dWvd/arWP/0dNV7Bqi/+aphvRspSr6f5Dm65FSVfTuZrO
+1XSupnM1navpXE3379t0xY2ms4SmUuEFPaTR/F1N9x/VdFylWedqOlfT/YWm
+q/1lk//KputQIs9/e9M1Kd72v7Lp8DTc1XSupnM1navpXE3najpX07maztV0
+rqZzNZ2r6VxN9x/SdJXzuZrO1XSupnM1navpXE3najpX07maztV0rqZzNd3/
+0qZzd2464/+FCSLvdDfliUVJJHpQ3KiN5r95oWf24MQjJY+4KAnyhzajJSHh
+BDVESOdB4mzf5ESsAO9q5f/pVs5IUKtB0/gQtSg/BDBR993Nb+mHuy+0BiY+
+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
+R9cFfg==\
+\>"]], " ", 
   Graphics3DBox[{Text3DBox[
      FormBox[
       StyleBox["\<\"AAA\"\>",
@@ -11959,7 +13001,7 @@ Cell[BoxData[{
    RowBox[{
     RowBox[{
      RowBox[{"operations", "[", 
-      RowBox[{"enc_:", "\"\<ACGU\>\""}], "]"}], ":=", 
+      RowBox[{"enc_", ":", "\"\<ACGU\>\""}], "]"}], ":=", 
      RowBox[{"DynamicModule", "[", 
       RowBox[{
        RowBox[{"{", 
@@ -11974,21 +13016,21 @@ Cell[BoxData[{
         RowBox[{
          RowBox[{"encode", "[", 
           RowBox[{"X_", ",", 
-           RowBox[{"enco_:", "enc"}]}], "]"}], ":=", 
+           RowBox[{"enco_", ":", "enc"}]}], "]"}], ":=", 
          RowBox[{"X", "/.", 
           RowBox[{"encoding", "[", 
            RowBox[{"enco", ",", "2"}], "]"}]}]}], ";", "\[IndentingNewLine]", 
         RowBox[{
          RowBox[{"decode", "[", 
           RowBox[{"X_", ",", 
-           RowBox[{"enco_:", "enc"}]}], "]"}], ":=", 
+           RowBox[{"enco_", ":", "enc"}]}], "]"}], ":=", 
          RowBox[{"X", "/.", 
           RowBox[{"decoding", "[", 
            RowBox[{"enco", ",", "2"}], "]"}]}]}], ";", "\[IndentingNewLine]", 
         RowBox[{
          RowBox[{"sum", "[", 
           RowBox[{"X_", ",", "Y_", ",", 
-           RowBox[{"enco_:", "enc"}]}], "]"}], ":=", 
+           RowBox[{"enco_", ":", "enc"}]}], "]"}], ":=", 
          RowBox[{"Module", "[", 
           RowBox[{
            RowBox[{"{", 
@@ -12007,7 +13049,7 @@ Cell[BoxData[{
         RowBox[{
          RowBox[{"product", "[", 
           RowBox[{"W_", ",", "Z_", ",", 
-           RowBox[{"enco_:", "enc"}]}], "]"}], ":=", 
+           RowBox[{"enco_", ":", "enc"}]}], "]"}], ":=", 
          RowBox[{"Module", "[", 
           RowBox[{
            RowBox[{"{", 
@@ -12026,7 +13068,7 @@ Cell[BoxData[{
         RowBox[{
          RowBox[{"suma", "[", 
           RowBox[{"X_", ",", "Y_", ",", 
-           RowBox[{"enco_:", "enc"}]}], "]"}], ":=", 
+           RowBox[{"enco_", ":", "enc"}]}], "]"}], ":=", 
          RowBox[{"Text", "@", 
           RowBox[{"Style", "[", 
            RowBox[{
@@ -12041,7 +13083,7 @@ Cell[BoxData[{
         RowBox[{
          RowBox[{"producto", "[", 
           RowBox[{"W_", ",", "Z_", ",", 
-           RowBox[{"enco_:", "enc"}]}], "]"}], ":=", 
+           RowBox[{"enco_", ":", "enc"}]}], "]"}], ":=", 
          RowBox[{"Text", "@", 
           RowBox[{"Style", "[", 
            RowBox[{
@@ -12343,7 +13385,8 @@ Cell[BoxData[{
  InitializationCell->True,
  InitializationGroup->True,
  FontFamily->"Courier New",
- FontSize->12,ExpressionUUID->"d583372c-2a14-4134-9a8d-7cc6c154d812"],
+ FontSize->12,
+ CellLabel->"In[98]:=",ExpressionUUID->"d583372c-2a14-4134-9a8d-7cc6c154d812"],
 
 Cell[BoxData[
  TagBox[
@@ -12409,14 +13452,13 @@ Cell[BoxData[
        Style["UACG", 
         RGBColor[1, 0, 1], Bold], 
        Style["UCAG", 
-        RGBColor[1, 0, 1], Bold]}}}, Typeset`size$$ = {658., {32., 39.}}, 
-    Typeset`update$$ = 0, Typeset`initDone$$, Typeset`skipInitDone$$ = 
-    False, $CellContext`baseorder$42131$$ = 0}, 
+        RGBColor[1, 0, 1], Bold]}}}, Typeset`size$$ = {
+    457., {21.87552490234375, 26.17447509765625}}, Typeset`update$$ = 0, 
+    Typeset`initDone$$, Typeset`skipInitDone$$ = False}, 
     DynamicBox[Manipulate`ManipulateBoxes[
      1, StandardForm, 
       "Variables" :> {$CellContext`baseorder$$ = Style["ACGU", Underlined, 
-          RGBColor[1, 0, 0], Bold]}, "ControllerVariables" :> {
-        Hold[$CellContext`baseorder$$, $CellContext`baseorder$42131$$, 0]}, 
+          RGBColor[1, 0, 0], Bold]}, "ControllerVariables" :> {}, 
       "OtherVariables" :> {
        Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
         Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
@@ -12479,7 +13521,7 @@ Cell[BoxData[
           Style["UCAG", 
            RGBColor[1, 0, 1], Bold]}, ControlType -> PopupMenu, 
          ImageSize -> {80, 22}}}, "Options" :> {}, "DefaultOptions" :> {}],
-     ImageSizeCache->{713., {102., 109.}},
+     ImageSizeCache->{497., {71.35052490234375, 75.64947509765625}},
      SingleEvaluation->True],
     Deinitialization:>None,
     DynamicModuleValues:>{},
@@ -12672,8 +13714,9 @@ $CellContext`enc], Automatic], "Times New Roman", Bold]]}}, ItemStyle ->
    StripOnInput->False],
   Manipulate`InterpretManipulate[1]]], "Output",
  CellMargins->{{46, 46}, {10, 30}},
- TextAlignment->Center,ExpressionUUID->"76de9f26-d046-4f8a-8529-11f20d67a625"]
-}, {2}]],
+ TextAlignment->Center,
+ CellLabel->"Out[99]=",ExpressionUUID->"70c007e9-46f1-4a38-9c7d-1ad183ba05f1"]
+}, Open  ]],
 
 Cell[TextData[{
  "For each class of ",
@@ -12768,8 +13811,9 @@ cubes\>\"", ",", "\"\<6. Dihedral groups\>\"", ",",
        ",", "\"\<References\>\""}], "}"}]}], "}"}], ",", 
    RowBox[{"Paneled", "\[Rule]", "False"}], ",", 
    RowBox[{"SaveDefinitions", "\[Rule]", "True"}]}], "]"}]}], "Input",
- InitializationCell->
-  True,ExpressionUUID->"37aa9907-e90c-4744-a8a7-0b7433942e5c"],
+ InitializationCell->True,
+ CellLabel->
+  "In[100]:=",ExpressionUUID->"37aa9907-e90c-4744-a8a7-0b7433942e5c"],
 
 Cell[BoxData[
  TagBox[
@@ -12791,14 +13835,12 @@ Cell[BoxData[
        "5.1. The multiplication of two genetic-code cubes", 
        "5.2. Cayley multiplications table for all pairs of cubes", 
        "6. Dihedral groups", "7. Klein four groups", "8. Concluding remarks", 
-       "References"}}}, Typeset`size$$ = {0., {0., 7.}}, Typeset`update$$ = 0,
-     Typeset`initDone$$, Typeset`skipInitDone$$ = 
-    False, $CellContext`tag$42170$$ = 0}, 
+       "References"}}}, Typeset`size$$ = {0., {0., 5.}}, Typeset`update$$ = 0,
+     Typeset`initDone$$, Typeset`skipInitDone$$ = False}, 
     DynamicBox[Manipulate`ManipulateBoxes[
      1, StandardForm, 
       "Variables" :> {$CellContext`tag$$ = 
-        "3. Algebraic operations on the cubes"}, "ControllerVariables" :> {
-        Hold[$CellContext`tag$$, $CellContext`tag$42170$$, 0]}, 
+        "3. Algebraic operations on the cubes"}, "ControllerVariables" :> {}, 
       "OtherVariables" :> {
        Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
         Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
@@ -12820,13 +13862,13 @@ Cell[BoxData[
           "6. Dihedral groups", "7. Klein four groups", 
           "8. Concluding remarks", "References"}}}, 
       "Options" :> {Paneled -> False}, "DefaultOptions" :> {}],
-     ImageSizeCache->{474., {46., 53.}},
+     ImageSizeCache->{257., {32.35052490234375, 36.64947509765625}},
      SingleEvaluation->True],
     Deinitialization:>None,
     DynamicModuleValues:>{},
-    Initialization:>({$CellContext`content[
-         Pattern[$CellContext`tag, 
-          Blank[]]] := Module[{}, NotebookLocate[$CellContext`tag]; ""]}; 
+    Initialization:>($CellContext`content[
+        Pattern[$CellContext`tag, 
+         Blank[]]] := Module[{}, NotebookLocate[$CellContext`tag]; ""]; 
      Typeset`initDone$$ = True),
     SynchronousInitialization->True,
     UndoTrackedVariables:>{Typeset`show$$, Typeset`bookmarkMode$$},
@@ -12834,9 +13876,10 @@ Cell[BoxData[
     UntrackedVariables:>{Typeset`size$$}], "Manipulate",
    Deployed->True,
    StripOnInput->False],
-  Manipulate`InterpretManipulate[1]]], "Output",ExpressionUUID->"51a61a09-\
-1d40-4b95-9c72-9487ce7357d5"]
-}, {2}]]
+  Manipulate`InterpretManipulate[1]]], "Output",
+ CellLabel->
+  "Out[101]=",ExpressionUUID->"752e7e67-8e34-4bca-91ca-2d0f6b2adae8"]
+}, Open  ]]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -13451,8 +14494,9 @@ Cell[BoxData[
    RowBox[{"Alignment", "\[Rule]", " ", "Left"}], ",", 
    RowBox[{"SaveDefinitions", "\[Rule]", "True"}]}], "\[IndentingNewLine]", 
   "]"}]], "Input",
- InitializationCell->
-  True,ExpressionUUID->"619a8ea6-375a-47cf-bc58-0295442f479a"],
+ InitializationCell->True,
+ CellLabel->
+  "In[102]:=",ExpressionUUID->"619a8ea6-375a-47cf-bc58-0295442f479a"],
 
 Cell[BoxData[
  TagBox[
@@ -13464,13 +14508,12 @@ Cell[BoxData[
      RGBColor[1, 0, 0], Bold], $CellContext`fontweight$$ = 
     "Bold", $CellContext`mcolor1$$ = RGBColor[
     1, 1, 0], $CellContext`mcolor2$$ = GrayLevel[1], $CellContext`Member1$$ = 
-    "Standard Genetic Code", $CellContext`Member2$$ = 
-    "Ancestral Triplet Subset", $CellContext`norms$$ = 
+    "GAA", $CellContext`Member2$$ = "AAA", $CellContext`norms$$ = 
     0, $CellContext`opacities$$ = 0.47, $CellContext`Producto$$ = 
-    False, $CellContext`Size$$ = 10, $CellContext`Suma$$ = 
-    False, $CellContext`sumcolor$$ = RGBColor[
+    True, $CellContext`Size$$ = 10, $CellContext`Suma$$ = 
+    True, $CellContext`sumcolor$$ = RGBColor[
     0, 1, 1], $CellContext`switcher$$ = 
-    "Cube with center on the triplet CCC", $CellContext`timecolor$$ = 
+    "Cube with center on the triplet DDD", $CellContext`timecolor$$ = 
     RGBColor[0, 1, 0], Typeset`show$$ = True, Typeset`bookmarkList$$ = {}, 
     Typeset`bookmarkMode$$ = "Menu", Typeset`animator$$, Typeset`animvar$$ = 
     1, Typeset`name$$ = "\"untitled\"", Typeset`specs$$ = {{
@@ -13661,14 +14704,8 @@ Cell[BoxData[
        Hold[$CellContext`opacities$$], 0.47, "opacity"}, 0, 1, 0.01}, {
       Hold[$CellContext`background$$], 
       RGBColor[0, 0.6666666666666666, 1]}}, Typeset`size$$ = {
-    424., {209., 215.}}, Typeset`update$$ = 0, Typeset`initDone$$, 
-    Typeset`skipInitDone$$ = False, $CellContext`switcher$42194$$ = 
-    False, $CellContext`Member1$42195$$ = 0, $CellContext`Member2$42196$$ = 
-    0, $CellContext`encode$42197$$ = 0, $CellContext`Suma$42198$$ = 
-    False, $CellContext`Producto$42199$$ = False, $CellContext`Size$42200$$ = 
-    0, $CellContext`fontweight$42201$$ = 
-    False, $CellContext`cubesize$42202$$ = 0, $CellContext`opacities$42203$$ =
-     0}, 
+    288.75, {143., 145.75}}, Typeset`update$$ = 0, Typeset`initDone$$, 
+    Typeset`skipInitDone$$ = True}, 
     DynamicBox[Manipulate`ManipulateBoxes[
      1, StandardForm, 
       "Variables" :> {$CellContext`aa$$ = 0, $CellContext`background$$ = 
@@ -13686,18 +14723,7 @@ Cell[BoxData[
         False, $CellContext`sumcolor$$ = 
         RGBColor[0, 1, 1], $CellContext`switcher$$ = 
         "Cube with center on the triplet CCC", $CellContext`timecolor$$ = 
-        RGBColor[0, 1, 0]}, "ControllerVariables" :> {
-        Hold[$CellContext`switcher$$, $CellContext`switcher$42194$$, False], 
-        Hold[$CellContext`Member1$$, $CellContext`Member1$42195$$, 0], 
-        Hold[$CellContext`Member2$$, $CellContext`Member2$42196$$, 0], 
-        Hold[$CellContext`encode$$, $CellContext`encode$42197$$, 0], 
-        Hold[$CellContext`Suma$$, $CellContext`Suma$42198$$, False], 
-        Hold[$CellContext`Producto$$, $CellContext`Producto$42199$$, False], 
-        Hold[$CellContext`Size$$, $CellContext`Size$42200$$, 0], 
-        Hold[$CellContext`fontweight$$, $CellContext`fontweight$42201$$, 
-         False], 
-        Hold[$CellContext`cubesize$$, $CellContext`cubesize$42202$$, 0], 
-        Hold[$CellContext`opacities$$, $CellContext`opacities$42203$$, 0]}, 
+        RGBColor[0, 1, 0]}, "ControllerVariables" :> {}, 
       "OtherVariables" :> {
        Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
         Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
@@ -13705,7 +14731,7 @@ Cell[BoxData[
          Typeset`skipInitDone$$}, "Body" :> 
       Switch[$CellContext`switcher$$, "Cube with center on the triplet DDD", 
         Dynamic[
-         $CellContext`Cube[$CellContext`opacities$$, $CellContext`Member1$$, \
+         Cube[$CellContext`opacities$$, $CellContext`Member1$$, \
 $CellContext`mcolor1$$, $CellContext`Member2$$, $CellContext`mcolor2$$, \
 $CellContext`Suma$$, $CellContext`sumcolor$$, $CellContext`Producto$$, \
 $CellContext`timecolor$$, $CellContext`Size$$, $CellContext`fontweight$$, \
@@ -13713,7 +14739,7 @@ $CellContext`background$$, $CellContext`cubesize$$, $CellContext`encode$$, \
 $CellContext`aa$$, $CellContext`cord$$, $CellContext`norms$$, 1]], 
         "Cube with center on the triplet CCC", 
         Dynamic[
-         $CellContext`Cube[$CellContext`opacities$$, $CellContext`Member1$$, \
+         Cube[$CellContext`opacities$$, $CellContext`Member1$$, \
 $CellContext`mcolor1$$, $CellContext`Member2$$, $CellContext`mcolor2$$, \
 $CellContext`Suma$$, $CellContext`sumcolor$$, $CellContext`Producto$$, \
 $CellContext`timecolor$$, $CellContext`Size$$, $CellContext`fontweight$$, \
@@ -13925,1057 +14951,20 @@ $CellContext`aa$$, $CellContext`cord$$, $CellContext`norms$$, 2]]],
       "Options" :> {
        FrameMargins -> Small, ImageMargins -> Medium, ControlPlacement -> 
         Left, Alignment -> Left}, "DefaultOptions" :> {}],
-     ImageSizeCache->{814., {310., 317.}},
+     ImageSizeCache->{560.5, {199.60052490234375`, 203.89947509765625`}},
      SingleEvaluation->True],
     Deinitialization:>None,
     DynamicModuleValues:>{},
-    Initialization:>({$CellContext`Cube[
-         Pattern[$CellContext`opacities, 
-          Blank[]], 
-         Pattern[$CellContext`Member1, 
-          Blank[]], 
-         Pattern[$CellContext`mcolor1, 
-          Blank[]], 
-         Pattern[$CellContext`Member2, 
-          Blank[]], 
-         Pattern[$CellContext`mcolor2, 
-          Blank[]], 
-         Pattern[$CellContext`Suma, 
-          Blank[]], 
-         Pattern[$CellContext`sumcolor, 
-          Blank[]], 
-         Pattern[$CellContext`Producto, 
-          Blank[]], 
-         Pattern[$CellContext`timecolor, 
-          Blank[]], 
-         Pattern[$CellContext`Size, 
-          Blank[]], 
-         Pattern[$CellContext`fontweight, 
-          Blank[]], 
-         Pattern[$CellContext`background, 
-          Blank[]], 
-         Pattern[$CellContext`cubesize, 
-          Blank[]], 
-         Pattern[$CellContext`encode, 
-          Blank[]], 
-         Pattern[$CellContext`aa, 
-          Blank[]], 
-         Pattern[$CellContext`cord, 
-          Blank[]], 
-         Pattern[$CellContext`norms, 
-          Blank[]], 
-         Pattern[$CellContext`t, 
-          Blank[]]] := 
-       DynamicModule[{$CellContext`c, $CellContext`triplet, \
-$CellContext`triplets, $CellContext`tl, $CellContext`trip, $CellContext`o1, \
-$CellContext`oper1, $CellContext`operat1, $CellContext`operator1, \
-$CellContext`operat2, $CellContext`operator2, $CellContext`puntos, \
-$CellContext`puntos2, $CellContext`amino, $CellContext`amino2, \
-$CellContext`timesamino, $CellContext`oper2, $CellContext`opa, \
-$CellContext`puntonorm, $CellContext`puntonorm2, $CellContext`enc, \
-$CellContext`transftriplets1, $CellContext`graphic, $CellContext`grafico, \
-$CellContext`linearamino, $CellContext`sumpoints, $CellContext`sumamino, \
-$CellContext`sumtriplets, $CellContext`timepoints, $CellContext`timetriplets, \
-$CellContext`sumpointsnorm, $CellContext`timepointsnorm}, 
-         If[$CellContext`t == 1, $CellContext`c = 1, $CellContext`c = 
-           3]; $CellContext`opa = $CellContext`opacities; $CellContext`enc = 
-          Part[$CellContext`encode, 1]; 
-         If[$CellContext`Member1 != 
-           
-           "None", $CellContext`operat1 = \
-$CellContext`f[$CellContext`Member1]; If[
-             
-             MemberQ[$CellContext`VlineLabels, $CellContext`Member1], \
-$CellContext`oper1 = Part[$CellContext`operat1, 2]; $CellContext`operator1 = 
-              Part[$CellContext`operat1, 
-                1], $CellContext`operator1 = $CellContext`operat1]; \
-$CellContext`puntos = $CellContext`points[$CellContext`operator1, \
-$CellContext`enc, 2]; If[$CellContext`aa == 1, $CellContext`amino = ReplaceAll[
-               
-               Map[$CellContext`GC[#, $CellContext`enc, 
-                 2]& , $CellContext`puntos], "-" -> ""]]; 
-           Null, $CellContext`operator1 = \
-$CellContext`f[$CellContext`Member1]; $CellContext`puntos = {{0, 0, 0}}; 
-           Null]; If[$CellContext`Member2 != 
-           "None", $CellContext`operat2 = \
-$CellContext`f[$CellContext`Member2]; If[
-             
-             MemberQ[$CellContext`VlineLabels, $CellContext`Member2], \
-$CellContext`oper2 = Part[$CellContext`operat2, 2]; $CellContext`operator2 = 
-              Part[$CellContext`operat2, 
-                1], $CellContext`operator2 = $CellContext`operat2]; \
-$CellContext`puntos2 = $CellContext`points[$CellContext`operator2, \
-$CellContext`enc, 2]; 
-           If[$CellContext`aa == 1, $CellContext`amino2 = ReplaceAll[
-               
-               Map[$CellContext`GC[#, $CellContext`enc, 
-                 2]& , $CellContext`puntos2], "-" -> ""]]; 
-           Null, $CellContext`operator2 = \
-$CellContext`f[$CellContext`Member2]; $CellContext`puntos2 = {{0, 0, 0}}; 
-           Null]; If[$CellContext`norms == 1, $CellContext`puntonorm = N[
-              Map[Norm, 
-               $CellContext`points[
-                Map[StringJoin, 
-                 $CellContext`tripletes[$CellContext`puntos, $CellContext`enc,
-                   2]], $CellContext`enc, $CellContext`t]]]; \
-$CellContext`puntonorm2 = N[
-              Map[Norm, 
-               $CellContext`points[
-                Map[StringJoin, 
-                 $CellContext`tripletes[$CellContext`puntos2, \
-$CellContext`enc, 2]], $CellContext`enc, $CellContext`t]]]; Null]; If[
-           And[$CellContext`Suma, $CellContext`Member1 != 
-            "None", $CellContext`Member2 != 
-            "None"], $CellContext`sumpoints = \
-$CellContext`Add[$CellContext`puntos, $CellContext`puntos2]; \
-$CellContext`sumtriplets = Map[StringJoin[#]& , 
-              $CellContext`tripletes[$CellContext`sumpoints, $CellContext`enc,
-                2]]; If[$CellContext`aa == 1, $CellContext`sumamino = 
-             Map[$CellContext`GC[#, $CellContext`enc, 
-                2]& , $CellContext`sumpoints]]; 
-           If[$CellContext`t != 
-             2, $CellContext`sumpoints = $CellContext`points[
-               Map[StringJoin, 
-                $CellContext`tripletes[$CellContext`sumpoints, \
-$CellContext`enc, 2]], $CellContext`enc, $CellContext`t]]; 
-           Null, $CellContext`sumtriplets = {""}; $CellContext`sumpoints = {{
-             0, 0, 0}}]; 
-         If[$CellContext`norms == 1, $CellContext`sumpointsnorm = N[
-             Map[Norm, $CellContext`sumpoints]]]; If[
-           
-           And[$CellContext`Producto, $CellContext`Member1 != 
-            "None", $CellContext`Member2 != 
-            "None"], $CellContext`timepoints = \
-$CellContext`Productos[$CellContext`puntos, $CellContext`puntos2]; \
-$CellContext`timetriplets = Map[StringJoin[#]& , 
-              $CellContext`tripletes[$CellContext`timepoints, \
-$CellContext`enc, 2]]; 
-           If[$CellContext`aa == 1, $CellContext`timesamino = 
-             Map[$CellContext`GC[#, $CellContext`enc, 
-                2]& , $CellContext`timepoints]]; 
-           If[$CellContext`t != 
-             2, $CellContext`timepoints = $CellContext`points[
-               Map[StringJoin, 
-                $CellContext`tripletes[$CellContext`timepoints, \
-$CellContext`enc, 2]], $CellContext`enc, $CellContext`t]]; 
-           Null, $CellContext`timetriplets = {
-             ""}; $CellContext`timepoints = {{0, 0, 0}}]; 
-         If[$CellContext`norms == 1, $CellContext`timepointsnorm = N[
-             Map[Norm, $CellContext`timepoints]]]; 
-         If[$CellContext`t != 2, $CellContext`puntos = $CellContext`points[
-              Map[StringJoin, 
-               $CellContext`tripletes[$CellContext`puntos, $CellContext`enc, 
-                2]], $CellContext`enc, 
-              1]; $CellContext`puntos2 = $CellContext`points[
-              Map[StringJoin, 
-               $CellContext`tripletes[$CellContext`puntos2, $CellContext`enc, 
-                2]], $CellContext`enc, 1]; Null]; $CellContext`graphic[
-            Pattern[$CellContext`p1, 
-             Blank[]], 
-            Pattern[$CellContext`p2, 
-             Blank[]], 
-            Pattern[$CellContext`h, 
-             Blank[]]] := Graphics3D[
-            Flatten[{
-              If[$CellContext`Member1 != "None", 
-               $CellContext`TripletCoordinates[$CellContext`operator1, \
-$CellContext`puntos, $CellContext`fontweight, $CellContext`mcolor1, \
-$CellContext`Size]], 
-              If[$CellContext`Member2 != "None", 
-               $CellContext`TripletCoordinates[$CellContext`operator2, \
-$CellContext`puntos2, $CellContext`fontweight, $CellContext`mcolor2, \
-$CellContext`Size]], 
-              If[$CellContext`aa == 1, 
-               $CellContext`TripletCoordinates[$CellContext`amino, 
-                
-                Map[# - {
-                 0, 0, 0.12}& , $CellContext`puntos], \
-$CellContext`fontweight, $CellContext`mcolor1, $CellContext`Size]], 
-              If[
-               And[$CellContext`aa == 0, $CellContext`cord == 1], 
-               $CellContext`TripletCoordinates[
-                Map[ToString[#]& , $CellContext`puntos], 
-                
-                Map[# - {
-                 0, 0, 0.15}& , $CellContext`puntos], \
-$CellContext`fontweight, $CellContext`mcolor1, $CellContext`Size - 1]], 
-              If[
-               And[$CellContext`aa == 1, $CellContext`Member2 != "None"], 
-               $CellContext`TripletCoordinates[$CellContext`amino2, 
-                
-                Map[# - {
-                 0, 0, 0.12}& , $CellContext`puntos2], \
-$CellContext`fontweight, $CellContext`mcolor1, $CellContext`Size]], 
-              If[
-               And[$CellContext`aa == 0, $CellContext`cord == 1], 
-               $CellContext`TripletCoordinates[
-                Map[ToString[#]& , $CellContext`puntos2], 
-                
-                Map[# - {
-                 0, 0, 0.15}& , $CellContext`puntos2], \
-$CellContext`fontweight, $CellContext`mcolor1, $CellContext`Size - 1]], 
-              If[
-               
-               And[$CellContext`Suma, $CellContext`Member1 != 
-                "None", $CellContext`Member2 != "None"], 
-               $CellContext`TripletCoordinates[$CellContext`sumtriplets, \
-$CellContext`sumpoints, $CellContext`fontweight, $CellContext`sumcolor, \
-$CellContext`Size]], 
-              If[
-               
-               And[$CellContext`aa == 0, $CellContext`Suma, $CellContext`cord == 
-                1], 
-               $CellContext`TripletCoordinates[
-                Map[ToString[#]& , $CellContext`sumpoints], 
-                
-                Map[# - {
-                 0, 0, 0.15}& , $CellContext`sumpoints], \
-$CellContext`fontweight, $CellContext`mcolor1, $CellContext`Size - 1]], 
-              If[
-               
-               And[$CellContext`Producto, $CellContext`Member1 != 
-                "None", $CellContext`Member2 != "None"], 
-               $CellContext`TripletCoordinates[$CellContext`timetriplets, \
-$CellContext`timepoints, $CellContext`fontweight, $CellContext`timecolor, \
-$CellContext`Size]], 
-              If[
-               
-               And[$CellContext`aa == 
-                0, $CellContext`Producto, $CellContext`cord == 1], 
-               $CellContext`TripletCoordinates[
-                Map[ToString[#]& , $CellContext`timepoints], 
-                
-                Map[# - {
-                 0, 0, 0.15}& , $CellContext`timepoints], \
-$CellContext`fontweight, $CellContext`mcolor1, $CellContext`Size - 1]], 
-              If[
-               
-               And[$CellContext`aa == 
-                1, $CellContext`Suma, $CellContext`Member1 != 
-                "None", $CellContext`Member2 != "None"], 
-               $CellContext`TripletCoordinates[$CellContext`sumamino, 
-                
-                Map[# - {
-                 0, 0, 0.12}& , $CellContext`sumpoints], \
-$CellContext`fontweight, $CellContext`sumcolor, $CellContext`Size]], 
-              If[
-               
-               And[$CellContext`aa == 
-                1, $CellContext`Producto, $CellContext`Member1 != 
-                "None", $CellContext`Member2 != "None"], 
-               $CellContext`TripletCoordinates[$CellContext`timesamino, 
-                
-                Map[# - {
-                 0, 0, 0.12}& , $CellContext`timepoints], \
-$CellContext`fontweight, $CellContext`timecolor, $CellContext`Size]], 
-              If[
-               
-               And[$CellContext`aa == 0, $CellContext`cord == 
-                0, $CellContext`norms == 1], 
-               $CellContext`TripletCoordinates[$CellContext`puntonorm, 
-                
-                Map[# - {
-                 0, 0, 0.15}& , $CellContext`puntos], \
-$CellContext`fontweight, $CellContext`mcolor1, $CellContext`Size - 1]], 
-              If[
-               
-               And[$CellContext`aa == 0, $CellContext`cord == 
-                0, $CellContext`norms == 1], 
-               $CellContext`TripletCoordinates[$CellContext`puntonorm2, 
-                
-                Map[# - {
-                 0, 0, 0.15}& , $CellContext`puntos2], \
-$CellContext`fontweight, $CellContext`mcolor1, $CellContext`Size - 1]], 
-              If[
-               
-               And[$CellContext`aa == 0, $CellContext`cord == 
-                0, $CellContext`Suma, $CellContext`Member1 != 
-                "None", $CellContext`Member2 != "None", $CellContext`norms == 
-                1], 
-               $CellContext`TripletCoordinates[$CellContext`sumpointsnorm, 
-                
-                Map[# - {
-                 0, 0, 0.12}& , $CellContext`sumpoints], \
-$CellContext`fontweight, $CellContext`sumcolor, $CellContext`Size]], 
-              If[
-               
-               And[$CellContext`aa == 0, $CellContext`cord == 
-                0, $CellContext`Producto, $CellContext`Member1 != 
-                "None", $CellContext`Member2 != "None", $CellContext`norms == 
-                1], 
-               $CellContext`TripletCoordinates[$CellContext`timepointsnorm, 
-                
-                Map[# - {
-                 0, 0, 0.12}& , $CellContext`timepoints], \
-$CellContext`fontweight, $CellContext`timecolor, $CellContext`Size]], 
-              Opacity[$CellContext`opa], Green, 
-              If[$CellContext`h == 1, 
-               $CellContext`VerticalPlaneCoordinatesY[-2, $CellContext`c, \
-$CellContext`h], 
-               $CellContext`VerticalPlaneCoordinatesY[
-               0, $CellContext`c, $CellContext`h]], 
-              Opacity[$CellContext`opa], Blue, 
-              If[$CellContext`h == 1, 
-               $CellContext`VerticalPlaneCoordinatesY[-1, $CellContext`c, \
-$CellContext`h], 
-               $CellContext`VerticalPlaneCoordinatesY[
-               1, $CellContext`c, $CellContext`h]], 
-              Opacity[$CellContext`opa], Magenta, 
-              If[$CellContext`h == 1, 
-               $CellContext`VerticalPlaneCoordinatesY[
-               0, $CellContext`c, $CellContext`h], 
-               $CellContext`VerticalPlaneCoordinatesY[
-               2, $CellContext`c, $CellContext`h]], 
-              Opacity[$CellContext`opa], Orange, 
-              If[$CellContext`h == 1, 
-               $CellContext`VerticalPlaneCoordinatesY[
-               1, $CellContext`c, $CellContext`h], 
-               $CellContext`VerticalPlaneCoordinatesY[
-               3, $CellContext`c, $CellContext`h]], 
-              Opacity[$CellContext`opa], Red, 
-              If[$CellContext`h == 1, 
-               $CellContext`VerticalPlaneCoordinatesY[
-               2, $CellContext`c, $CellContext`h], 
-               $CellContext`VerticalPlaneCoordinatesY[
-               4, $CellContext`c, $CellContext`h]], 
-              If[$CellContext`h == 1, 
-               Table[{
-                 RGBColor[1, 1, 0.3, 0.2], 
-                 $CellContext`VerticalPlaneCoordinatesX[$CellContext`b, \
-$CellContext`c, $CellContext`h], 
-                 RGBColor[1, 1, 0, 0.3], 
-                 $CellContext`HorizontalPlaneCoordinates[$CellContext`b, \
-$CellContext`c, $CellContext`h]}, {$CellContext`b, -2, $CellContext`c + 1}], 
-               Table[{
-                 RGBColor[1, 1, 0.3, 0.2], 
-                 $CellContext`VerticalPlaneCoordinatesX[$CellContext`b, \
-$CellContext`c, $CellContext`h], 
-                 RGBColor[1, 1, 0, 0.3], 
-                 $CellContext`HorizontalPlaneCoordinates[$CellContext`b, \
-$CellContext`c, $CellContext`h]}, {$CellContext`b, 0, $CellContext`c + 1}]]}],
-             Boxed -> False, ImageSize -> Part[
-              Dynamic[$CellContext`cubesize], 1], ViewPoint -> {3, 1.5, 0.1}, 
-            SphericalRegion -> True, 
-            Background -> $CellContext`background]; \
-$CellContext`graphic[$CellContext`puntos, $CellContext`puntos2, \
-$CellContext`t]], $CellContext`f[
-         Pattern[$CellContext`t, 
-          Blank[]]] := 
-       Switch[$CellContext`t, "Ancestral Genetic Code", $CellContext`ExtCode, 
-         "Standard Genetic Code", $CellContext`StdCode, 
-         "Ancestral Triplet Subset", {
-         "DDD", "DDA", "DDC", "DDG", "DDU", "DAD", "DAA", "DAC", "DAG", "DAU",
-           "DCD", "DCA", "DCC", "DCG", "DCU", "DGD", "DGA", "DGC", "DGG", 
-          "DGU", "DUD", "DUA", "DUC", "DUG", "DUU", "ADD", "ADA", "ADC", 
-          "ADG", "ADU", "AAD", "ACD", "AGD", "AUD", "CDD", "CDA", "CDC", 
-          "CDG", "CDU", "CAD", "CCD", "CGD", "CUD", "GDD", "GDA", "GDC", 
-          "GDG", "GDU", "GAD", "GCD", "GGD", "GUD", "UDD", "UDA", "UDC", 
-          "UDG", "UDU", "UAD", "UCD", "UGD", "UUD"}, 
-         "Vertical Plane XDZ", $CellContext`PlaneXDZ, 
-         "Vertical Plane XAZ", $CellContext`PlaneXAZ, 
-         "Vertical Plane XCZ", $CellContext`PlaneXCZ, 
-         "Vertical Plane XGZ", $CellContext`PlaneXGZ, 
-         "Vertical Plane XUZ", $CellContext`PlaneXUZ, 
-         "Vertical Plane DYZ", $CellContext`PlaneDYZ, 
-         "Vertical Plane AYZ", $CellContext`PlaneAYZ, 
-         "Vertical Plane CYZ", $CellContext`PlaneCYZ, 
-         "Vertical Plane GYZ", $CellContext`PlaneGYZ, 
-         "Vertical Plane UYZ", $CellContext`PlaneUYZ, 
-         "Oblique Plane XNN", $CellContext`PlaneXNN, 
-         "Oblique Plane NYN", $CellContext`PlaneNYN, 
-         "Oblique Plane NNZ", $CellContext`PlaneNNZ, 
-         "Horizontal Plane XYD", $CellContext`PlaneXYD, 
-         "Horizontal Plane XYA", $CellContext`PlaneXYA, 
-         "Horizontal Plane XYC", $CellContext`PlaneXYC, 
-         "Horizontal Plane XYG", $CellContext`PlaneXYG, 
-         "Horizontal Plane XYU", $CellContext`PlaneXYU, 
-         "Code Plane XAZ", $CellContext`GCplaneXAZ, 
-         "Code Plane XCZ", $CellContext`GCplaneXCZ, 
-         "Code Plane XGZ", $CellContext`GCplaneXGZ, 
-         "Code Plane XUZ", $CellContext`GCplaneXUZ, 
-         "Code Plane AYZ", $CellContext`GCplaneAYZ, 
-         "Code Plane CYZ", $CellContext`GCplaneCYZ, 
-         "Code Plane GYZ", $CellContext`GCplaneGYZ, 
-         "Code Plane UYZ", $CellContext`GCplaneUYZ, 
-         "Code Plane XYA", $CellContext`GCplaneXYA, 
-         "Code Plane XYC", $CellContext`GCplaneXYC, 
-         "Code Plane XYG", $CellContext`GCplaneXYG, 
-         "Code Plane XYU", $CellContext`GCplaneXYU, 
-         "Vertical Line DDZ", $CellContext`LineDDZ, 
-         "Vertical Line DAZ", $CellContext`LineDAZ, 
-         "Vertical Line DCZ", $CellContext`LineDCZ, 
-         "Vertical Line DGZ", $CellContext`LineDGZ, 
-         "Vertical Line DUZ", $CellContext`LineDUZ, 
-         "Vertical Line ADZ", $CellContext`LineADZ, 
-         "Vertical Line AAZ", $CellContext`LineAAZ, 
-         "Vertical Line ACZ", $CellContext`LineACZ, 
-         "Vertical Line AGZ", $CellContext`LineAGZ, 
-         "Vertical Line AUZ", $CellContext`LineAUZ, 
-         "Vertical Line CDZ", $CellContext`LineCDZ, 
-         "Vertical Line CAZ", $CellContext`LineCAZ, 
-         "Vertical Line CCZ", $CellContext`LineCCZ, 
-         "Vertical Line CGZ", $CellContext`LineCGZ, 
-         "Vertical Line CUZ", $CellContext`LineCUZ, 
-         "Vertical Line GDZ", $CellContext`LineGDZ, 
-         "Vertical Line GAZ", $CellContext`LineGAZ, 
-         "Vertical Line GCZ", $CellContext`LineGCZ, 
-         "Vertical Line GGZ", $CellContext`LineGGZ, 
-         "Vertical Line GUZ", $CellContext`LineGUZ, 
-         "Vertical Line UDZ", $CellContext`LineUDZ, 
-         "Vertical Line UAZ", $CellContext`LineUAZ, 
-         "Vertical Line UCZ", $CellContext`LineUCZ, 
-         "Vertical Line UGZ", $CellContext`LineUGZ, 
-         "Vertical Line UUZ", $CellContext`LineUUZ, "GC Random Sample", 
-         Flatten[{
-           RandomSample[$CellContext`GCplaneXAZ, 1], 
-           RandomSample[$CellContext`GCplaneXCZ, 1], 
-           RandomSample[$CellContext`GCplaneXGZ, 1], 
-           RandomSample[$CellContext`GCplaneXUZ, 1]}], "Ala", {
-         "GCG", "GCU", "GCA", "GCC"}, "Cys", {"UGU", "UGC"}, "Asp", {
-         "GAU", "GAC"}, "Glu", {"GAG", "GAA"}, "Phe", {"UUU", "UUC"}, "Gly", {
-         "GGG", "GGU", "GGA", "GGC"}, "His", {"CAU", "CAC"}, "Ile", {
-         "AUU", "AUA", "AUC"}, "Lys", {"AAG", "AAA"}, "Leu", {
-         "UUG", "UUA", "CUG", "CUU", "CUA", "CUC"}, "Met", {"AUG"}, "Asn", {
-         "AAU", "AAC"}, "Pro", {"CCG", "CCU", "CCA", "CCC"}, "Gln", {
-         "CAG", "CAA"}, "Arg", {"AGG", "AGA", "CGG", "CGU", "CGA", "CGC"}, 
-         "Ser", {"UCG", "UCU", "UCA", "UCC", "AGU", "AGC"}, "Thr", {
-         "ACG", "ACU", "ACA", "ACC"}, "Val", {"GUG", "GUU", "GUA", "GUC"}, 
-         "Trp", {"UGG"}, "Tyr", {"UAU", "UAC"}, "Stop", {
-         "UGA", "UAG", "UAA", "TAG"}, "None", {""}, "DDD", {"DDD"}, "DDA", {
-         "DDA"}, "DDC", {"DDC"}, "DDG", {"DDG"}, "DDU", {"DDU"}, "ADD", {
-         "ADD"}, "ADA", {"ADA"}, "ADC", {"ADC"}, "ADG", {"ADG"}, "ADU", {
-         "ADU"}, "CDD", {"CDD"}, "CDA", {"CDA"}, "CDC", {"CDC"}, "CDG", {
-         "CDG"}, "CDU", {"CDU"}, "GDD", {"GDD"}, "GDA", {"GDA"}, "GDC", {
-         "GDC"}, "GDG", {"GDG"}, "GDU", {"GDU"}, "UDD", {"UDD"}, "UDA", {
-         "UDA"}, "UDC", {"UDC"}, "UDG", {"UDG"}, "UDU", {"UDU"}, "DAD", {
-         "DAD"}, "DAA", {"DAA"}, "DAC", {"DAC"}, "DAG", {"DAG"}, "DAU", {
-         "DAU"}, "AAD", {"AAD"}, "AAA", {"AAA"}, "AAC", {"AAC"}, "AAG", {
-         "AAG"}, "AAU", {"AAU"}, "CAD", {"CAD"}, "CAA", {"CAA"}, "CAC", {
-         "CAC"}, "CAG", {"CAG"}, "CAU", {"CAU"}, "GAD", {"GAD"}, "GAA", {
-         "GAA"}, "GAC", {"GAC"}, "GAG", {"GAG"}, "GAU", {"GAU"}, "UAD", {
-         "UAD"}, "UAA", {"UAA"}, "UAC", {"UAC"}, "UAG", {"UAG"}, "UAU", {
-         "UAU"}, "DCD", {"DCD"}, "DCA", {"DCA"}, "DCC", {"DCC"}, "DCG", {
-         "DCG"}, "DCU", {"DCU"}, "ACD", {"ACD"}, "ACA", {"ACA"}, "ACC", {
-         "ACC"}, "ACG", {"ACG"}, "ACU", {"ACU"}, "CCD", {"CCD"}, "CCA", {
-         "CCA"}, "CCC", {"CCC"}, "CCG", {"CCG"}, "CCU", {"CCU"}, "GCD", {
-         "GCD"}, "GCA", {"GCA"}, "GCC", {"GCC"}, "GCG", {"GCG"}, "GCU", {
-         "GCU"}, "UCD", {"UCD"}, "UCA", {"UCA"}, "UCC", {"UCC"}, "UCG", {
-         "UCG"}, "UCU", {"UCU"}, "DGD", {"DGD"}, "DGA", {"DGA"}, "DGC", {
-         "DGC"}, "DGG", {"DGG"}, "DGU", {"DGU"}, "AGD", {"AGD"}, "AGA", {
-         "AGA"}, "AGC", {"AGC"}, "AGG", {"AGG"}, "AGU", {"AGU"}, "CGD", {
-         "CGD"}, "CGA", {"CGA"}, "CGC", {"CGC"}, "CGG", {"CGG"}, "CGU", {
-         "CGU"}, "GGD", {"GGD"}, "GGA", {"GGA"}, "GGC", {"GGC"}, "GGG", {
-         "GGG"}, "GGU", {"GGU"}, "UGD", {"UGD"}, "UGA", {"UGA"}, "UGC", {
-         "UGC"}, "UGG", {"UGG"}, "UGU", {"UGU"}, "DUD", {"DUD"}, "DUA", {
-         "DUA"}, "DUC", {"DUC"}, "DUG", {"DUG"}, "DUU", {"DUU"}, "AUD", {
-         "AUD"}, "AUA", {"AUA"}, "AUC", {"AUC"}, "AUG", {"AUG"}, "AUU", {
-         "AUU"}, "CUD", {"CUD"}, "CUA", {"CUA"}, "CUC", {"CUC"}, "CUG", {
-         "CUG"}, "CUU", {"CUU"}, "GUD", {"GUD"}, "GUA", {"GUA"}, "GUC", {
-         "GUC"}, "GUG", {"GUG"}, "GUU", {"GUU"}, "UUD", {"UUD"}, "UUA", {
-         "UUA"}, "UUC", {"UUC"}, "UUG", {"UUG"}, "UUU", {
-         "UUU"}], $CellContext`f[
-         Pattern[$CellContext`t, 
-          Blank[]], 
-         Optional[
-          Pattern[$CellContext`wildseq, 
-           Blank[]], "Lysozyme"]] := 
-       Switch[$CellContext`t, "Wild DNA Sequence", 
-         If[
-          $CellContext`dna[
-           $CellContext`prot[$CellContext`wildseq]], 
-          Part[
-           Dynamic[
-            Map[StringJoin, 
-             Part[
-              Partition[
-               ReplaceAll[
-                Characters[
-                 Part[
-                  $CellContext`prot[$CellContext`wildseq], 1]], "T" -> "U"], 
-               3], 
-              Span[$CellContext`start, $CellContext`end]]]], 1], 
-          Part[
-           Part[
-            Characters[
-             $CellContext`prot[$CellContext`wildseq]], 1], 
-           Span[$CellContext`start, $CellContext`end]]], 
-         "Ancestral Genetic Code", $CellContext`ExtCode, 
-         "Standard Genetic Code", $CellContext`StdCode, 
-         "Ancestral Triplet Subset", {
-         "DDD", "DDA", "DDC", "DDG", "DDU", "DAD", "DAA", "DAC", "DAG", "DAU",
-           "DCD", "DCA", "DCC", "DCG", "DCU", "DGD", "DGA", "DGC", "DGG", 
-          "DGU", "DUD", "DUA", "DUC", "DUG", "DUU", "ADD", "ADA", "ADC", 
-          "ADG", "ADU", "AAD", "ACD", "AGD", "AUD", "CDD", "CDA", "CDC", 
-          "CDG", "CDU", "CAD", "CCD", "CGD", "CUD", "GDD", "GDA", "GDC", 
-          "GDG", "GDU", "GAD", "GCD", "GGD", "GUD", "UDD", "UDA", "UDC", 
-          "UDG", "UDU", "UAD", "UCD", "UGD", "UUD"}, 
-         "Vertical Plane XDZ", $CellContext`PlaneXDZ, 
-         "Vertical Plane XAZ", $CellContext`PlaneXAZ, 
-         "Vertical Plane XCZ", $CellContext`PlaneXCZ, 
-         "Vertical Plane XGZ", $CellContext`PlaneXGZ, 
-         "Vertical Plane XUZ", $CellContext`PlaneXUZ, 
-         "Vertical Plane DYZ", $CellContext`PlaneDYZ, 
-         "Vertical Plane AYZ", $CellContext`PlaneAYZ, 
-         "Vertical Plane CYZ", $CellContext`PlaneCYZ, 
-         "Vertical Plane GYZ", $CellContext`PlaneGYZ, 
-         "Vertical Plane UYZ", $CellContext`PlaneUYZ, 
-         "Oblique Plane XNN", $CellContext`PlaneXNN, 
-         "Oblique Plane NYN", $CellContext`PlaneNYN, 
-         "Oblique Plane NNZ", $CellContext`PlaneNNZ, 
-         "Horizontal Plane XYD", $CellContext`PlaneXYD, 
-         "Horizontal Plane XYA", $CellContext`PlaneXYA, 
-         "Horizontal Plane XYC", $CellContext`PlaneXYC, 
-         "Horizontal Plane XYG", $CellContext`PlaneXYG, 
-         "Horizontal Plane XYU", $CellContext`PlaneXYU, 
-         "Code Plane XAZ", $CellContext`GCplaneXAZ, 
-         "Code Plane XCZ", $CellContext`GCplaneXCZ, 
-         "Code Plane XGZ", $CellContext`GCplaneXGZ, 
-         "Code Plane XUZ", $CellContext`GCplaneXUZ, 
-         "Code Plane AYZ", $CellContext`GCplaneAYZ, 
-         "Code Plane CYZ", $CellContext`GCplaneCYZ, 
-         "Code Plane GYZ", $CellContext`GCplaneGYZ, 
-         "Code Plane UYZ", $CellContext`GCplaneUYZ, 
-         "Code Plane XYA", $CellContext`GCplaneXYA, 
-         "Code Plane XYC", $CellContext`GCplaneXYC, 
-         "Code Plane XYG", $CellContext`GCplaneXYG, 
-         "Code Plane XYU", $CellContext`GCplaneXYU, 
-         "Vertical Line DDZ", $CellContext`LineDDZ, 
-         "Vertical Line DAZ", $CellContext`LineDAZ, 
-         "Vertical Line DCZ", $CellContext`LineDCZ, 
-         "Vertical Line DGZ", $CellContext`LineDGZ, 
-         "Vertical Line DUZ", $CellContext`LineDUZ, 
-         "Vertical Line ADZ", $CellContext`LineADZ, 
-         "Vertical Line AAZ", $CellContext`LineAAZ, 
-         "Vertical Line ACZ", $CellContext`LineACZ, 
-         "Vertical Line AGZ", $CellContext`LineAGZ, 
-         "Vertical Line AUZ", $CellContext`LineAUZ, 
-         "Vertical Line CDZ", $CellContext`LineCDZ, 
-         "Vertical Line CAZ", $CellContext`LineCAZ, 
-         "Vertical Line CCZ", $CellContext`LineCCZ, 
-         "Vertical Line CGZ", $CellContext`LineCGZ, 
-         "Vertical Line CUZ", $CellContext`LineCUZ, 
-         "Vertical Line GDZ", $CellContext`LineGDZ, 
-         "Vertical Line GAZ", $CellContext`LineGAZ, 
-         "Vertical Line GCZ", $CellContext`LineGCZ, 
-         "Vertical Line GGZ", $CellContext`LineGGZ, 
-         "Vertical Line GUZ", $CellContext`LineGUZ, 
-         "Vertical Line UDZ", $CellContext`LineUDZ, 
-         "Vertical Line UAZ", $CellContext`LineUAZ, 
-         "Vertical Line UCZ", $CellContext`LineUCZ, 
-         "Vertical Line UGZ", $CellContext`LineUGZ, 
-         "Vertical Line UUZ", $CellContext`LineUUZ, "GC Random Sample", 
-         Flatten[{
-           RandomSample[$CellContext`GCplaneXAZ, 1], 
-           RandomSample[$CellContext`GCplaneXCZ, 1], 
-           RandomSample[$CellContext`GCplaneXGZ, 1], 
-           RandomSample[$CellContext`GCplaneXUZ, 1]}], "Ala", {
-         "GCG", "GCU", "GCA", "GCC"}, "Cys", {"UGU", "UGC"}, "Asp", {
-         "GAU", "GAC"}, "Glu", {"GAG", "GAA"}, "Phe", {"UUU", "UUC"}, "Gly", {
-         "GGG", "GGU", "GGA", "GGC"}, "His", {"CAU", "CAC"}, "Ile", {
-         "AUU", "AUA", "AUC"}, "Lys", {"AAG", "AAA"}, "Leu", {
-         "UUG", "UUA", "CUG", "CUU", "CUA", "CUC"}, "Met", {"AUG"}, "Asn", {
-         "AAU", "AAC"}, "Pro", {"CCG", "CCU", "CCA", "CCC"}, "Gln", {
-         "CAG", "CAA"}, "Arg", {"AGG", "AGA", "CGG", "CGU", "CGA", "CGC"}, 
-         "Ser", {"UCG", "UCU", "UCA", "UCC", "AGU", "AGC"}, "Thr", {
-         "ACG", "ACU", "ACA", "ACC"}, "Val", {"GUG", "GUU", "GUA", "GUC"}, 
-         "Trp", {"UGG"}, "Tyr", {"UAU", "UAC"}, "Stop", {
-         "UGA", "UAG", "UAA", "TAG"}, "None", {""}, "DDD", {"DDD"}, "DDA", {
-         "DDA"}, "DDC", {"DDC"}, "DDG", {"DDG"}, "DDU", {"DDU"}, "ADD", {
-         "ADD"}, "ADA", {"ADA"}, "ADC", {"ADC"}, "ADG", {"ADG"}, "ADU", {
-         "ADU"}, "CDD", {"CDD"}, "CDA", {"CDA"}, "CDC", {"CDC"}, "CDG", {
-         "CDG"}, "CDU", {"CDU"}, "GDD", {"GDD"}, "GDA", {"GDA"}, "GDC", {
-         "GDC"}, "GDG", {"GDG"}, "GDU", {"GDU"}, "UDD", {"UDD"}, "UDA", {
-         "UDA"}, "UDC", {"UDC"}, "UDG", {"UDG"}, "UDU", {"UDU"}, "DAD", {
-         "DAD"}, "DAA", {"DAA"}, "DAC", {"DAC"}, "DAG", {"DAG"}, "DAU", {
-         "DAU"}, "AAD", {"AAD"}, "AAA", {"AAA"}, "AAC", {"AAC"}, "AAG", {
-         "AAG"}, "AAU", {"AAU"}, "CAD", {"CAD"}, "CAA", {"CAA"}, "CAC", {
-         "CAC"}, "CAG", {"CAG"}, "CAU", {"CAU"}, "GAD", {"GAD"}, "GAA", {
-         "GAA"}, "GAC", {"GAC"}, "GAG", {"GAG"}, "GAU", {"GAU"}, "UAD", {
-         "UAD"}, "UAA", {"UAA"}, "UAC", {"UAC"}, "UAG", {"UAG"}, "UAU", {
-         "UAU"}, "DCD", {"DCD"}, "DCA", {"DCA"}, "DCC", {"DCC"}, "DCG", {
-         "DCG"}, "DCU", {"DCU"}, "ACD", {"ACD"}, "ACA", {"ACA"}, "ACC", {
-         "ACC"}, "ACG", {"ACG"}, "ACU", {"ACU"}, "CCD", {"CCD"}, "CCA", {
-         "CCA"}, "CCC", {"CCC"}, "CCG", {"CCG"}, "CCU", {"CCU"}, "GCD", {
-         "GCD"}, "GCA", {"GCA"}, "GCC", {"GCC"}, "GCG", {"GCG"}, "GCU", {
-         "GCU"}, "UCD", {"UCD"}, "UCA", {"UCA"}, "UCC", {"UCC"}, "UCG", {
-         "UCG"}, "UCU", {"UCU"}, "DGD", {"DGD"}, "DGA", {"DGA"}, "DGC", {
-         "DGC"}, "DGG", {"DGG"}, "DGU", {"DGU"}, "AGD", {"AGD"}, "AGA", {
-         "AGA"}, "AGC", {"AGC"}, "AGG", {"AGG"}, "AGU", {"AGU"}, "CGD", {
-         "CGD"}, "CGA", {"CGA"}, "CGC", {"CGC"}, "CGG", {"CGG"}, "CGU", {
-         "CGU"}, "GGD", {"GGD"}, "GGA", {"GGA"}, "GGC", {"GGC"}, "GGG", {
-         "GGG"}, "GGU", {"GGU"}, "UGD", {"UGD"}, "UGA", {"UGA"}, "UGC", {
-         "UGC"}, "UGG", {"UGG"}, "UGU", {"UGU"}, "DUD", {"DUD"}, "DUA", {
-         "DUA"}, "DUC", {"DUC"}, "DUG", {"DUG"}, "DUU", {"DUU"}, "AUD", {
-         "AUD"}, "AUA", {"AUA"}, "AUC", {"AUC"}, "AUG", {"AUG"}, "AUU", {
-         "AUU"}, "CUD", {"CUD"}, "CUA", {"CUA"}, "CUC", {"CUC"}, "CUG", {
-         "CUG"}, "CUU", {"CUU"}, "GUD", {"GUD"}, "GUA", {"GUA"}, "GUC", {
-         "GUC"}, "GUG", {"GUG"}, "GUU", {"GUU"}, "UUD", {"UUD"}, "UUA", {
-         "UUA"}, "UUC", {"UUC"}, "UUG", {"UUG"}, "UUU", {
-         "UUU"}], $CellContext`ExtCode = {
-        "DDD", "DDA", "DDC", "DDG", "DDU", "ADD", "ADA", "ADC", "ADG", "ADU", 
-         "CDD", "CDA", "CDC", "CDG", "CDU", "GDD", "GDA", "GDC", "GDG", "GDU",
-          "UDD", "UDA", "UDC", "UDG", "UDU", "DAD", "DAA", "DAC", "DAG", 
-         "DAU", "AAD", "AAA", "AAC", "AAG", "AAU", "CAD", "CAA", "CAC", "CAG",
-          "CAU", "GAD", "GAA", "GAC", "GAG", "GAU", "UAD", "UAA", "UAC", 
-         "UAG", "UAU", "DCD", "DCA", "DCC", "DCG", "DCU", "ACD", "ACA", "ACC",
-          "ACG", "ACU", "CCD", "CCA", "CCC", "CCG", "CCU", "GCD", "GCA", 
-         "GCC", "GCG", "GCU", "UCD", "UCA", "UCC", "UCG", "UCU", "DGD", "DGA",
-          "DGC", "DGG", "DGU", "AGD", "AGA", "AGC", "AGG", "AGU", "CGD", 
-         "CGA", "CGC", "CGG", "CGU", "GGD", "GGA", "GGC", "GGG", "GGU", "UGD",
-          "UGA", "UGC", "UGG", "UGU", "DUD", "DUA", "DUC", "DUG", "DUU", 
-         "AUD", "AUA", "AUC", "AUG", "AUU", "CUD", "CUA", "CUC", "CUG", "CUU",
-          "GUD", "GUA", "GUC", "GUG", "GUU", "UUD", "UUA", "UUC", "UUG", 
-         "UUU"}, $CellContext`StdCode = {
-        "AAA", "AAC", "AAG", "AAU", "CAA", "CAC", "CAG", "CAU", "GAA", "GAC", 
-         "GAG", "GAU", "UAA", "UAC", "UAG", "UAU", "ACA", "ACC", "ACG", "ACU",
-          "CCA", "CCC", "CCG", "CCU", "GCA", "GCC", "GCG", "GCU", "UCA", 
-         "UCC", "UCG", "UCU", "AGA", "AGC", "AGG", "AGU", "CGA", "CGC", "CGG",
-          "CGU", "GGA", "GGC", "GGG", "GGU", "UGA", "UGC", "UGG", "UGU", 
-         "AUA", "AUC", "AUG", "AUU", "CUA", "CUC", "CUG", "CUU", "GUA", "GUC",
-          "GUG", "GUU", "UUA", "UUC", "UUG", "UUU"}, $CellContext`PlaneXDZ = {
-        "DDD", "DDA", "DDC", "DDG", "DDU", "ADD", "ADA", "ADC", "ADG", "ADU", 
-         "CDD", "CDA", "CDC", "CDG", "CDU", "GDD", "GDA", "GDC", "GDG", "GDU",
-          "UDD", "UDA", "UDC", "UDG", "UDU"}, $CellContext`PlaneXAZ = {
-        "DAD", "DAA", "DAC", "DAG", "DAU", "AAD", "AAA", "AAC", "AAG", "AAU", 
-         "CAD", "CAA", "CAC", "CAG", "CAU", "GAD", "GAA", "GAC", "GAG", "GAU",
-          "UAD", "UAA", "UAC", "UAG", "UAU"}, $CellContext`PlaneXCZ = {
-        "DCD", "DCA", "DCC", "DCG", "DCU", "ACD", "ACA", "ACC", "ACG", "ACU", 
-         "CCD", "CCA", "CCC", "CCG", "CCU", "GCD", "GCA", "GCC", "GCG", "GCU",
-          "UCD", "UCA", "UCC", "UCG", "UCU"}, $CellContext`PlaneXGZ = {
-        "DGD", "DGA", "DGC", "DGG", "DGU", "AGD", "AGA", "AGC", "AGG", "AGU", 
-         "CGD", "CGA", "CGC", "CGG", "CGU", "GGD", "GGA", "GGC", "GGG", "GGU",
-          "UGD", "UGA", "UGC", "UGG", "UGU"}, $CellContext`PlaneXUZ = {
-        "DUD", "DUA", "DUC", "DUG", "DUU", "AUD", "AUA", "AUC", "AUG", "AUU", 
-         "CUD", "CUA", "CUC", "CUG", "CUU", "GUD", "GUA", "GUC", "GUG", "GUU",
-          "UUD", "UUA", "UUC", "UUG", "UUU"}, $CellContext`PlaneDYZ = {
-        "DDD", "DDA", "DDC", "DDG", "DDU", "DAD", "DAA", "DAC", "DAG", "DAU", 
-         "DCD", "DCA", "DCC", "DCG", "DCU", "DGD", "DGA", "DGC", "DGG", "DGU",
-          "DUD", "DUA", "DUC", "DUG", "DUU"}, $CellContext`PlaneAYZ = {
-        "ADD", "ADA", "ADC", "ADG", "ADU", "AAD", "AAA", "AAC", "AAG", "AAU", 
-         "ACD", "ACA", "ACC", "ACG", "ACU", "AGD", "AGA", "AGC", "AGG", "AGU",
-          "AUD", "AUA", "AUC", "AUG", "AUU"}, $CellContext`PlaneCYZ = {
-        "CDD", "CDA", "CDC", "CDG", "CDU", "CAD", "CAA", "CAC", "CAG", "CAU", 
-         "CCD", "CCA", "CCC", "CCG", "CCU", "CGD", "CGA", "CGC", "CGG", "CGU",
-          "CUD", "CUA", "CUC", "CUG", "CUU"}, $CellContext`PlaneGYZ = {
-        "GDD", "GDA", "GDC", "GDG", "GDU", "GAD", "GAA", "GAC", "GAG", "GAU", 
-         "GCD", "GCA", "GCC", "GCG", "GCU", "GGD", "GGA", "GGC", "GGG", "GGU",
-          "GUD", "GUA", "GUC", "GUG", "GUU"}, $CellContext`PlaneUYZ = {
-        "UDD", "UDA", "UDC", "UDG", "UDU", "UAD", "UAA", "UAC", "UAG", "UAU", 
-         "UCD", "UCA", "UCC", "UCG", "UCU", "UGD", "UGA", "UGC", "UGG", "UGU",
-          "UUD", "UUA", "UUC", "UUG", "UUU"}, $CellContext`PlaneXNN = {
-        "DDD", "DAA", "DCC", "DGG", "DUU", "ADD", "AAA", "ACC", "AGG", "AUU", 
-         "CDD", "CAA", "CCC", "CGG", "CUU", "GDD", "GAA", "GCC", "GGG", "GUU",
-          "UDD", "UAA", "UCC", "UGG", "UUU"}, $CellContext`PlaneNYN = {
-        "DDD", "ADA", "CDC", "GDG", "UDU", "DAD", "AAA", "CAC", "GAG", "UAU", 
-         "DCD", "ACA", "CCC", "GCG", "UCU", "DGD", "AGA", "CGC", "GGG", "UGU",
-          "DUD", "AUA", "CUC", "GUG", "UUU"}, $CellContext`PlaneNNZ = {
-        "DDD", "AAD", "CCD", "GGD", "UUD", "DDA", "AAA", "CCA", "GGA", "UUA", 
-         "DDC", "AAC", "CCC", "GGC", "UUC", "DDG", "AAG", "CCG", "GGG", "UUG",
-          "DDU", "AAU", "CCU", "GGU", "UUU"}, $CellContext`PlaneXYD = {
-        "DDD", "DAD", "DCD", "DGD", "DUD", "ADD", "AAD", "ACD", "AGD", "AUD", 
-         "CDD", "CAD", "CCD", "CGD", "CUD", "GDD", "GAD", "GCD", "GGD", "GUD",
-          "UDD", "UAD", "UCD", "UGD", "UUD"}, $CellContext`PlaneXYA = {
-        "DDA", "DAA", "DCA", "DGA", "DUA", "ADA", "AAA", "ACA", "AGA", "AUA", 
-         "CDA", "CAA", "CCA", "CGA", "CUA", "GDA", "GAA", "GCA", "GGA", "GUA",
-          "UDA", "UAA", "UCA", "UGA", "UUA"}, $CellContext`PlaneXYC = {
-        "DDC", "DAC", "DCC", "DGC", "DUC", "ADC", "AAC", "ACC", "AGC", "AUC", 
-         "CDC", "CAC", "CCC", "CGC", "CUC", "GDC", "GAC", "GCC", "GGC", "GUC",
-          "UDC", "UAC", "UCC", "UGC", "UUC"}, $CellContext`PlaneXYG = {
-        "DDG", "DAG", "DCG", "DGG", "DUG", "ADG", "AAG", "ACG", "AGG", "AUG", 
-         "CDG", "CAG", "CCG", "CGG", "CUG", "GDG", "GAG", "GCG", "GGG", "GUG",
-          "UDG", "UAG", "UCG", "UGG", "UUG"}, $CellContext`PlaneXYU = {
-        "DDU", "DAU", "DCU", "DGU", "DUU", "ADU", "AAU", "ACU", "AGU", "AUU", 
-         "CDU", "CAU", "CCU", "CGU", "CUU", "GDU", "GAU", "GCU", "GGU", "GUU",
-          "UDU", "UAU", "UCU", "UGU", "UUU"}, $CellContext`GCplaneXAZ = {
-        "AAA", "AAC", "AAG", "AAU", "CAA", "CAC", "CAG", "CAU", "GAA", "GAC", 
-         "GAG", "GAU", "UAA", "UAC", "UAG", 
-         "UAU"}, $CellContext`GCplaneXCZ = {
-        "ACA", "ACC", "ACG", "ACU", "CCA", "CCC", "CCG", "CCU", "GCA", "GCC", 
-         "GCG", "GCU", "UCA", "UCC", "UCG", 
-         "UCU"}, $CellContext`GCplaneXGZ = {
-        "AGA", "AGC", "AGG", "AGU", "CGA", "CGC", "CGG", "CGU", "GGA", "GGC", 
-         "GGG", "GGU", "UGA", "UGC", "UGG", 
-         "UGU"}, $CellContext`GCplaneXUZ = {
-        "AUA", "AUC", "AUG", "AUU", "CUA", "CUC", "CUG", "CUU", "GUA", "GUC", 
-         "GUG", "GUU", "UUA", "UUC", "UUG", 
-         "UUU"}, $CellContext`GCplaneAYZ = {
-        "AAA", "AAC", "AAG", "AAU", "ACA", "ACC", "ACG", "ACU", "AGA", "AGC", 
-         "AGG", "AGU", "AUA", "AUC", "AUG", 
-         "AUU"}, $CellContext`GCplaneCYZ = {
-        "CAA", "CAC", "CAG", "CAU", "CCA", "CCC", "CCG", "CCU", "CGA", "CGC", 
-         "CGG", "CGU", "CUA", "CUC", "CUG", 
-         "CUU"}, $CellContext`GCplaneGYZ = {
-        "GAA", "GAC", "GAG", "GAU", "GCA", "GCC", "GCG", "GCU", "GGA", "GGC", 
-         "GGG", "GGU", "GUA", "GUC", "GUG", 
-         "GUU"}, $CellContext`GCplaneUYZ = {
-        "UAA", "UAC", "UAG", "UAU", "UCA", "UCC", "UCG", "UCU", "UGA", "UGC", 
-         "UGG", "UGU", "UUA", "UUC", "UUG", 
-         "UUU"}, $CellContext`GCplaneXYA = {
-        "AAA", "CAA", "GAA", "UAA", "ACA", "CCA", "GCA", "UCA", "AGA", "CGA", 
-         "GGA", "UGA", "AUA", "CUA", "GUA", 
-         "UUA"}, $CellContext`GCplaneXYC = {
-        "AAC", "CAC", "GAC", "UAC", "ACC", "CCC", "GCC", "UCC", "AGC", "CGC", 
-         "GGC", "UGC", "AUC", "CUC", "GUC", 
-         "UUC"}, $CellContext`GCplaneXYG = {
-        "AAG", "CAG", "GAG", "UAG", "ACG", "CCG", "GCG", "UCG", "AGG", "CGG", 
-         "GGG", "UGG", "AUG", "CUG", "GUG", 
-         "UUG"}, $CellContext`GCplaneXYU = {
-        "AAU", "CAU", "GAU", "UAU", "ACU", "CCU", "GCU", "UCU", "AGU", "CGU", 
-         "GGU", "UGU", "AUU", "CUU", "GUU", "UUU"}, $CellContext`LineDDZ = {{
-         "DDD", "DDA", "DDC", "DDG", "DDU"}, 
-         Line[{{0, 0, 0}, {0, 0, -2}, {0, 0, -1}, {0, 0, 1}, {0, 0, 
-          2}}]}, $CellContext`LineDAZ = {{"DAD", "DAA", "DAC", "DAG", "DAU"}, 
-         Line[{{0, -2, 0}, {0, -2, -2}, {0, -2, -1}, {0, -2, 1}, {0, -2, 
-          2}}]}, $CellContext`LineDCZ = {{"DCD", "DCA", "DCC", "DCG", "DCU"}, 
-         Line[{{0, -1, 0}, {0, -1, -2}, {0, -1, -1}, {0, -1, 1}, {0, -1, 
-          2}}]}, $CellContext`LineDGZ = {{"DGD", "DGA", "DGC", "DGG", "DGU"}, 
-         Line[{{0, 1, 0}, {0, 1, -2}, {0, 1, -1}, {0, 1, 1}, {0, 1, 
-          2}}]}, $CellContext`LineDUZ = {{"DUD", "DUA", "DUC", "DUG", "DUU"}, 
-         Line[{{0, 2, 0}, {0, 2, -2}, {0, 2, -1}, {0, 2, 1}, {0, 2, 
-          2}}]}, $CellContext`LineADZ = {{"ADD", "ADA", "ADC", "ADG", "ADU"}, 
-         Line[{{-2, 0, 0}, {-2, 0, -2}, {-2, 0, -1}, {-2, 0, 1}, {-2, 0, 
-          2}}]}, $CellContext`LineAAZ = {{"AAD", "AAA", "AAC", "AAG", "AAU"}, 
-         Line[{{-2, -2, 0}, {-2, -2, -2}, {-2, -2, -1}, {-2, -2, 1}, {-2, -2, 
-          2}}]}, $CellContext`LineACZ = {{"ACD", "ACA", "ACC", "ACG", "ACU"}, 
-         Line[{{-2, -1, 0}, {-2, -1, -2}, {-2, -1, -1}, {-2, -1, 1}, {-2, -1, 
-          2}}]}, $CellContext`LineAGZ = {{"AGD", "AGA", "AGC", "AGG", "AGU"}, 
-         Line[{{-2, 1, 0}, {-2, 1, -2}, {-2, 1, -1}, {-2, 1, 1}, {-2, 1, 
-          2}}]}, $CellContext`LineAUZ = {{"AUD", "AUA", "AUC", "AUG", "AUU"}, 
-         Line[{{-2, 2, 0}, {-2, 2, -2}, {-2, 2, -1}, {-2, 2, 1}, {-2, 2, 
-          2}}]}, $CellContext`LineCDZ = {{"CDD", "CDA", "CDC", "CDG", "CDU"}, 
-         Line[{{-1, 0, 0}, {-1, 0, -2}, {-1, 0, -1}, {-1, 0, 1}, {-1, 0, 
-          2}}]}, $CellContext`LineCAZ = {{"CAD", "CAA", "CAC", "CAG", "CAU"}, 
-         Line[{{-1, -2, 0}, {-1, -2, -2}, {-1, -2, -1}, {-1, -2, 1}, {-1, -2, 
-          2}}]}, $CellContext`LineCCZ = {{"CCD", "CCA", "CCC", "CCG", "CCU"}, 
-         Line[{{-1, -1, 0}, {-1, -1, -2}, {-1, -1, -1}, {-1, -1, 1}, {-1, -1, 
-          2}}]}, $CellContext`LineCGZ = {{"CGD", "CGA", "CGC", "CGG", "CGU"}, 
-         Line[{{-1, 1, 0}, {-1, 1, -2}, {-1, 1, -1}, {-1, 1, 1}, {-1, 1, 
-          2}}]}, $CellContext`LineCUZ = {{"CUD", "CUA", "CUC", "CUG", "CUU"}, 
-         Line[{{-1, 2, 0}, {-1, 2, -2}, {-1, 2, -1}, {-1, 2, 1}, {-1, 2, 
-          2}}]}, $CellContext`LineGDZ = {{"GDD", "GDA", "GDC", "GDG", "GDU"}, 
-         Line[{{1, 0, 0}, {1, 0, -2}, {1, 0, -1}, {1, 0, 1}, {1, 0, 
-          2}}]}, $CellContext`LineGAZ = {{"GAD", "GAA", "GAC", "GAG", "GAU"}, 
-         Line[{{1, -2, 0}, {1, -2, -2}, {1, -2, -1}, {1, -2, 1}, {1, -2, 
-          2}}]}, $CellContext`LineGCZ = {{"GCD", "GCA", "GCC", "GCG", "GCU"}, 
-         Line[{{1, -1, 0}, {1, -1, -2}, {1, -1, -1}, {1, -1, 1}, {1, -1, 
-          2}}]}, $CellContext`LineGGZ = {{"GGD", "GGA", "GGC", "GGG", "GGU"}, 
-         Line[{{1, 1, 0}, {1, 1, -2}, {1, 1, -1}, {1, 1, 1}, {1, 1, 
-          2}}]}, $CellContext`LineGUZ = {{"GUD", "GUA", "GUC", "GUG", "GUU"}, 
-         Line[{{1, 2, 0}, {1, 2, -2}, {1, 2, -1}, {1, 2, 1}, {1, 2, 
-          2}}]}, $CellContext`LineUDZ = {{"UDD", "UDA", "UDC", "UDG", "UDU"}, 
-         Line[{{2, 0, 0}, {2, 0, -2}, {2, 0, -1}, {2, 0, 1}, {2, 0, 
-          2}}]}, $CellContext`LineUAZ = {{"UAD", "UAA", "UAC", "UAG", "UAU"}, 
-         Line[{{2, -2, 0}, {2, -2, -2}, {2, -2, -1}, {2, -2, 1}, {2, -2, 
-          2}}]}, $CellContext`LineUCZ = {{"UCD", "UCA", "UCC", "UCG", "UCU"}, 
-         Line[{{2, -1, 0}, {2, -1, -2}, {2, -1, -1}, {2, -1, 1}, {2, -1, 
-          2}}]}, $CellContext`LineUGZ = {{"UGD", "UGA", "UGC", "UGG", "UGU"}, 
-         Line[{{2, 1, 0}, {2, 1, -2}, {2, 1, -1}, {2, 1, 1}, {2, 1, 
-          2}}]}, $CellContext`LineUUZ = {{"UUD", "UUA", "UUC", "UUG", "UUU"}, 
-         Line[{{2, 2, 0}, {2, 2, -2}, {2, 2, -1}, {2, 2, 1}, {2, 2, 
-          2}}]}, $CellContext`dna[
-         Pattern[$CellContext`seq, 
-          Blank[]]] := Module[{$CellContext`alf}, $CellContext`alf = Part[
-            Transpose[
-             Tally[
-              Part[
-               Characters[$CellContext`seq], 1]]], 1]; 
-         Or[Sort[$CellContext`alf] == Sort[{"A", "U", "G", "C"}], 
-           Sort[$CellContext`alf] == 
-           Sort[{"A", "T", "G", "C"}]]], $CellContext`start = 
-       1, $CellContext`end = 
-       1, $CellContext`VlineLabels = {
-        "Vertical Line DDZ", "Vertical Line DAZ", "Vertical Line DCZ", 
-         "Vertical Line DGZ", "Vertical Line DUZ", "Vertical Line ADZ", 
-         "Vertical Line AAZ", "Vertical Line ACZ", "Vertical Line AGZ", 
-         "Vertical Line AUZ", "Vertical Line CDZ", "Vertical Line CAZ", 
-         "Vertical Line CCZ", "Vertical Line CGZ", "Vertical Line CUZ", 
-         "Vertical Line GDZ", "Vertical Line GAZ", "Vertical Line GCZ", 
-         "Vertical Line GGZ", "Vertical Line GUZ", "Vertical Line UDZ", 
-         "Vertical Line UAZ", "Vertical Line UCZ", "Vertical Line UGZ", 
-         "Vertical Line UUZ"}, $CellContext`points[
-         Pattern[$CellContext`s, 
-          Blank[]], 
-         Optional[
-          Pattern[$CellContext`enc, 
-           Blank[]], "ACGU"], 
-         Optional[
-          Pattern[$CellContext`t, 
-           Blank[]], 2]] := Map[ReplaceAll[
-          Flatten[
-           Characters[#]], 
-          $CellContext`encoding[$CellContext`enc, $CellContext`t]]& , \
-$CellContext`s], $CellContext`encoding[
-         Pattern[$CellContext`enc, 
-          Blank[]], 
-         Optional[
-          Pattern[$CellContext`t, 
-           Blank[]], 1]] := Switch[$CellContext`t, 1, 
-         Flatten[
-          Prepend[
-           MapThread[# -> #2& , {
-             Characters[$CellContext`enc], {-2, -1, 1, 2}}], {
-           "D" -> 0, "T" -> Part[{-2, -1, 1, 2}, 
-              Part[
-               Position[
-                Characters[$CellContext`enc], "U"], 1, 1]]}]], 2, 
-         Flatten[
-          Prepend[
-           MapThread[# -> #2& , {
-             Characters[$CellContext`enc], {1, 2, 3, 4}}], {
-           "D" -> 0, "T" -> Part[{1, 2, 3, 4}, 
-              Part[
-               Position[
-                Characters[$CellContext`enc], "U"], 1, 1]]}]], 3, 
-         Flatten[
-          Prepend[
-           MapThread[# -> #2& , {
-             Characters[$CellContext`enc], {-2, -1, 1, 2}}], {
-           "D" -> 0, "-" -> 0, "T" -> Part[{-2, -1, 1, 2}, 
-              Part[
-               Position[
-                Characters[$CellContext`enc], "U"], 1, 
-               1]]}]]], $CellContext`GC[
-         Pattern[$CellContext`x, 
-          Blank[]], 
-         Optional[
-          Pattern[$CellContext`enc, 
-           Blank[]], "ACGU"], 
-         Optional[
-          Pattern[$CellContext`t, 
-           Blank[]], 1]] := Which[
-         MemberQ[
-          Map[Flatten[
-            $CellContext`points[{#}, $CellContext`enc, $CellContext`t], 1]& , 
-           $CellContext`f["Ala"]], $CellContext`x], "A", 
-         MemberQ[
-          Map[Flatten[
-            $CellContext`points[{#}, $CellContext`enc, $CellContext`t], 1]& , 
-           $CellContext`f["Cys"]], $CellContext`x], "C", 
-         MemberQ[
-          Map[Flatten[
-            $CellContext`points[{#}, $CellContext`enc, $CellContext`t], 1]& , 
-           $CellContext`f["Asp"]], $CellContext`x], "D", 
-         MemberQ[
-          Map[Flatten[
-            $CellContext`points[{#}, $CellContext`enc, $CellContext`t], 1]& , 
-           $CellContext`f["Glu"]], $CellContext`x], "E", 
-         MemberQ[
-          Map[Flatten[
-            $CellContext`points[{#}, $CellContext`enc, $CellContext`t], 1]& , 
-           $CellContext`f["Phe"]], $CellContext`x], "F", 
-         MemberQ[
-          Map[Flatten[
-            $CellContext`points[{#}, $CellContext`enc, $CellContext`t], 1]& , 
-           $CellContext`f["Gly"]], $CellContext`x], "G", 
-         MemberQ[
-          Map[Flatten[
-            $CellContext`points[{#}, $CellContext`enc, $CellContext`t], 1]& , 
-           $CellContext`f["His"]], $CellContext`x], "H", 
-         MemberQ[
-          Map[Flatten[
-            $CellContext`points[{#}, $CellContext`enc, $CellContext`t], 1]& , 
-           $CellContext`f["Ile"]], $CellContext`x], "I", 
-         MemberQ[
-          Map[Flatten[
-            $CellContext`points[{#}, $CellContext`enc, $CellContext`t], 1]& , 
-           $CellContext`f["Lys"]], $CellContext`x], "K", 
-         MemberQ[
-          Map[Flatten[
-            $CellContext`points[{#}, $CellContext`enc, $CellContext`t], 1]& , 
-           $CellContext`f["Leu"]], $CellContext`x], "L", 
-         MemberQ[
-          Map[Flatten[
-            $CellContext`points[{#}, $CellContext`enc, $CellContext`t], 1]& , 
-           $CellContext`f["Met"]], $CellContext`x], "M", 
-         MemberQ[
-          Map[Flatten[
-            $CellContext`points[{#}, $CellContext`enc, $CellContext`t], 1]& , 
-           $CellContext`f["Asn"]], $CellContext`x], "N", 
-         MemberQ[
-          Map[Flatten[
-            $CellContext`points[{#}, $CellContext`enc, $CellContext`t], 1]& , 
-           $CellContext`f["Pro"]], $CellContext`x], "P", 
-         MemberQ[
-          Map[Flatten[
-            $CellContext`points[{#}, $CellContext`enc, $CellContext`t], 1]& , 
-           $CellContext`f["Gln"]], $CellContext`x], "Q", 
-         MemberQ[
-          Map[Flatten[
-            $CellContext`points[{#}, $CellContext`enc, $CellContext`t], 1]& , 
-           $CellContext`f["Arg"]], $CellContext`x], "R", 
-         MemberQ[
-          Map[Flatten[
-            $CellContext`points[{#}, $CellContext`enc, $CellContext`t], 1]& , 
-           $CellContext`f["Ser"]], $CellContext`x], "S", 
-         MemberQ[
-          Map[Flatten[
-            $CellContext`points[{#}, $CellContext`enc, $CellContext`t], 1]& , 
-           $CellContext`f["Thr"]], $CellContext`x], "T", 
-         MemberQ[
-          Map[Flatten[
-            $CellContext`points[{#}, $CellContext`enc, $CellContext`t], 1]& , 
-           $CellContext`f["Val"]], $CellContext`x], "V", 
-         MemberQ[
-          Map[Flatten[
-            $CellContext`points[{#}, $CellContext`enc, $CellContext`t], 1]& , 
-           $CellContext`f["Trp"]], $CellContext`x], "W", 
-         MemberQ[
-          Map[Flatten[
-            $CellContext`points[{#}, $CellContext`enc, $CellContext`t], 1]& , 
-           $CellContext`f["Tyr"]], $CellContext`x], "Y", 
-         MemberQ[
-          Map[Flatten[
-            $CellContext`points[{#}, $CellContext`enc, $CellContext`t], 1]& , 
-           $CellContext`f["Stop"]], $CellContext`x], "-", 
-         MemberQ[
-          Map[Flatten[
-            $CellContext`points[{#}, $CellContext`enc, $CellContext`t], 1]& , 
-           $CellContext`f["Vertical Plane XDZ"]], $CellContext`x], "-", 
-         MemberQ[
-          Map[Flatten[
-            $CellContext`points[{#}, $CellContext`enc, $CellContext`t], 1]& , 
-           $CellContext`f["Vertical Plane DXZ"]], $CellContext`x], "-", 
-         MemberQ[
-          Map[Flatten[
-            $CellContext`points[{#}, $CellContext`enc, $CellContext`t], 1]& , 
-           $CellContext`f["Vertical Plane XYD"]], $CellContext`x], "-", 
-         MemberQ[
-          Map[Flatten[
-            $CellContext`points[{#}, $CellContext`enc, $CellContext`t], 1]& , 
-           
-           Union[$CellContext`PlaneXDZ, $CellContext`PlaneDYZ, \
-$CellContext`PlaneXYD]], $CellContext`x], "-"], $CellContext`tripletes[
-         Pattern[$CellContext`tr, 
-          Blank[]], 
-         Optional[
-          Pattern[$CellContext`enc, 
-           Blank[]], "ACGU"], 
-         Optional[
-          Pattern[$CellContext`t, 
-           Blank[]], 2]] := Map[ReplaceAll[#, 
-          $CellContext`decoding[$CellContext`enc, $CellContext`t]]& , \
-$CellContext`tr], $CellContext`decoding[
-         Optional[
-          Pattern[$CellContext`enc, 
-           Blank[]], "ACGU"], 
-         Optional[
-          Pattern[$CellContext`t, 
-           Blank[]], 1]] := Switch[$CellContext`t, 1, 
-         Prepend[
-          MapThread[# -> #2& , {{-2, -1, 1, 2}, 
-            Characters[$CellContext`enc]}], 0 -> "D"], 2, 
-         Prepend[
-          MapThread[# -> #2& , {{1, 2, 3, 4}, 
-            Characters[$CellContext`enc]}], 0 -> "D"]], $CellContext`Add[
-         Pattern[$CellContext`x, 
-          Blank[]], 
-         Pattern[$CellContext`y, 
-          Blank[]]] := Flatten[
-         Map[
-          Function[$CellContext`b, 
-           Map[
-           Mod[# + $CellContext`b, 5]& , $CellContext`x]], $CellContext`y], 
-         1], $CellContext`Productos[
-         Pattern[$CellContext`x, 
-          Blank[]], 
-         Pattern[$CellContext`y, 
-          Blank[]]] := Flatten[
-         Map[
-          Function[$CellContext`b, 
-           Map[Mod[# $CellContext`b, 5]& , $CellContext`x]], $CellContext`y], 
-         1], $CellContext`TripletCoordinates[
-         Pattern[$CellContext`trd, 
-          Blank[]], 
-         Pattern[$CellContext`crd, 
-          Blank[]], 
-         Pattern[$CellContext`style, 
-          Blank[]], 
-         Pattern[$CellContext`col, 
-          Blank[]], 
-         Pattern[$CellContext`font, 
-          Blank[]]] := MapThread[Text[
-          
-          Style[#, 8, FontFamily -> "Times New Roman", 
-           FontWeight -> $CellContext`style, $CellContext`col, \
-$CellContext`font], #2]& , {$CellContext`trd, $CellContext`crd}], \
-$CellContext`VerticalPlaneCoordinatesY[
-         Pattern[$CellContext`y, 
-          Blank[]], 
-         Pattern[$CellContext`c, 
-          Blank[]], 
-         Optional[
-          Pattern[$CellContext`t, 
-           Blank[]], 1]] := If[$CellContext`t == 1, 
-         Table[
-          
-          Polygon[{{$CellContext`x, $CellContext`y, $CellContext`z}, \
-{$CellContext`x, $CellContext`y, $CellContext`z + 1}, {$CellContext`x + 
-             1, $CellContext`y, $CellContext`z + 1}, {$CellContext`x + 
-             1, $CellContext`y, $CellContext`z}}], {$CellContext`x, -2, \
-$CellContext`c}, {$CellContext`z, -2, $CellContext`c}], 
-         Table[
-          
-          Polygon[{{$CellContext`x, $CellContext`y, $CellContext`z}, \
-{$CellContext`x, $CellContext`y, $CellContext`z + 1}, {$CellContext`x + 
-             1, $CellContext`y, $CellContext`z + 1}, {$CellContext`x + 
-             1, $CellContext`y, $CellContext`z}}], {$CellContext`x, 
-           0, $CellContext`c}, {$CellContext`z, 
-           0, $CellContext`c}]], $CellContext`VerticalPlaneCoordinatesX[
-         Pattern[$CellContext`x, 
-          Blank[]], 
-         Pattern[$CellContext`c, 
-          Blank[]], 
-         Optional[
-          Pattern[$CellContext`t, 
-           Blank[]], 1]] := If[$CellContext`t == 1, 
-         Table[
-          
-          Polygon[{{$CellContext`x, $CellContext`y, $CellContext`z}, \
-{$CellContext`x, $CellContext`y, $CellContext`z + 
-             1}, {$CellContext`x, $CellContext`y + 1, $CellContext`z + 
-             1}, {$CellContext`x, $CellContext`y + 
-             1, $CellContext`z}}], {$CellContext`y, -2, $CellContext`c}, \
-{$CellContext`z, -2, $CellContext`c}], 
-         Table[
-          
-          Polygon[{{$CellContext`x, $CellContext`y, $CellContext`z}, \
-{$CellContext`x, $CellContext`y, $CellContext`z + 
-             1}, {$CellContext`x, $CellContext`y + 1, $CellContext`z + 
-             1}, {$CellContext`x, $CellContext`y + 
-             1, $CellContext`z}}], {$CellContext`y, 
-           0, $CellContext`c}, {$CellContext`z, 
-           0, $CellContext`c}]], $CellContext`HorizontalPlaneCoordinates[
-         Pattern[$CellContext`z, 
-          Blank[]], 
-         Pattern[$CellContext`c, 
-          Blank[]], 
-         Optional[
-          Pattern[$CellContext`t, 
-           Blank[]], 1]] := If[$CellContext`t == 1, 
-         Table[
-          
-          Polygon[{{$CellContext`x, $CellContext`y, $CellContext`z}, \
-{$CellContext`x, $CellContext`y + 1, $CellContext`z}, {$CellContext`x + 
-             1, $CellContext`y + 1, $CellContext`z}, {$CellContext`x + 
-             1, $CellContext`y, $CellContext`z}}], {$CellContext`x, -2, \
-$CellContext`c}, {$CellContext`y, -2, $CellContext`c}], 
-         Table[
-          
-          Polygon[{{$CellContext`x, $CellContext`y, $CellContext`z}, \
-{$CellContext`x, $CellContext`y + 1, $CellContext`z}, {$CellContext`x + 
-             1, $CellContext`y + 1, $CellContext`z}, {$CellContext`x + 
-             1, $CellContext`y, $CellContext`z}}], {$CellContext`x, 
-           0, $CellContext`c}, {$CellContext`y, 0, $CellContext`c}], Null]}; 
-     Typeset`initDone$$ = True),
     SynchronousInitialization->True,
     UndoTrackedVariables:>{Typeset`show$$, Typeset`bookmarkMode$$},
     UnsavedVariables:>{Typeset`initDone$$},
     UntrackedVariables:>{Typeset`size$$}], "Manipulate",
    Deployed->True,
    StripOnInput->False],
-  Manipulate`InterpretManipulate[1]]], "Output",ExpressionUUID->"0c2de3fa-\
-adea-4959-93d9-eac70f0143f1"]
-}, {2}]],
+  Manipulate`InterpretManipulate[1]]], "Output",
+ CellLabel->
+  "Out[102]=",ExpressionUUID->"f88a78d6-d4a8-41ad-877d-800e4546e16e"]
+}, Open  ]],
 
 Cell[CellGroupData[{
 
@@ -15022,8 +15011,9 @@ cubes\>\"", ",", "\"\<6. Dihedral groups\>\"", ",",
        ",", "\"\<References\>\""}], "}"}]}], "}"}], ",", 
    RowBox[{"Paneled", "\[Rule]", "False"}], ",", 
    RowBox[{"SaveDefinitions", "\[Rule]", "True"}]}], "]"}]}], "Input",
- InitializationCell->
-  True,ExpressionUUID->"52807ff4-0faa-42b9-8e34-397217fd2c39"],
+ InitializationCell->True,
+ CellLabel->
+  "In[103]:=",ExpressionUUID->"52807ff4-0faa-42b9-8e34-397217fd2c39"],
 
 Cell[BoxData[
  TagBox[
@@ -15046,15 +15036,13 @@ Cell[BoxData[
        "5.1. The multiplication of two genetic-code cubes", 
        "5.2. Cayley multiplications table for all pairs of cubes", 
        "6. Dihedral groups", "7. Klein four groups", "8. Concluding remarks", 
-       "References"}}}, Typeset`size$$ = {0., {0., 7.}}, Typeset`update$$ = 0,
-     Typeset`initDone$$, Typeset`skipInitDone$$ = 
-    False, $CellContext`tag$42414$$ = 0}, 
+       "References"}}}, Typeset`size$$ = {0., {0., 5.}}, Typeset`update$$ = 0,
+     Typeset`initDone$$, Typeset`skipInitDone$$ = False}, 
     DynamicBox[Manipulate`ManipulateBoxes[
      1, StandardForm, 
       "Variables" :> {$CellContext`tag$$ = 
         "4. The inner product of two codons and codon norm on R^3"}, 
-      "ControllerVariables" :> {
-        Hold[$CellContext`tag$$, $CellContext`tag$42414$$, 0]}, 
+      "ControllerVariables" :> {}, 
       "OtherVariables" :> {
        Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
         Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
@@ -15076,13 +15064,13 @@ Cell[BoxData[
           "6. Dihedral groups", "7. Klein four groups", 
           "8. Concluding remarks", "References"}}}, 
       "Options" :> {Paneled -> False}, "DefaultOptions" :> {}],
-     ImageSizeCache->{474., {46., 53.}},
+     ImageSizeCache->{257., {32.35052490234375, 36.64947509765625}},
      SingleEvaluation->True],
     Deinitialization:>None,
     DynamicModuleValues:>{},
-    Initialization:>({$CellContext`content[
-         Pattern[$CellContext`tag, 
-          Blank[]]] := Module[{}, NotebookLocate[$CellContext`tag]; ""]}; 
+    Initialization:>($CellContext`content[
+        Pattern[$CellContext`tag, 
+         Blank[]]] := Module[{}, NotebookLocate[$CellContext`tag]; ""]; 
      Typeset`initDone$$ = True),
     SynchronousInitialization->True,
     UndoTrackedVariables:>{Typeset`show$$, Typeset`bookmarkMode$$},
@@ -15090,9 +15078,10 @@ Cell[BoxData[
     UntrackedVariables:>{Typeset`size$$}], "Manipulate",
    Deployed->True,
    StripOnInput->False],
-  Manipulate`InterpretManipulate[1]]], "Output",ExpressionUUID->"694a10c2-\
-7b4b-4bf9-ad7a-925f1862cc3b"]
-}, {2}]]
+  Manipulate`InterpretManipulate[1]]], "Output",
+ CellLabel->
+  "Out[104]=",ExpressionUUID->"b687fbfc-e5e3-48c1-86cc-00fe6c28fc22"]
+}, Open  ]]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -15653,15 +15642,16 @@ Cell[BoxData[{
    RowBox[{"SaveDefinitions", "\[Rule]", "True"}]}], "\[IndentingNewLine]", 
   "]"}]}], "Input",
  CellMargins->{{46, 46}, {10, 30}},
- InitializationCell->
-  True,ExpressionUUID->"f2b6ab2e-0476-4eb8-bc81-9faca02b61e0"],
+ InitializationCell->True,
+ CellLabel->
+  "In[105]:=",ExpressionUUID->"f2b6ab2e-0476-4eb8-bc81-9faca02b61e0"],
 
 Cell[BoxData[
  TagBox[
   StyleBox[
-   DynamicModuleBox[{$CellContext`codon$$ = "CUA", $CellContext`encode$$ = 
+   DynamicModuleBox[{$CellContext`codon$$ = "AAA", $CellContext`encode$$ = 
     Style["ACGU", Underlined, 
-     RGBColor[1, 0, 0], Bold], $CellContext`space$$ = 2, Typeset`show$$ = 
+     RGBColor[1, 0, 0], Bold], $CellContext`space$$ = 1, Typeset`show$$ = 
     True, Typeset`bookmarkList$$ = {}, Typeset`bookmarkMode$$ = "Menu", 
     Typeset`animator$$, Typeset`animvar$$ = 1, Typeset`name$$ = 
     "\"untitled\"", Typeset`specs$$ = {{
@@ -15745,18 +15735,14 @@ Cell[BoxData[
        "UAA", "UAC", "UAD", "UAG", "UAU", "UCA", "UCC", "UCD", "UCG", "UCU", 
        "UDA", "UDC", "UDD", "UDG", "UDU", "UGA", "UGC", "UGD", "UGG", "UGU", 
        "UUA", "UUC", "UUD", "UUG", "UUU"}}}, Typeset`size$$ = {
-    84., {3., 10.}}, Typeset`update$$ = 0, Typeset`initDone$$, 
-    Typeset`skipInitDone$$ = False, $CellContext`space$42438$$ = 
-    False, $CellContext`encode$42439$$ = 0, $CellContext`codon$42440$$ = 0}, 
+    44.5048828125, {2., 7.}}, Typeset`update$$ = 0, Typeset`initDone$$, 
+    Typeset`skipInitDone$$ = False}, 
     DynamicBox[Manipulate`ManipulateBoxes[
      1, StandardForm, 
       "Variables" :> {$CellContext`codon$$ = "AAA", $CellContext`encode$$ = 
         Style["ACGU", Underlined, 
           RGBColor[1, 0, 0], Bold], $CellContext`space$$ = 1}, 
-      "ControllerVariables" :> {
-        Hold[$CellContext`space$$, $CellContext`space$42438$$, False], 
-        Hold[$CellContext`encode$$, $CellContext`encode$42439$$, 0], 
-        Hold[$CellContext`codon$$, $CellContext`codon$42440$$, 0]}, 
+      "ControllerVariables" :> {}, 
       "OtherVariables" :> {
        Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
         Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
@@ -15846,7 +15832,7 @@ $CellContext`encode$$, $CellContext`space$$], "Specifications" :> {
           "UGG", "UGU", "UUA", "UUC", "UUD", "UUG", "UUU"}, ControlType -> 
          PopupMenu, ImageSize -> {70, 22}}}, "Options" :> {}, 
       "DefaultOptions" :> {}],
-     ImageSizeCache->{301., {113., 120.}},
+     ImageSizeCache->{184., {75.85052490234375, 80.14947509765625}},
      SingleEvaluation->True],
     Deinitialization:>None,
     DynamicModuleValues:>{},
@@ -15896,8 +15882,10 @@ $CellContext`encode$$, $CellContext`space$$], "Specifications" :> {
    Deployed->True,
    StripOnInput->False],
   Manipulate`InterpretManipulate[1]]], "Output",
- TextAlignment->Center,ExpressionUUID->"6969a582-1dce-4143-bf95-c4a6785648bc"]
-}, {2}]],
+ TextAlignment->Center,
+ CellLabel->
+  "Out[106]=",ExpressionUUID->"1eba62d2-aff3-4eec-9305-32c335f56292"]
+}, Open  ]],
 
 Cell[CellGroupData[{
 
@@ -16109,7 +16097,7 @@ Cell[BoxData[
     RowBox[{
      RowBox[{"inner1", "[", 
       RowBox[{
-       RowBox[{"enc_:", "\"\<ACGU\>\""}], ",", "space_"}], "]"}], ":=", 
+       RowBox[{"enc_", ":", "\"\<ACGU\>\""}], ",", "space_"}], "]"}], ":=", 
      RowBox[{"DynamicModule", "[", 
       RowBox[{
        RowBox[{"{", 
@@ -16438,7 +16426,9 @@ Cell[BoxData[
  CellMargins->{{46, 46}, {10, 30}},
  InitializationCell->True,
  FontFamily->"Courier New",
- FontSize->12,ExpressionUUID->"53922b45-c824-4bb7-9d37-ff150a60e18a"],
+ FontSize->12,
+ CellLabel->
+  "In[107]:=",ExpressionUUID->"53922b45-c824-4bb7-9d37-ff150a60e18a"],
 
 Cell[BoxData[
  TagBox[
@@ -16512,17 +16502,14 @@ Cell[BoxData[
        Style["UACG", 
         RGBColor[1, 0, 1], Bold], 
        Style["UCAG", 
-        RGBColor[1, 0, 1], Bold]}}}, Typeset`size$$ = {675., {25., 32.}}, 
-    Typeset`update$$ = 0, Typeset`initDone$$, Typeset`skipInitDone$$ = 
-    False, $CellContext`space$42468$$ = False, $CellContext`encode$42469$$ = 
-    0}, 
+        RGBColor[1, 0, 1], Bold]}}}, Typeset`size$$ = {
+    459.625, {14.7626953125, 17.8623046875}}, Typeset`update$$ = 0, 
+    Typeset`initDone$$, Typeset`skipInitDone$$ = False}, 
     DynamicBox[Manipulate`ManipulateBoxes[
      1, StandardForm, 
       "Variables" :> {$CellContext`encode$$ = Style["ACGU", Underlined, 
           RGBColor[1, 0, 0], Bold], $CellContext`space$$ = 1}, 
-      "ControllerVariables" :> {
-        Hold[$CellContext`space$$, $CellContext`space$42468$$, False], 
-        Hold[$CellContext`encode$$, $CellContext`encode$42469$$, 0]}, 
+      "ControllerVariables" :> {}, 
       "OtherVariables" :> {
        Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
         Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
@@ -16595,7 +16582,7 @@ Cell[BoxData[
           Style["UCAG", 
            RGBColor[1, 0, 1], Bold]}, ControlType -> PopupMenu, 
          ImageSize -> {80, 22}}}, "Options" :> {}, "DefaultOptions" :> {}],
-     ImageSizeCache->{730., {118., 125.}},
+     ImageSizeCache->{500., {76.85052490234375, 81.14947509765625}},
      SingleEvaluation->True],
     Deinitialization:>None,
     DynamicModuleValues:>{},
@@ -16631,9 +16618,9 @@ $CellContext`decode[
                  MenuStyle -> {FontSize -> 18, "Times New Roman"}], 
                 PopupMenu[
                  Dynamic[$CellContext`Z, Automatic], {
-                 "D", "A", "C", "G", "U"}, ImageSize -> {42, 25}, 
-                 MenuStyle -> {FontSize -> 18, "Times New Roman"}]}, 
-               TableDirections -> Row], 
+                 "D", "A", "C", "G", "U"}, ImageSize -> {42, 25}, MenuStyle -> 
+                 {FontSize -> 18, "Times New Roman"}]}, TableDirections -> 
+               Row], 
               MatrixForm[{
                 PopupMenu[
                  Dynamic[$CellContext`P, Automatic], {
@@ -16727,8 +16714,10 @@ $CellContext`decode[
    StripOnInput->False],
   Manipulate`InterpretManipulate[1]]], "Output",
  CellMargins->{{46, 46}, {10, 30}},
- TextAlignment->Center,ExpressionUUID->"10198156-3f40-44f7-a110-aee9471d9e7d"]
-}, {2}]]
+ TextAlignment->Center,
+ CellLabel->
+  "Out[108]=",ExpressionUUID->"83f237a9-cc59-4dbb-8d43-721d33d2503f"]
+}, Open  ]]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -16910,7 +16899,7 @@ Cell[BoxData[{
   RowBox[{
    RowBox[{"norm", "[", 
     RowBox[{
-     RowBox[{"enc_:", "\"\<ACGU\>\""}], ",", "space_"}], "]"}], ":=", 
+     RowBox[{"enc_", ":", "\"\<ACGU\>\""}], ",", "space_"}], "]"}], ":=", 
    RowBox[{"DynamicModule", "[", 
     RowBox[{
      RowBox[{"{", 
@@ -17152,7 +17141,9 @@ Cell[BoxData[{
  CellMargins->{{46, 46}, {10, 30}},
  InitializationCell->True,
  FontFamily->"Courier New",
- FontSize->12,ExpressionUUID->"127c25c7-d3ea-4cb8-a6e9-852857d05db8"],
+ FontSize->12,
+ CellLabel->
+  "In[109]:=",ExpressionUUID->"127c25c7-d3ea-4cb8-a6e9-852857d05db8"],
 
 Cell[BoxData[
  TagBox[
@@ -17226,16 +17217,14 @@ Cell[BoxData[
        Style["UACG", 
         RGBColor[1, 0, 1], Bold], 
        Style["UCAG", 
-        RGBColor[1, 0, 1], Bold]}}}, Typeset`size$$ = {423., {25., 32.}}, 
-    Typeset`update$$ = 0, Typeset`initDone$$, Typeset`skipInitDone$$ = 
-    False, $CellContext`space$3812$$ = False, $CellContext`encode$3813$$ = 0}, 
+        RGBColor[1, 0, 1], Bold]}}}, Typeset`size$$ = {
+    280.625, {14.7626953125, 17.8623046875}}, Typeset`update$$ = 0, 
+    Typeset`initDone$$, Typeset`skipInitDone$$ = False}, 
     DynamicBox[Manipulate`ManipulateBoxes[
      1, StandardForm, 
       "Variables" :> {$CellContext`encode$$ = Style["ACGU", Underlined, 
           RGBColor[1, 0, 0], Bold], $CellContext`space$$ = 1}, 
-      "ControllerVariables" :> {
-        Hold[$CellContext`space$$, $CellContext`space$3812$$, False], 
-        Hold[$CellContext`encode$$, $CellContext`encode$3813$$, 0]}, 
+      "ControllerVariables" :> {}, 
       "OtherVariables" :> {
        Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
         Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
@@ -17308,7 +17297,7 @@ Cell[BoxData[
           Style["UCAG", 
            RGBColor[1, 0, 1], Bold]}, ControlType -> PopupMenu, 
          ImageSize -> {80, 22}}}, "Options" :> {}, "DefaultOptions" :> {}],
-     ImageSizeCache->{478., {118., 125.}},
+     ImageSizeCache->{321., {76.85052490234375, 81.14947509765625}},
      SingleEvaluation->True],
     Deinitialization:>None,
     DynamicModuleValues:>{},
@@ -17414,8 +17403,10 @@ $CellContext`decode[
    Deployed->True,
    StripOnInput->False],
   Manipulate`InterpretManipulate[1]]], "Output",
- TextAlignment->Center,ExpressionUUID->"6b5cbe2d-c2b1-406e-b663-e467a4f8d40b"]
-}, {2}]],
+ TextAlignment->Center,
+ CellLabel->
+  "Out[110]=",ExpressionUUID->"bd78163f-a929-4987-b2d2-3b72722e257f"]
+}, Open  ]],
 
 Cell["", "Text",
  CellMargins->{{49.63636363636363, 46.}, {10., 30.}},
@@ -17511,8 +17502,9 @@ cubes\>\"", ",", "\"\<6. Dihedral groups\>\"", ",",
        ",", "\"\<References\>\""}], "}"}]}], "}"}], ",", 
    RowBox[{"Paneled", "\[Rule]", "False"}], ",", 
    RowBox[{"SaveDefinitions", "\[Rule]", "True"}]}], "]"}]}], "Input",
- InitializationCell->
-  True,ExpressionUUID->"70b7a87e-3e95-46d4-9417-763b45fa9dbb"],
+ InitializationCell->True,
+ CellLabel->
+  "In[111]:=",ExpressionUUID->"70b7a87e-3e95-46d4-9417-763b45fa9dbb"],
 
 Cell[BoxData[
  TagBox[
@@ -17535,15 +17527,13 @@ Cell[BoxData[
        "5.1. The multiplication of two genetic-code cubes", 
        "5.2. Cayley multiplications table for all pairs of cubes", 
        "6. Dihedral groups", "7. Klein four groups", "8. Concluding remarks", 
-       "References"}}}, Typeset`size$$ = {0., {0., 7.}}, Typeset`update$$ = 0,
-     Typeset`initDone$$, Typeset`skipInitDone$$ = 
-    False, $CellContext`tag$42542$$ = 0}, 
+       "References"}}}, Typeset`size$$ = {0., {0., 5.}}, Typeset`update$$ = 0,
+     Typeset`initDone$$, Typeset`skipInitDone$$ = False}, 
     DynamicBox[Manipulate`ManipulateBoxes[
      1, StandardForm, 
       "Variables" :> {$CellContext`tag$$ = 
         "5. Symmetric group defined over the set of genetic code cubes"}, 
-      "ControllerVariables" :> {
-        Hold[$CellContext`tag$$, $CellContext`tag$42542$$, 0]}, 
+      "ControllerVariables" :> {}, 
       "OtherVariables" :> {
        Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
         Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
@@ -17565,13 +17555,13 @@ Cell[BoxData[
           "6. Dihedral groups", "7. Klein four groups", 
           "8. Concluding remarks", "References"}}}, 
       "Options" :> {Paneled -> False}, "DefaultOptions" :> {}],
-     ImageSizeCache->{474., {46., 53.}},
+     ImageSizeCache->{257., {32.35052490234375, 36.64947509765625}},
      SingleEvaluation->True],
     Deinitialization:>None,
     DynamicModuleValues:>{},
-    Initialization:>({$CellContext`content[
-         Pattern[$CellContext`tag, 
-          Blank[]]] := Module[{}, NotebookLocate[$CellContext`tag]; ""]}; 
+    Initialization:>($CellContext`content[
+        Pattern[$CellContext`tag, 
+         Blank[]]] := Module[{}, NotebookLocate[$CellContext`tag]; ""]; 
      Typeset`initDone$$ = True),
     SynchronousInitialization->True,
     UndoTrackedVariables:>{Typeset`show$$, Typeset`bookmarkMode$$},
@@ -17579,9 +17569,10 @@ Cell[BoxData[
     UntrackedVariables:>{Typeset`size$$}], "Manipulate",
    Deployed->True,
    StripOnInput->False],
-  Manipulate`InterpretManipulate[1]]], "Output",ExpressionUUID->"dc869ec9-\
-4722-46df-8214-c0a5875381fe"]
-}, {2}]]
+  Manipulate`InterpretManipulate[1]]], "Output",
+ CellLabel->
+  "Out[112]=",ExpressionUUID->"49b5cfde-5dd5-4757-abc9-e2363ffee3d0"]
+}, Open  ]]
 }, Open  ]]
 }, Open  ]],
 
@@ -18266,8 +18257,9 @@ Cell[BoxData[{
    "\[IndentingNewLine]", 
    RowBox[{"SaveDefinitions", "\[Rule]", "True"}]}], "\[IndentingNewLine]", 
   "]"}]}], "Input",
- InitializationCell->
-  True,ExpressionUUID->"c69468dd-0f68-44b5-8873-2cfb8f5c8a03"],
+ InitializationCell->True,
+ CellLabel->
+  "In[113]:=",ExpressionUUID->"c69468dd-0f68-44b5-8873-2cfb8f5c8a03"],
 
 Cell[BoxData[
  TagBox[
@@ -18333,14 +18325,13 @@ Cell[BoxData[
        Style["UACG", 
         RGBColor[1, 0, 1], Bold], 
        Style["UCAG", 
-        RGBColor[1, 0, 1], Bold]}}}, Typeset`size$$ = {411., {29.5, 36.5}}, 
-    Typeset`update$$ = 0, Typeset`initDone$$, Typeset`skipInitDone$$ = 
-    False, $CellContext`baseorder$42565$$ = 0}, 
+        RGBColor[1, 0, 1], Bold]}}}, Typeset`size$$ = {
+    285., {20.425524902343753`, 24.724475097656253`}}, Typeset`update$$ = 0, 
+    Typeset`initDone$$, Typeset`skipInitDone$$ = False}, 
     DynamicBox[Manipulate`ManipulateBoxes[
      1, StandardForm, 
       "Variables" :> {$CellContext`baseorder$$ = Style["ACGU", Underlined, 
-          RGBColor[1, 0, 0], Bold]}, "ControllerVariables" :> {
-        Hold[$CellContext`baseorder$$, $CellContext`baseorder$42565$$, 0]}, 
+          RGBColor[1, 0, 0], Bold]}, "ControllerVariables" :> {}, 
       "OtherVariables" :> {
        Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
         Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
@@ -18404,7 +18395,7 @@ Cell[BoxData[
           Style["UCAG", 
            RGBColor[1, 0, 1], Bold]}, ControlType -> PopupMenu, 
          ImageSize -> {80, 22}}}, "Options" :> {}, "DefaultOptions" :> {}],
-     ImageSizeCache->{466., {100., 107.}},
+     ImageSizeCache->{325., {69.85052490234375, 74.14947509765625}},
      SingleEvaluation->True],
     Deinitialization:>None,
     DynamicModuleValues:>{},
@@ -18558,8 +18549,10 @@ $CellContext`SW1 = {"ACGU", "AGCU", "UCGA", "UGCA"}, $CellContext`SW2 = {
     UntrackedVariables:>{Typeset`size$$}], "Manipulate",
    Deployed->True,
    StripOnInput->False],
-  Manipulate`InterpretManipulate[1]]], "Output",ExpressionUUID->"f609573a-161d-4259-8238-1a3d9b3f20a8"]
-}, {2}]],
+  Manipulate`InterpretManipulate[1]]], "Output",
+ CellLabel->
+  "Out[114]=",ExpressionUUID->"d83ddd87-dbf9-4c1b-acd4-deef8e88ca73"]
+}, Open  ]],
 
 Cell["Or the simplest usual way: (CGUA) \[SmallCircle] (UGCA) = (AUGC) ", \
 "Text",ExpressionUUID->"03d89a9b-7f8b-4971-96e7-cbb7392b9a56"],
@@ -18736,8 +18729,9 @@ Cell[BoxData[{
    "\[IndentingNewLine]", 
    RowBox[{"SaveDefinitions", "\[Rule]", "True"}]}], "\[IndentingNewLine]", 
   "]"}]}], "Input",
- InitializationCell->
-  True,ExpressionUUID->"dbf6b001-1caf-4555-b1ea-15ee4e860250"],
+ InitializationCell->True,
+ CellLabel->
+  "In[115]:=",ExpressionUUID->"dbf6b001-1caf-4555-b1ea-15ee4e860250"],
 
 Cell[BoxData[
  TagBox[
@@ -18803,14 +18797,13 @@ Cell[BoxData[
        Style["UACG", 
         RGBColor[1, 0, 1], Bold], 
        Style["UCAG", 
-        RGBColor[1, 0, 1], Bold]}}}, Typeset`size$$ = {338., {15., 22.}}, 
-    Typeset`update$$ = 0, Typeset`initDone$$, Typeset`skipInitDone$$ = 
-    False, $CellContext`baseorder$42598$$ = 0}, 
+        RGBColor[1, 0, 1], Bold]}}}, Typeset`size$$ = {
+    234., {10.42552490234375, 14.72447509765625}}, Typeset`update$$ = 0, 
+    Typeset`initDone$$, Typeset`skipInitDone$$ = False}, 
     DynamicBox[Manipulate`ManipulateBoxes[
      1, StandardForm, 
       "Variables" :> {$CellContext`baseorder$$ = Style["ACGU", Underlined, 
-          RGBColor[1, 0, 0], Bold]}, "ControllerVariables" :> {
-        Hold[$CellContext`baseorder$$, $CellContext`baseorder$42598$$, 0]}, 
+          RGBColor[1, 0, 0], Bold]}, "ControllerVariables" :> {}, 
       "OtherVariables" :> {
        Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
         Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
@@ -18874,7 +18867,7 @@ Cell[BoxData[
           Style["UCAG", 
            RGBColor[1, 0, 1], Bold]}, ControlType -> PopupMenu, 
          ImageSize -> {80, 22}}}, "Options" :> {}, "DefaultOptions" :> {}],
-     ImageSizeCache->{393., {85., 92.}},
+     ImageSizeCache->{274., {59.85052490234375, 64.14947509765625}},
      SingleEvaluation->True],
     Deinitialization:>None,
     DynamicModuleValues:>{},
@@ -18987,7 +18980,6 @@ $CellContext`baseorder]], $CellContext`baseorder], $CellContext`Cycle2Cube[
            Style[$CellContext`cube, Red, Bold, 
             FontFamily -> $CellContext`family, $CellContext`size], 
            MemberQ[$CellContext`YR1, $CellContext`cube], 
-           
            Style[$CellContext`cube, Underlined, Blue, Bold, 
             FontFamily -> $CellContext`family, $CellContext`size], 
            MemberQ[$CellContext`YR2, $CellContext`cube], 
@@ -19024,9 +19016,10 @@ $CellContext`SW1 = {"ACGU", "AGCU", "UCGA", "UGCA"}, $CellContext`SW2 = {
     UntrackedVariables:>{Typeset`size$$}], "Manipulate",
    Deployed->True,
    StripOnInput->False],
-  Manipulate`InterpretManipulate[1]]], "Output",ExpressionUUID->"f67ff4f3-\
-ce4b-4eb8-b65d-701dd1a9d844"]
-}, {2}]],
+  Manipulate`InterpretManipulate[1]]], "Output",
+ CellLabel->
+  "Out[116]=",ExpressionUUID->"b7a4b270-214f-4f38-bc91-cb7ec818cd37"]
+}, Open  ]],
 
 Cell[TextData[{
  "Group ",
@@ -19188,8 +19181,9 @@ cubes\>\"", ",", "\"\<6. Dihedral groups\>\"", ",",
        ",", "\"\<References\>\""}], "}"}]}], "}"}], ",", 
    RowBox[{"Paneled", "\[Rule]", "False"}], ",", 
    RowBox[{"SaveDefinitions", "\[Rule]", "True"}]}], "]"}]}], "Input",
- InitializationCell->
-  True,ExpressionUUID->"8d5190ce-463d-434f-b4e8-ee0c2d9f9772"],
+ InitializationCell->True,
+ CellLabel->
+  "In[117]:=",ExpressionUUID->"8d5190ce-463d-434f-b4e8-ee0c2d9f9772"],
 
 Cell[BoxData[
  TagBox[
@@ -19212,15 +19206,13 @@ Cell[BoxData[
        "5.1. The multiplication of two genetic-code cubes", 
        "5.2. Cayley multiplications table for all pairs of cubes", 
        "6. Dihedral groups", "7. Klein four groups", "8. Concluding remarks", 
-       "References"}}}, Typeset`size$$ = {0., {0., 7.}}, Typeset`update$$ = 0,
-     Typeset`initDone$$, Typeset`skipInitDone$$ = 
-    False, $CellContext`tag$42627$$ = 0}, 
+       "References"}}}, Typeset`size$$ = {0., {0., 5.}}, Typeset`update$$ = 0,
+     Typeset`initDone$$, Typeset`skipInitDone$$ = False}, 
     DynamicBox[Manipulate`ManipulateBoxes[
      1, StandardForm, 
       "Variables" :> {$CellContext`tag$$ = 
         "5.2. Cayley multiplications table for all pairs of cubes"}, 
-      "ControllerVariables" :> {
-        Hold[$CellContext`tag$$, $CellContext`tag$42627$$, 0]}, 
+      "ControllerVariables" :> {}, 
       "OtherVariables" :> {
        Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
         Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
@@ -19242,13 +19234,13 @@ Cell[BoxData[
           "6. Dihedral groups", "7. Klein four groups", 
           "8. Concluding remarks", "References"}}}, 
       "Options" :> {Paneled -> False}, "DefaultOptions" :> {}],
-     ImageSizeCache->{474., {46., 53.}},
+     ImageSizeCache->{257., {32.35052490234375, 36.64947509765625}},
      SingleEvaluation->True],
     Deinitialization:>None,
     DynamicModuleValues:>{},
-    Initialization:>({$CellContext`content[
-         Pattern[$CellContext`tag, 
-          Blank[]]] := Module[{}, NotebookLocate[$CellContext`tag]; ""]}; 
+    Initialization:>($CellContext`content[
+        Pattern[$CellContext`tag, 
+         Blank[]]] := Module[{}, NotebookLocate[$CellContext`tag]; ""]; 
      Typeset`initDone$$ = True),
     SynchronousInitialization->True,
     UndoTrackedVariables:>{Typeset`show$$, Typeset`bookmarkMode$$},
@@ -19256,9 +19248,10 @@ Cell[BoxData[
     UntrackedVariables:>{Typeset`size$$}], "Manipulate",
    Deployed->True,
    StripOnInput->False],
-  Manipulate`InterpretManipulate[1]]], "Output",ExpressionUUID->"4ac5e7e1-\
-372d-4f8a-bcd4-d263773bb847"]
-}, {2}]]
+  Manipulate`InterpretManipulate[1]]], "Output",
+ CellLabel->
+  "Out[118]=",ExpressionUUID->"c12e8846-6724-4fd2-8e50-8b113af99173"]
+}, Open  ]]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -19765,7 +19758,9 @@ Cell[BoxData[{
    RowBox[{"SaveDefinitions", "\[Rule]", "True"}]}], "\[IndentingNewLine]", 
   "]"}]}], "Input",
  InitializationCell->True,
- TextJustification->1.,ExpressionUUID->"f759a55f-5e49-4d30-a0a4-8e25b9b9e298"],
+ TextJustification->1.,
+ CellLabel->
+  "In[119]:=",ExpressionUUID->"f759a55f-5e49-4d30-a0a4-8e25b9b9e298"],
 
 Cell[BoxData[
  TagBox[
@@ -19843,20 +19838,14 @@ Cell[BoxData[
        Hold[$CellContext`family$$], "Courier", 
        Style["Font family", FontWeight -> Bold, FontSize -> 14]}, {
       "Courier", "Times", "Helvetica"}}}, Typeset`size$$ = {
-    1176., {247.5, 254.5}}, Typeset`update$$ = 0, Typeset`initDone$$, 
-    Typeset`skipInitDone$$ = False, $CellContext`baseorder$42651$$ = 
-    0, $CellContext`ind$42652$$ = False, $CellContext`Size$42653$$ = 
-    0, $CellContext`family$42654$$ = 0}, 
+    846., {180.5505249023437, 184.8494750976562}}, Typeset`update$$ = 0, 
+    Typeset`initDone$$, Typeset`skipInitDone$$ = False}, 
     DynamicBox[Manipulate`ManipulateBoxes[
      1, StandardForm, 
       "Variables" :> {$CellContext`baseorder$$ = Style["ACGU", Underlined, 
           RGBColor[1, 0, 0], Bold], $CellContext`family$$ = 
         "Courier", $CellContext`ind$$ = False, $CellContext`Size$$ = 11}, 
-      "ControllerVariables" :> {
-        Hold[$CellContext`baseorder$$, $CellContext`baseorder$42651$$, 0], 
-        Hold[$CellContext`ind$$, $CellContext`ind$42652$$, False], 
-        Hold[$CellContext`Size$$, $CellContext`Size$42653$$, 0], 
-        Hold[$CellContext`family$$, $CellContext`family$42654$$, 0]}, 
+      "ControllerVariables" :> {}, 
       "OtherVariables" :> {
        Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
         Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
@@ -19932,7 +19921,7 @@ $CellContext`ind$$, $CellContext`Size$$, $CellContext`family$$],
          "Courier", "Times", "Helvetica"}, ControlType -> PopupMenu, 
          ImageSize -> {100, 22}, ControlPlacement -> Top}}, "Options" :> {}, 
       "DefaultOptions" :> {}],
-     ImageSizeCache->{1231., {358., 365.}},
+     ImageSizeCache->{886., {256.35052490234375`, 260.64947509765625`}},
      SingleEvaluation->True],
     Deinitialization:>None,
     DynamicModuleValues:>{},
@@ -20128,9 +20117,10 @@ $CellContext`SW1 = {"ACGU", "AGCU", "UCGA", "UGCA"}, $CellContext`SW2 = {
     UntrackedVariables:>{Typeset`size$$}], "Manipulate",
    Deployed->True,
    StripOnInput->False],
-  Manipulate`InterpretManipulate[1]]], "Output",ExpressionUUID->"f1710267-\
-ac8d-4b1b-93e3-694f10236be4"]
-}, {2}]],
+  Manipulate`InterpretManipulate[1]]], "Output",
+ CellLabel->
+  "Out[120]=",ExpressionUUID->"0e7c2e43-b8a6-4da7-88fb-7db4acf9c38b"]
+}, Open  ]],
 
 Cell[TextData[{
  "Notice that inside the first row of blocks with  8 x 8 elements, colors are \
@@ -20479,8 +20469,9 @@ Cell[BoxData[
    "\[IndentingNewLine]", 
    RowBox[{"SaveDefinitions", "\[Rule]", "True"}]}], "\[IndentingNewLine]", 
   "]"}]], "Input",
- InitializationCell->
-  True,ExpressionUUID->"514af99e-e8e8-4460-b58b-a2002d7a52bc"],
+ InitializationCell->True,
+ CellLabel->
+  "In[121]:=",ExpressionUUID->"514af99e-e8e8-4460-b58b-a2002d7a52bc"],
 
 Cell[BoxData[
  TagBox[
@@ -20585,12 +20576,8 @@ ciNuxMX+V8zH+thezCVcwiVcwiVcyqVcyqVcymW+J+MyLuMybqn4BacAMF4=
       1110, 1135, 1160, 1185, 1210, 1235, 1260, 1285, 1310, 1335, 1360, 1385, 
       1410, 1435, 1460, 1485, 1510, 1535, 1560, 1585, 1610, 1635, 1660, 1685, 
       1710, 1735, 1760, 1785, 1810, 1835, 1860, 1885, 1910, 1935, 1960, 
-      1985}}}, Typeset`size$$ = {671., {321., 327.}}, Typeset`update$$ = 0, 
-    Typeset`initDone$$, Typeset`skipInitDone$$ = 
-    False, $CellContext`group$43259$$ = 0, $CellContext`baseorder$43260$$ = 
-    0, $CellContext`vertexSize$43261$$ = 0, $CellContext`vertexShape$43262$$ =
-     0, $CellContext`family$43263$$ = 0, $CellContext`Size$43264$$ = 
-    0, $CellContext`graphsize$43265$$ = 0}, 
+      1985}}}, Typeset`size$$ = {457.5, {218., 221.02925502105472`}}, 
+    Typeset`update$$ = 0, Typeset`initDone$$, Typeset`skipInitDone$$ = False}, 
     DynamicBox[Manipulate`ManipulateBoxes[
      1, StandardForm, 
       "Variables" :> {$CellContext`baseorder$$ = Style["ACGU", Underlined, 
@@ -20599,14 +20586,8 @@ ciNuxMX+V8zH+thezCVcwiVcwiVcyqVcyqVcymW+J+MyLuMybqn4BacAMF4=
         "Symmetric Group", $CellContext`Size$$ = 
         9, $CellContext`vertexColor$$ = 
         GrayLevel[0.85], $CellContext`vertexShape$$ = 
-        "Circle", $CellContext`vertexSize$$ = 0.5}, "ControllerVariables" :> {
-        Hold[$CellContext`group$$, $CellContext`group$43259$$, 0], 
-        Hold[$CellContext`baseorder$$, $CellContext`baseorder$43260$$, 0], 
-        Hold[$CellContext`vertexSize$$, $CellContext`vertexSize$43261$$, 0], 
-        Hold[$CellContext`vertexShape$$, $CellContext`vertexShape$43262$$, 0], 
-        Hold[$CellContext`family$$, $CellContext`family$43263$$, 0], 
-        Hold[$CellContext`Size$$, $CellContext`Size$43264$$, 0], 
-        Hold[$CellContext`graphsize$$, $CellContext`graphsize$43265$$, 0]}, 
+        "Circle", $CellContext`vertexSize$$ = 0.5}, 
+      "ControllerVariables" :> {}, 
       "OtherVariables" :> {
        Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
         Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
@@ -20715,7 +20696,7 @@ ciNuxMX+V8zH+thezCVcwiVcwiVcyqVcyqVcymW+J+MyLuMybqn4BacAMF4=
          1910, 1935, 1960, 1985}, ControlType -> PopupMenu, 
          ImageSize -> {60, 22}, ControlPlacement -> Left}}, "Options" :> {}, 
       "DefaultOptions" :> {}],
-     ImageSizeCache->{960., {397., 404.}},
+     ImageSizeCache->{660., {269.85052490234375`, 274.14947509765625`}},
      SingleEvaluation->True],
     Deinitialization:>None,
     DynamicModuleValues:>{},
@@ -20836,9 +20817,10 @@ $CellContext`SW1 = {"ACGU", "AGCU", "UCGA", "UGCA"}, $CellContext`SW2 = {
     UntrackedVariables:>{Typeset`size$$}], "Manipulate",
    Deployed->True,
    StripOnInput->False],
-  Manipulate`InterpretManipulate[1]]], "Output",ExpressionUUID->"b148172c-\
-bca8-4f89-852e-69ae0af6cb87"]
-}, {2}]],
+  Manipulate`InterpretManipulate[1]]], "Output",
+ CellLabel->
+  "Out[121]=",ExpressionUUID->"a1184ad3-89e7-46ea-9874-804a7872747f"]
+}, Open  ]],
 
 Cell[TextData[{
  "The vertexes located over the center imaginary plane of the Cayley graph \
@@ -21297,8 +21279,9 @@ cubes\>\"", ",", "\"\<6. Dihedral groups\>\"", ",",
        ",", "\"\<References\>\""}], "}"}]}], "}"}], ",", 
    RowBox[{"Paneled", "\[Rule]", "False"}], ",", 
    RowBox[{"SaveDefinitions", "\[Rule]", "True"}]}], "]"}]}], "Input",
- InitializationCell->
-  True,ExpressionUUID->"a53cee15-7b14-4475-ab6b-96b478ce3fe4"],
+ InitializationCell->True,
+ CellLabel->
+  "In[122]:=",ExpressionUUID->"a53cee15-7b14-4475-ab6b-96b478ce3fe4"],
 
 Cell[BoxData[
  TagBox[
@@ -21320,13 +21303,11 @@ Cell[BoxData[
        "5.2. Cayley multiplications table for all pairs of cubes", 
        "6. Dihedral groups", "7. Klein four groups", "8. Concluding remarks", 
        "References"}}}, Typeset`size$$ = {0., {0., 7.}}, Typeset`update$$ = 0,
-     Typeset`initDone$$, Typeset`skipInitDone$$ = 
-    False, $CellContext`tag$44003$$ = 0}, 
+     Typeset`initDone$$, Typeset`skipInitDone$$ = False}, 
     DynamicBox[Manipulate`ManipulateBoxes[
      1, StandardForm, 
       "Variables" :> {$CellContext`tag$$ = "6. Dihedral groups"}, 
-      "ControllerVariables" :> {
-        Hold[$CellContext`tag$$, $CellContext`tag$44003$$, 0]}, 
+      "ControllerVariables" :> {}, 
       "OtherVariables" :> {
        Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
         Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
@@ -21347,13 +21328,13 @@ Cell[BoxData[
           "6. Dihedral groups", "7. Klein four groups", 
           "8. Concluding remarks", "References"}}}, 
       "Options" :> {Paneled -> False}, "DefaultOptions" :> {}],
-     ImageSizeCache->{474., {45., 52.}},
+     ImageSizeCache->{366., {44.84743637626525, 51.15256362373475}},
      SingleEvaluation->True],
     Deinitialization:>None,
     DynamicModuleValues:>{},
-    Initialization:>({$CellContext`content[
-         Pattern[$CellContext`tag, 
-          Blank[]]] := Module[{}, NotebookLocate[$CellContext`tag]; ""]}; 
+    Initialization:>($CellContext`content[
+        Pattern[$CellContext`tag, 
+         Blank[]]] := Module[{}, NotebookLocate[$CellContext`tag]; ""]; 
      Typeset`initDone$$ = True),
     SynchronousInitialization->True,
     UndoTrackedVariables:>{Typeset`show$$, Typeset`bookmarkMode$$},
@@ -21361,9 +21342,10 @@ Cell[BoxData[
     UntrackedVariables:>{Typeset`size$$}], "Manipulate",
    Deployed->True,
    StripOnInput->False],
-  Manipulate`InterpretManipulate[1]]], "Output",ExpressionUUID->"5f6ffd54-\
-fb2b-4ee8-aa37-77b56c5872cb"]
-}, {2}]]
+  Manipulate`InterpretManipulate[1]]], "Output",
+ CellLabel->
+  "Out[123]=",ExpressionUUID->"df95e18a-0624-447e-a671-6e7a4636850f"]
+}, Open  ]]
 }, Open  ]]
 }, Open  ]],
 
@@ -22459,9 +22441,10 @@ Cell[BoxData[{
           RowBox[{"{", 
            RowBox[{
             RowBox[{"Style", "[", 
-             RowBox[{"\"\<Dihedral group over \!\(\*
-StyleBox[\"SW\",
-FontSlant->\"Italic\"]\)\>\"", ",", "Bold", ",", "Red", ",", 
+             RowBox[{
+             "\"\<Dihedral group over \
+\!\(\*StyleBox[\"SW\",FontSlant->\"Italic\"]\)\>\"", ",", "Bold", ",", "Red", 
+              ",", 
               RowBox[{"FontSize", "\[Rule]", " ", "Size"}], ",", 
               RowBox[{"FontFamily", "\[Rule]", "family"}]}], "]"}], ",", 
             RowBox[{"Flatten", "[", 
@@ -22488,9 +22471,10 @@ FontSlant->\"Italic\"]\)\>\"", ",", "Bold", ",", "Red", ",",
           RowBox[{"{", 
            RowBox[{
             RowBox[{"Style", "[", 
-             RowBox[{"\"\<Dihedral group over \!\(\*
-StyleBox[\"YR\",
-FontSlant->\"Italic\"]\)\>\"", ",", "Bold", ",", "Blue", ",", 
+             RowBox[{
+             "\"\<Dihedral group over \
+\!\(\*StyleBox[\"YR\",FontSlant->\"Italic\"]\)\>\"", ",", "Bold", ",", "Blue",
+               ",", 
               RowBox[{"FontSize", "\[Rule]", " ", "Size"}], ",", 
               RowBox[{"FontFamily", "\[Rule]", "family"}]}], "]"}], ",", 
             RowBox[{"Flatten", "[", 
@@ -22517,9 +22501,10 @@ FontSlant->\"Italic\"]\)\>\"", ",", "Bold", ",", "Blue", ",",
           RowBox[{"{", 
            RowBox[{
             RowBox[{"Style", "[", 
-             RowBox[{"\"\<Dihedral group over \!\(\*
-StyleBox[\"MK\",
-FontSlant->\"Italic\"]\)\>\"", ",", "Bold", ",", "Magenta", ",", 
+             RowBox[{
+             "\"\<Dihedral group over \
+\!\(\*StyleBox[\"MK\",FontSlant->\"Italic\"]\)\>\"", ",", "Bold", ",", 
+              "Magenta", ",", 
               RowBox[{"FontSize", "\[Rule]", " ", "Size"}], ",", 
               RowBox[{"FontFamily", "\[Rule]", "family"}]}], "]"}], ",", 
             RowBox[{"Flatten", "[", 
@@ -22844,7 +22829,9 @@ FontSlant->\"Italic\"]\)\>\"", ",", "Bold", ",", "Magenta", ",",
    RowBox[{"SaveDefinitions", "\[Rule]", "True"}]}], "\[IndentingNewLine]", 
   "]"}]}], "Input",
  InitializationCell->True,
- TextJustification->1.,ExpressionUUID->"32f3bf9a-f3a0-4166-8b25-9fc2fe24d00f"],
+ TextJustification->1.,
+ CellLabel->
+  "In[124]:=",ExpressionUUID->"32f3bf9a-f3a0-4166-8b25-9fc2fe24d00f"],
 
 Cell[BoxData[
  TagBox[
@@ -22922,20 +22909,14 @@ Cell[BoxData[
        Hold[$CellContext`family$$], "Helvetica", 
        Style["Font family", FontWeight -> Bold, FontSize -> 14]}, {
       "Courier", "Times", "Helvetica"}}}, Typeset`size$$ = {
-    427., {94., 101.}}, Typeset`update$$ = 0, Typeset`initDone$$, 
-    Typeset`skipInitDone$$ = False, $CellContext`baseorder$44094$$ = 
-    0, $CellContext`ind$44095$$ = False, $CellContext`Size$44096$$ = 
-    0, $CellContext`family$44097$$ = 0}, 
+    446., {93.19743637626524, 99.50256362373474}}, Typeset`update$$ = 0, 
+    Typeset`initDone$$, Typeset`skipInitDone$$ = False}, 
     DynamicBox[Manipulate`ManipulateBoxes[
      1, StandardForm, 
       "Variables" :> {$CellContext`baseorder$$ = Style["ACGU", Underlined, 
           RGBColor[1, 0, 0], Bold], $CellContext`family$$ = 
         "Helvetica", $CellContext`ind$$ = False, $CellContext`Size$$ = 12}, 
-      "ControllerVariables" :> {
-        Hold[$CellContext`baseorder$$, $CellContext`baseorder$44094$$, 0], 
-        Hold[$CellContext`ind$$, $CellContext`ind$44095$$, False], 
-        Hold[$CellContext`Size$$, $CellContext`Size$44096$$, 0], 
-        Hold[$CellContext`family$$, $CellContext`family$44097$$, 0]}, 
+      "ControllerVariables" :> {}, 
       "OtherVariables" :> {
        Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
         Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
@@ -23011,7 +22992,7 @@ $CellContext`ind$$, $CellContext`Size$$, $CellContext`family$$],
          "Courier", "Times", "Helvetica"}, ControlType -> PopupMenu, 
          ImageSize -> {100, 22}, ControlPlacement -> Top}}, "Options" :> {}, 
       "DefaultOptions" :> {}],
-     ImageSizeCache->{482., {202., 209.}},
+     ImageSizeCache->{501., {200.84743637626525`, 207.15256362373475`}},
      SingleEvaluation->True],
     Deinitialization:>None,
     DynamicModuleValues:>{},
@@ -23040,8 +23021,9 @@ $CellContext`Dihgroup}, $CellContext`unit =
                2]]]& , $CellContext`kleing2]; $CellContext`Dihgroup = Which[
             MemberQ[$CellContext`SW, $CellContext`unit], {
              Style[
-             "Dihedral group over \!\(\*\nStyleBox[\"SW\",\n\
-FontSlant->\"Italic\"]\)", Bold, Red, FontSize -> $CellContext`Size, 
+             "Dihedral group over \
+\!\(\*StyleBox[\"SW\",FontSlant->\"Italic\"]\)", Bold, Red, 
+              FontSize -> $CellContext`Size, 
               FontFamily -> $CellContext`family], 
              Flatten[
               Append[
@@ -23053,8 +23035,9 @@ FontSlant->\"Italic\"]\)", Bold, Red, FontSize -> $CellContext`Size,
                  FontFamily -> $CellContext`family]& , $CellContext`set2]]]}, 
             MemberQ[$CellContext`YR, $CellContext`unit], {
              Style[
-             "Dihedral group over \!\(\*\nStyleBox[\"YR\",\n\
-FontSlant->\"Italic\"]\)", Bold, Blue, FontSize -> $CellContext`Size, 
+             "Dihedral group over \
+\!\(\*StyleBox[\"YR\",FontSlant->\"Italic\"]\)", Bold, Blue, 
+              FontSize -> $CellContext`Size, 
               FontFamily -> $CellContext`family], 
              Flatten[
               Append[
@@ -23066,8 +23049,9 @@ FontSlant->\"Italic\"]\)", Bold, Blue, FontSize -> $CellContext`Size,
                  FontFamily -> $CellContext`family]& , $CellContext`set2]]]}, 
             MemberQ[$CellContext`MK, $CellContext`unit], {
              Style[
-             "Dihedral group over \!\(\*\nStyleBox[\"MK\",\n\
-FontSlant->\"Italic\"]\)", Bold, Magenta, FontSize -> $CellContext`Size, 
+             "Dihedral group over \
+\!\(\*StyleBox[\"MK\",FontSlant->\"Italic\"]\)", Bold, Magenta, 
+              FontSize -> $CellContext`Size, 
               FontFamily -> $CellContext`family], 
              Flatten[
               Append[
@@ -23218,9 +23202,10 @@ $CellContext`SW1 = {"ACGU", "AGCU", "UCGA", "UGCA"}, $CellContext`SW2 = {
     UntrackedVariables:>{Typeset`size$$}], "Manipulate",
    Deployed->True,
    StripOnInput->False],
-  Manipulate`InterpretManipulate[1]]], "Output",ExpressionUUID->"e922cc18-\
-7468-47de-aba9-6ff09892fd32"]
-}, {2}]],
+  Manipulate`InterpretManipulate[1]]], "Output",
+ CellLabel->
+  "Out[125]=",ExpressionUUID->"721ef2e9-702a-4430-a6a5-56304e278c65"]
+}, Open  ]],
 
 Cell[TextData[{
  "The cosets of quotient groups: ",
@@ -23271,11 +23256,10 @@ Cell[BoxData[
   RowBox[{
    RowBox[{"{", 
     RowBox[{
-     RowBox[{"X", "=", "\"\<\!\(\*
-StyleBox[SuperscriptBox[
-StyleBox[\"SW\",
-FontSlant->\"Italic\"], \"ACGU\"],
-FontColor->RGBColor[1, 0, 0]]\)\>\""}], ",", 
+     RowBox[{
+     "X", "=", 
+      "\"\<\!\(\*StyleBox[SuperscriptBox[StyleBox[\"SW\",FontSlant->\"Italic\"\
+], \"ACGU\"],FontColor->RGBColor[1, 0, 0]]\)\>\""}], ",", 
      RowBox[{"Y", "=", 
       RowBox[{"Style", "[", 
        RowBox[{"\"\<ACGU\>\"", ",", "Underlined", ",", "Red", ",", "Bold"}], 
@@ -23284,34 +23268,27 @@ FontColor->RGBColor[1, 0, 0]]\)\>\""}], ",",
     RowBox[{
      RowBox[{"group", "[", "x_", "]"}], ":=", 
      RowBox[{"Switch", "[", 
-      RowBox[{"x", ",", "\[IndentingNewLine]", "\"\<\!\(\*
-StyleBox[SuperscriptBox[
-StyleBox[\"SW\",
-FontSlant->\"Italic\"], \"ACGU\"],
-FontColor->RGBColor[1, 0, 0]]\)\>\"", ",", 
+      RowBox[{
+      "x", ",", "\[IndentingNewLine]", 
+       "\"\<\!\(\*StyleBox[SuperscriptBox[StyleBox[\"SW\",FontSlant->\"Italic\
+\"], \"ACGU\"],FontColor->RGBColor[1, 0, 0]]\)\>\"", ",", 
        RowBox[{"{", 
         RowBox[{
         "\"\<ACGU\>\"", ",", "\"\<AGCU\>\"", ",", "\"\<UCGA\>\"", ",", 
          "\"\<UGCA\>\"", ",", "\"\<CAUG\>\"", ",", "\"\<CUAG\>\"", ",", 
          "\"\<GAUC\>\"", ",", "\"\<GUAC\>\""}], "}"}], ",", 
-       "\[IndentingNewLine]", "\"\<\!\(\*
-StyleBox[SuperscriptBox[
-StyleBox[\"YR\",
-FontSlant->\"Italic\"], 
-StyleBox[\"ACUG\",
-FontSlant->\"Plain\"]],
-FontSlant->\"Italic\",
-FontColor->RGBColor[0, 0, 1]]\)\>\"", ",", 
+       "\[IndentingNewLine]", 
+       "\"\<\!\(\*StyleBox[SuperscriptBox[StyleBox[\"YR\",FontSlant->\"Italic\
+\"], StyleBox[\"ACUG\",FontSlant->\"Plain\"]],FontSlant->\"Italic\",FontColor-\
+>RGBColor[0, 0, 1]]\)\>\"", ",", 
        RowBox[{"{", 
         RowBox[{
         "\"\<ACUG\>\"", ",", "\"\<AUCG\>\"", ",", "\"\<GCUA\>\"", ",", 
          "\"\<GUCA\>\"", ",", "\"\<CAGU\>\"", ",", "\"\<UAGC\>\"", ",", 
          "\"\<UGAC\>\"", ",", "\"\<CGAU\>\""}], "}"}], ",", 
-       "\[IndentingNewLine]", "\"\<\!\(\*
-StyleBox[SuperscriptBox[
-StyleBox[\"MK\",
-FontSlant->\"Italic\"], \"AGUC\"],
-FontColor->RGBColor[1, 0, 1]]\)\>\"", ",", " ", 
+       "\[IndentingNewLine]", 
+       "\"\<\!\(\*StyleBox[SuperscriptBox[StyleBox[\"MK\",FontSlant->\"Italic\
+\"], \"AGUC\"],FontColor->RGBColor[1, 0, 1]]\)\>\"", ",", " ", 
        RowBox[{"{", 
         RowBox[{
         "\"\<AGUC\>\"", ",", "\"\<AUGC\>\"", ",", "\"\<CUGA\>\"", ",", 
@@ -23356,22 +23333,15 @@ FontColor->RGBColor[1, 0, 1]]\)\>\"", ",", " ",
             RowBox[{"Dynamic", "[", 
              RowBox[{"X", ",", "Automatic"}], "]"}], ",", 
             RowBox[{"{", 
-             RowBox[{"\"\<\!\(\*
-StyleBox[SuperscriptBox[
-StyleBox[\"SW\",
-FontSlant->\"Italic\"], \"ACGU\"],
-FontColor->RGBColor[1, 0, 0]]\)\>\"", ",", "\"\<\!\(\*
-StyleBox[SuperscriptBox[
-StyleBox[\"YR\",
-FontSlant->\"Italic\"], 
-StyleBox[\"ACUG\",
-FontSlant->\"Plain\"]],
-FontSlant->\"Italic\",
-FontColor->RGBColor[0, 0, 1]]\)\>\"", ",", "\"\<\!\(\*
-StyleBox[SuperscriptBox[
-StyleBox[\"MK\",
-FontSlant->\"Italic\"], \"AGUC\"],
-FontColor->RGBColor[1, 0, 1]]\)\>\""}], "}"}], ",", 
+             RowBox[{
+             "\"\<\!\(\*StyleBox[SuperscriptBox[StyleBox[\"SW\",FontSlant->\"\
+Italic\"], \"ACGU\"],FontColor->RGBColor[1, 0, 0]]\)\>\"", ",", 
+              "\"\<\!\(\*StyleBox[SuperscriptBox[StyleBox[\"YR\",FontSlant->\"\
+Italic\"], \
+StyleBox[\"ACUG\",FontSlant->\"Plain\"]],FontSlant->\"Italic\",FontColor->\
+RGBColor[0, 0, 1]]\)\>\"", ",", 
+              "\"\<\!\(\*StyleBox[SuperscriptBox[StyleBox[\"MK\",FontSlant->\"\
+Italic\"], \"AGUC\"],FontColor->RGBColor[1, 0, 1]]\)\>\""}], "}"}], ",", 
             RowBox[{"ImageSize", "\[Rule]", 
              RowBox[{"{", 
               RowBox[{"85", ",", "50"}], "}"}]}], ",", 
@@ -23411,15 +23381,16 @@ FontColor->RGBColor[1, 0, 1]]\)\>\""}], "}"}], ",",
        RowBox[{"{", 
         RowBox[{"Automatic", ",", "Automatic"}], "}"}]}]}], "]"}]}]}], 
   "\[IndentingNewLine]", "]"}]], "Input",
- InitializationCell->
-  True,ExpressionUUID->"e93902fc-8609-43a3-836c-e29f23eaa70c"],
+ InitializationCell->True,
+ CellLabel->
+  "In[126]:=",ExpressionUUID->"e93902fc-8609-43a3-836c-e29f23eaa70c"],
 
 Cell[BoxData[
  DynamicModuleBox[{$CellContext`X$$ = 
-  "\!\(\*\nStyleBox[SuperscriptBox[\n  StyleBox[\"SW\",\n\
-FontSlant->\"Italic\"], \"ACGU\"],\nFontColor->RGBColor[1, 0, 0]]\)", \
-$CellContext`Y$$ = Style["GCAU", 
-   RGBColor[1, 0, 1], Bold], $CellContext`group$$}, 
+  "\!\(\*StyleBox[SuperscriptBox[StyleBox[\"SW\",FontSlant->\"Italic\"], \
+\"ACGU\"],FontColor->RGBColor[1, 0, 0]]\)", $CellContext`Y$$ = Style[
+  "ACGU", Underlined, 
+   RGBColor[1, 0, 0], Bold], $CellContext`group$$}, 
   TagBox[GridBox[{
      {
       StyleBox["\<\"Cubes from GC\"\>",
@@ -23667,23 +23638,20 @@ $CellContext`Y$$ = Style["GCAU",
         FontSize -> 14, FontFamily -> 
          "Times New Roman"}], "\<\"\[SmallCircle]\"\>", 
       PopupMenuBox[Dynamic[$CellContext`X$$, Automatic], {
-       "\!\(\*\nStyleBox[SuperscriptBox[\n  StyleBox[\"SW\",\n\
-FontSlant->\"Italic\"], \"ACGU\"],\nFontColor->RGBColor[1, 0, \
-0]]\)"->"\<\"\\!\\(\\*\\nStyleBox[SuperscriptBox[\\n  \
-StyleBox[\\\"SW\\\",\\nFontSlant->\\\"Italic\\\"], \
-\\\"ACGU\\\"],\\nFontColor->RGBColor[1, 0, 0]]\\)\"\>", 
-       "\!\(\*\nStyleBox[SuperscriptBox[\n  StyleBox[\"YR\",\n\
-FontSlant->\"Italic\"], \n  StyleBox[\"ACUG\",\nFontSlant->\"Plain\"]],\n\
-FontSlant->\"Italic\",\nFontColor->RGBColor[0, 0, \
-1]]\)"->"\<\"\\!\\(\\*\\nStyleBox[SuperscriptBox[\\n  \
-StyleBox[\\\"YR\\\",\\nFontSlant->\\\"Italic\\\"], \\n  \
-StyleBox[\\\"ACUG\\\",\\nFontSlant->\\\"Plain\\\"]],\\nFontSlant->\\\"Italic\\\
-\",\\nFontColor->RGBColor[0, 0, 1]]\\)\"\>", 
-       "\!\(\*\nStyleBox[SuperscriptBox[\n  StyleBox[\"MK\",\n\
-FontSlant->\"Italic\"], \"AGUC\"],\nFontColor->RGBColor[1, 0, \
-1]]\)"->"\<\"\\!\\(\\*\\nStyleBox[SuperscriptBox[\\n  \
-StyleBox[\\\"MK\\\",\\nFontSlant->\\\"Italic\\\"], \
-\\\"AGUC\\\"],\\nFontColor->RGBColor[1, 0, 1]]\\)\"\>"},
+       "\!\(\*StyleBox[SuperscriptBox[StyleBox[\"SW\",FontSlant->\"Italic\"], \
+\"ACGU\"],FontColor->RGBColor[1, 0, \
+0]]\)"->"\<\"\\!\\(\\*StyleBox[SuperscriptBox[StyleBox[\\\"SW\\\",FontSlant->\
+\\\"Italic\\\"], \\\"ACGU\\\"],FontColor->RGBColor[1, 0, 0]]\\)\"\>", 
+       "\!\(\*StyleBox[SuperscriptBox[StyleBox[\"YR\",FontSlant->\"Italic\"], \
+StyleBox[\"ACUG\",FontSlant->\"Plain\"]],FontSlant->\"Italic\",FontColor->\
+RGBColor[0, 0, \
+1]]\)"->"\<\"\\!\\(\\*StyleBox[SuperscriptBox[StyleBox[\\\"YR\\\",FontSlant->\
+\\\"Italic\\\"], StyleBox[\\\"ACUG\\\",FontSlant->\\\"Plain\\\"]],FontSlant->\
+\\\"Italic\\\",FontColor->RGBColor[0, 0, 1]]\\)\"\>", 
+       "\!\(\*StyleBox[SuperscriptBox[StyleBox[\"MK\",FontSlant->\"Italic\"], \
+\"AGUC\"],FontColor->RGBColor[1, 0, \
+1]]\)"->"\<\"\\!\\(\\*StyleBox[SuperscriptBox[StyleBox[\\\"MK\\\",FontSlant->\
+\\\"Italic\\\"], \\\"AGUC\\\"],FontColor->RGBColor[1, 0, 1]]\\)\"\>"},
        ImageSize->{85, 50},
        MenuStyle->{
         FontSize -> 14, FontFamily -> "Times New Roman"}], "\<\"=\"\>", 
@@ -23693,7 +23661,7 @@ StyleBox[\\\"MK\\\",\\nFontSlant->\\\"Italic\\\"], \
           Part[
            $CellContext`group$$[$CellContext`X$$], 1]]& , 
          $CellContext`group$$[$CellContext`X$$]], StandardForm], Automatic,
-       ImageSizeCache->{371., {3., 10.}}]}
+       ImageSizeCache->{383.5130925057456, {3., 10.}}]}
     },
     AutoDelete->False,
     GridBoxAlignment->{"Columns" -> {{Center}}},
@@ -23713,19 +23681,20 @@ StyleBox[\\\"MK\\\",\\nFontSlant->\\\"Italic\\\"], \
           Pattern[$CellContext`x, 
            Blank[]]]] :> 
        Switch[$CellContext`x, 
-         "\!\(\*\nStyleBox[SuperscriptBox[\n  StyleBox[\"SW\",\n\
-FontSlant->\"Italic\"], \"ACGU\"],\nFontColor->RGBColor[1, 0, 0]]\)", {
+         "\!\(\*StyleBox[SuperscriptBox[StyleBox[\"SW\",FontSlant->\"Italic\"]\
+, \"ACGU\"],FontColor->RGBColor[1, 0, 0]]\)", {
          "ACGU", "AGCU", "UCGA", "UGCA", "CAUG", "CUAG", "GAUC", "GUAC"}, 
-         "\!\(\*\nStyleBox[SuperscriptBox[\n  StyleBox[\"YR\",\n\
-FontSlant->\"Italic\"], \n  StyleBox[\"ACUG\",\nFontSlant->\"Plain\"]],\n\
-FontSlant->\"Italic\",\nFontColor->RGBColor[0, 0, 1]]\)", {
+         "\!\(\*StyleBox[SuperscriptBox[StyleBox[\"YR\",FontSlant->\"Italic\"]\
+, StyleBox[\"ACUG\",FontSlant->\"Plain\"]],FontSlant->\"Italic\",FontColor->\
+RGBColor[0, 0, 1]]\)", {
          "ACUG", "AUCG", "GCUA", "GUCA", "CAGU", "UAGC", "UGAC", "CGAU"}, 
-         "\!\(\*\nStyleBox[SuperscriptBox[\n  StyleBox[\"MK\",\n\
-FontSlant->\"Italic\"], \"AGUC\"],\nFontColor->RGBColor[1, 0, 1]]\)", {
+         "\!\(\*StyleBox[SuperscriptBox[StyleBox[\"MK\",FontSlant->\"Italic\"]\
+, \"AGUC\"],FontColor->RGBColor[1, 0, 1]]\)", {
          "AGUC", "AUGC", "CUGA", "CGUA", "GCAU", "GACU", "UACG", 
-          "UCAG"}]}}}]], "Output",ExpressionUUID->"6e4e336f-c9a7-45a8-8278-\
-548fe16d3d7b"]
-}, {2}]],
+          "UCAG"}]}}}]], "Output",
+ CellLabel->
+  "Out[126]=",ExpressionUUID->"4b89c800-01f7-40ee-ba5b-cc5cc7e95a7f"]
+}, Open  ]],
 
 Cell[CellGroupData[{
 
@@ -23769,8 +23738,9 @@ cubes\>\"", ",", "\"\<6. Dihedral groups\>\"", ",",
        ",", "\"\<References\>\""}], "}"}]}], "}"}], ",", 
    RowBox[{"Paneled", "\[Rule]", "False"}], ",", 
    RowBox[{"SaveDefinitions", "\[Rule]", "True"}]}], "]"}]}], "Input",
- InitializationCell->
-  True,ExpressionUUID->"47bf7476-9e84-4e06-8262-01b8cbbe2c81"],
+ InitializationCell->True,
+ CellLabel->
+  "In[127]:=",ExpressionUUID->"47bf7476-9e84-4e06-8262-01b8cbbe2c81"],
 
 Cell[BoxData[
  TagBox[
@@ -23792,13 +23762,11 @@ Cell[BoxData[
        "5.2. Cayley multiplications table for all pairs of cubes", 
        "6. Dihedral groups", "7. Klein four groups", "8. Concluding remarks", 
        "References"}}}, Typeset`size$$ = {0., {0., 7.}}, Typeset`update$$ = 0,
-     Typeset`initDone$$, Typeset`skipInitDone$$ = 
-    False, $CellContext`tag$44190$$ = 0}, 
+     Typeset`initDone$$, Typeset`skipInitDone$$ = False}, 
     DynamicBox[Manipulate`ManipulateBoxes[
      1, StandardForm, 
       "Variables" :> {$CellContext`tag$$ = "7. Klein four groups"}, 
-      "ControllerVariables" :> {
-        Hold[$CellContext`tag$$, $CellContext`tag$44190$$, 0]}, 
+      "ControllerVariables" :> {}, 
       "OtherVariables" :> {
        Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
         Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
@@ -23819,13 +23787,13 @@ Cell[BoxData[
           "6. Dihedral groups", "7. Klein four groups", 
           "8. Concluding remarks", "References"}}}, 
       "Options" :> {Paneled -> False}, "DefaultOptions" :> {}],
-     ImageSizeCache->{474., {45., 52.}},
+     ImageSizeCache->{366., {44.84743637626525, 51.15256362373475}},
      SingleEvaluation->True],
     Deinitialization:>None,
     DynamicModuleValues:>{},
-    Initialization:>({$CellContext`content[
-         Pattern[$CellContext`tag, 
-          Blank[]]] := Module[{}, NotebookLocate[$CellContext`tag]; ""]}; 
+    Initialization:>($CellContext`content[
+        Pattern[$CellContext`tag, 
+         Blank[]]] := Module[{}, NotebookLocate[$CellContext`tag]; ""]; 
      Typeset`initDone$$ = True),
     SynchronousInitialization->True,
     UndoTrackedVariables:>{Typeset`show$$, Typeset`bookmarkMode$$},
@@ -23833,9 +23801,10 @@ Cell[BoxData[
     UntrackedVariables:>{Typeset`size$$}], "Manipulate",
    Deployed->True,
    StripOnInput->False],
-  Manipulate`InterpretManipulate[1]]], "Output",ExpressionUUID->"485ba012-\
-94cc-4d07-8a94-1cae98fd18b0"]
-}, {2}]]
+  Manipulate`InterpretManipulate[1]]], "Output",
+ CellLabel->
+  "Out[128]=",ExpressionUUID->"056d8394-6b14-43d9-9759-659e6aa00ee2"]
+}, Open  ]]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -24500,8 +24469,8 @@ Cell[BoxData[{
    RowBox[{
     RowBox[{"klein", "[", 
      RowBox[{"baseorder_", ",", 
-      RowBox[{"normal_:", "False"}], ",", "repr_", " ", ",", "Size_", ",", 
-      "family_"}], "]"}], ":=", 
+      RowBox[{"normal_", ":", "False"}], ",", "repr_", " ", ",", "Size_", ",",
+       "family_"}], "]"}], ":=", 
     RowBox[{"Module", "[", 
      RowBox[{
       RowBox[{"{", 
@@ -24548,11 +24517,12 @@ Cell[BoxData[{
              RowBox[{
               RowBox[{"Style", "[", 
                RowBox[{
-                SubsuperscriptBox["\"\<Non Normal Klein four group \!\(\*
-StyleBox[\"SW\",
-FontSlant->\"Italic\"]\)\>\"", "\"\<\!\(\*
-StyleBox[\"K\",
-FontSlant->\"Italic\"]\)\>\"", "unit"], ",", "Bold", ",", "Red", ",", 
+                
+                SubsuperscriptBox[
+                 "\"\<Non Normal Klein four group \
+\!\(\*StyleBox[\"SW\",FontSlant->\"Italic\"]\)\>\"", 
+                 "\"\<\!\(\*StyleBox[\"K\",FontSlant->\"Italic\"]\)\>\"", 
+                 "unit"], ",", "Bold", ",", "Red", ",", 
                 RowBox[{"FontSize", "\[Rule]", " ", "Size"}], ",", 
                 RowBox[{"FontFamily", "\[Rule]", "family"}]}], "]"}], ",", 
               RowBox[{
@@ -24568,11 +24538,12 @@ FontSlant->\"Italic\"]\)\>\"", "unit"], ",", "Bold", ",", "Red", ",",
              RowBox[{
               RowBox[{"Style", "[", 
                RowBox[{
-                SubsuperscriptBox["\"\<Non Normal Klein four group \!\(\*
-StyleBox[\"SW\",
-FontSlant->\"Italic\"]\)\>\"", "\"\<\!\(\*
-StyleBox[\"K\",
-FontSlant->\"Italic\"]\)\>\"", "unit"], ",", "Bold", ",", "Red", ",", 
+                
+                SubsuperscriptBox[
+                 "\"\<Non Normal Klein four group \
+\!\(\*StyleBox[\"SW\",FontSlant->\"Italic\"]\)\>\"", 
+                 "\"\<\!\(\*StyleBox[\"K\",FontSlant->\"Italic\"]\)\>\"", 
+                 "unit"], ",", "Bold", ",", "Red", ",", 
                 RowBox[{"FontSize", "\[Rule]", " ", "Size"}], ",", 
                 RowBox[{"FontFamily", "\[Rule]", "family"}]}], "]"}], ",", 
               RowBox[{
@@ -24589,11 +24560,12 @@ FontSlant->\"Italic\"]\)\>\"", "unit"], ",", "Bold", ",", "Red", ",",
              RowBox[{
               RowBox[{"Style", "[", 
                RowBox[{
-                SubsuperscriptBox["\"\<Non Normal Klein four group \!\(\*
-StyleBox[\"YR\",
-FontSlant->\"Italic\"]\)\>\"", "\"\<\!\(\*
-StyleBox[\"K\",
-FontSlant->\"Italic\"]\)\>\"", "unit"], ",", "Bold", ",", "Blue", ",", 
+                
+                SubsuperscriptBox[
+                 "\"\<Non Normal Klein four group \
+\!\(\*StyleBox[\"YR\",FontSlant->\"Italic\"]\)\>\"", 
+                 "\"\<\!\(\*StyleBox[\"K\",FontSlant->\"Italic\"]\)\>\"", 
+                 "unit"], ",", "Bold", ",", "Blue", ",", 
                 RowBox[{"FontSize", "\[Rule]", " ", "Size"}], ",", 
                 RowBox[{"FontFamily", "\[Rule]", "family"}]}], "]"}], ",", 
               RowBox[{
@@ -24610,11 +24582,12 @@ FontSlant->\"Italic\"]\)\>\"", "unit"], ",", "Bold", ",", "Blue", ",",
              RowBox[{
               RowBox[{"Style", "[", 
                RowBox[{
-                SubsuperscriptBox["\"\<Non Normal Klein four group \!\(\*
-StyleBox[\"YR\",
-FontSlant->\"Italic\"]\)\>\"", "\"\<\!\(\*
-StyleBox[\"K\",
-FontSlant->\"Italic\"]\)\>\"", "unit"], ",", "Bold", ",", "Blue", ",", 
+                
+                SubsuperscriptBox[
+                 "\"\<Non Normal Klein four group \
+\!\(\*StyleBox[\"YR\",FontSlant->\"Italic\"]\)\>\"", 
+                 "\"\<\!\(\*StyleBox[\"K\",FontSlant->\"Italic\"]\)\>\"", 
+                 "unit"], ",", "Bold", ",", "Blue", ",", 
                 RowBox[{"FontSize", "\[Rule]", " ", "Size"}], ",", 
                 RowBox[{"FontFamily", "\[Rule]", "family"}]}], "]"}], ",", 
               RowBox[{
@@ -24631,11 +24604,12 @@ FontSlant->\"Italic\"]\)\>\"", "unit"], ",", "Bold", ",", "Blue", ",",
              RowBox[{
               RowBox[{"Style", "[", 
                RowBox[{
-                SubsuperscriptBox["\"\<Non Normal Klein four group \!\(\*
-StyleBox[\"MK\",
-FontSlant->\"Italic\"]\)\>\"", "\"\<\!\(\*
-StyleBox[\"K\",
-FontSlant->\"Italic\"]\)\>\"", "unit"], ",", "Bold", ",", "Magenta", ",", 
+                
+                SubsuperscriptBox[
+                 "\"\<Non Normal Klein four group \
+\!\(\*StyleBox[\"MK\",FontSlant->\"Italic\"]\)\>\"", 
+                 "\"\<\!\(\*StyleBox[\"K\",FontSlant->\"Italic\"]\)\>\"", 
+                 "unit"], ",", "Bold", ",", "Magenta", ",", 
                 RowBox[{"FontSize", "\[Rule]", " ", "Size"}], ",", 
                 RowBox[{"FontFamily", "\[Rule]", "family"}]}], "]"}], ",", 
               RowBox[{
@@ -24652,11 +24626,12 @@ FontSlant->\"Italic\"]\)\>\"", "unit"], ",", "Bold", ",", "Magenta", ",",
              RowBox[{
               RowBox[{"Style", "[", 
                RowBox[{
-                SubsuperscriptBox["\"\<Non Normal Klein four group \!\(\*
-StyleBox[\"MK\",
-FontSlant->\"Italic\"]\)\>\"", "\"\<\!\(\*
-StyleBox[\"K\",
-FontSlant->\"Italic\"]\)\>\"", "unit"], ",", "Bold", ",", "Magenta", ",", 
+                
+                SubsuperscriptBox[
+                 "\"\<Non Normal Klein four group \
+\!\(\*StyleBox[\"MK\",FontSlant->\"Italic\"]\)\>\"", 
+                 "\"\<\!\(\*StyleBox[\"K\",FontSlant->\"Italic\"]\)\>\"", 
+                 "unit"], ",", "Bold", ",", "Magenta", ",", 
                 RowBox[{"FontSize", "\[Rule]", " ", "Size"}], ",", 
                 RowBox[{"FontFamily", "\[Rule]", "family"}]}], "]"}], ",", 
               RowBox[{
@@ -24675,11 +24650,12 @@ FontSlant->\"Italic\"]\)\>\"", "unit"], ",", "Bold", ",", "Magenta", ",",
              RowBox[{
               RowBox[{"Style", "[", 
                RowBox[{
-                SubsuperscriptBox["\"\<Normal Klein four group \!\(\*
-StyleBox[\"SW\",
-FontSlant->\"Italic\"]\)\>\"", "\"\<\!\(\*
-StyleBox[\"NK\",
-FontSlant->\"Italic\"]\)\>\"", "unit"], ",", "Bold", ",", "Red", ",", 
+                
+                SubsuperscriptBox[
+                 "\"\<Normal Klein four group \
+\!\(\*StyleBox[\"SW\",FontSlant->\"Italic\"]\)\>\"", 
+                 "\"\<\!\(\*StyleBox[\"NK\",FontSlant->\"Italic\"]\)\>\"", 
+                 "unit"], ",", "Bold", ",", "Red", ",", 
                 RowBox[{"FontSize", "\[Rule]", " ", "Size"}], ",", 
                 RowBox[{"FontFamily", "\[Rule]", "family"}]}], "]"}], ",", 
               RowBox[{
@@ -24695,11 +24671,12 @@ FontSlant->\"Italic\"]\)\>\"", "unit"], ",", "Bold", ",", "Red", ",",
              RowBox[{
               RowBox[{"Style", "[", 
                RowBox[{
-                SubsuperscriptBox["\"\<Normal Klein four group \!\(\*
-StyleBox[\"YR\",
-FontSlant->\"Italic\"]\)\>\"", "\"\<\!\(\*
-StyleBox[\"NK\",
-FontSlant->\"Italic\"]\)\>\"", "unit"], ",", "Bold", ",", "Blue", ",", 
+                
+                SubsuperscriptBox[
+                 "\"\<Normal Klein four group \
+\!\(\*StyleBox[\"YR\",FontSlant->\"Italic\"]\)\>\"", 
+                 "\"\<\!\(\*StyleBox[\"NK\",FontSlant->\"Italic\"]\)\>\"", 
+                 "unit"], ",", "Bold", ",", "Blue", ",", 
                 RowBox[{"FontSize", "\[Rule]", " ", "Size"}], ",", 
                 RowBox[{"FontFamily", "\[Rule]", "family"}]}], "]"}], ",", 
               RowBox[{
@@ -24715,11 +24692,12 @@ FontSlant->\"Italic\"]\)\>\"", "unit"], ",", "Bold", ",", "Blue", ",",
              RowBox[{
               RowBox[{"Style", "[", 
                RowBox[{
-                SubsuperscriptBox["\"\<Normal Klein four group \!\(\*
-StyleBox[\"YR\",
-FontSlant->\"Italic\"]\)\>\"", "\"\<\!\(\*
-StyleBox[\"NK\",
-FontSlant->\"Italic\"]\)\>\"", "unit"], ",", "Bold", ",", "Magenta", ",", 
+                
+                SubsuperscriptBox[
+                 "\"\<Normal Klein four group \
+\!\(\*StyleBox[\"YR\",FontSlant->\"Italic\"]\)\>\"", 
+                 "\"\<\!\(\*StyleBox[\"NK\",FontSlant->\"Italic\"]\)\>\"", 
+                 "unit"], ",", "Bold", ",", "Magenta", ",", 
                 RowBox[{"FontSize", "\[Rule]", " ", "Size"}], ",", 
                 RowBox[{"FontFamily", "\[Rule]", "family"}]}], "]"}], ",", 
               RowBox[{
@@ -25138,7 +25116,9 @@ FontSlant->\"Italic\"]\)\>\"", "unit"], ",", "Bold", ",", "Magenta", ",",
    RowBox[{"SaveDefinitions", "\[Rule]", "True"}]}], "\[IndentingNewLine]", 
   "]"}]}], "Input",
  InitializationCell->True,
- TextJustification->1.,ExpressionUUID->"ee5c1e0e-38d3-459c-8128-47e0b4ccd76e"],
+ TextJustification->1.,
+ CellLabel->
+  "In[129]:=",ExpressionUUID->"ee5c1e0e-38d3-459c-8128-47e0b4ccd76e"],
 
 Cell[BoxData[
  TagBox[
@@ -25220,21 +25200,14 @@ Cell[BoxData[
        Hold[$CellContext`family$$], "Courier", 
        Style["Font family", FontWeight -> Bold, FontSize -> 14]}, {
       "Courier", "Times", "Helvetica"}}}, Typeset`size$$ = {
-    327., {56.5, 63.5}}, Typeset`update$$ = 0, Typeset`initDone$$, 
-    Typeset`skipInitDone$$ = False, $CellContext`baseorder$2724$$ = 
-    0, $CellContext`normal$2725$$ = False, $CellContext`repr$2726$$ = 
-    0, $CellContext`Size$2727$$ = 0, $CellContext`family$2728$$ = 0}, 
+    305., {52.23403309800197, 57.965966901998044`}}, Typeset`update$$ = 0, 
+    Typeset`initDone$$, Typeset`skipInitDone$$ = False}, 
     DynamicBox[Manipulate`ManipulateBoxes[
      1, StandardForm, 
       "Variables" :> {$CellContext`baseorder$$ = Style["ACGU", Underlined, 
           RGBColor[1, 0, 0], Bold], $CellContext`family$$ = 
         "Courier", $CellContext`normal$$ = False, $CellContext`repr$$ = 
-        "Cube", $CellContext`Size$$ = 12}, "ControllerVariables" :> {
-        Hold[$CellContext`baseorder$$, $CellContext`baseorder$2724$$, 0], 
-        Hold[$CellContext`normal$$, $CellContext`normal$2725$$, False], 
-        Hold[$CellContext`repr$$, $CellContext`repr$2726$$, 0], 
-        Hold[$CellContext`Size$$, $CellContext`Size$2727$$, 0], 
-        Hold[$CellContext`family$$, $CellContext`family$2728$$, 0]}, 
+        "Cube", $CellContext`Size$$ = 12}, "ControllerVariables" :> {}, 
       "OtherVariables" :> {
        Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
         Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
@@ -25315,7 +25288,7 @@ $CellContext`family$$], "Specifications" :> {
          "Courier", "Times", "Helvetica"}, ControlType -> PopupMenu, 
          ImageSize -> {100, 22}, ControlPlacement -> Top}}, "Options" :> {}, 
       "DefaultOptions" :> {}],
-     ImageSizeCache->{382., {178., 185.}},
+     ImageSizeCache->{356., {161.13403309800196`, 166.86596690199804`}},
      SingleEvaluation->True],
     Deinitialization:>None,
     DynamicModuleValues:>{},
@@ -25348,11 +25321,10 @@ $CellContext`Klein = $CellContext`kleing]; $CellContext`set = Map[StringJoin[
              MemberQ[$CellContext`SW1, $CellContext`unit], {
               Style[
               Subscript[
-                "Non Normal Klein four group \!\(\*\nStyleBox[\"SW\",\n\
-FontSlant->\"Italic\"]\)", 
-                 "\!\(\*\nStyleBox[\"K\",\n\
-FontSlant->\"Italic\"]\)"]^$CellContext`unit, Bold, Red, 
-               FontSize -> $CellContext`Size, 
+                "Non Normal Klein four group \
+\!\(\*StyleBox[\"SW\",FontSlant->\"Italic\"]\)", 
+                 "\!\(\*StyleBox[\"K\",FontSlant->\"Italic\"]\)"]^$\
+CellContext`unit, Bold, Red, FontSize -> $CellContext`Size, 
                FontFamily -> $CellContext`family], 
               Map[
               Style[#, Underlined, Bold, Red, FontSize -> $CellContext`Size, 
@@ -25360,11 +25332,10 @@ FontSlant->\"Italic\"]\)"]^$CellContext`unit, Bold, Red,
              MemberQ[$CellContext`SW2, $CellContext`unit], {
               Style[
               Subscript[
-                "Non Normal Klein four group \!\(\*\nStyleBox[\"SW\",\n\
-FontSlant->\"Italic\"]\)", 
-                 "\!\(\*\nStyleBox[\"K\",\n\
-FontSlant->\"Italic\"]\)"]^$CellContext`unit, Bold, Red, 
-               FontSize -> $CellContext`Size, 
+                "Non Normal Klein four group \
+\!\(\*StyleBox[\"SW\",FontSlant->\"Italic\"]\)", 
+                 "\!\(\*StyleBox[\"K\",FontSlant->\"Italic\"]\)"]^$\
+CellContext`unit, Bold, Red, FontSize -> $CellContext`Size, 
                FontFamily -> $CellContext`family], 
               Map[
               Style[#, Bold, Red, FontSize -> $CellContext`Size, 
@@ -25372,11 +25343,10 @@ FontSlant->\"Italic\"]\)"]^$CellContext`unit, Bold, Red,
              MemberQ[$CellContext`YR1, $CellContext`unit], {
               Style[
               Subscript[
-                "Non Normal Klein four group \!\(\*\nStyleBox[\"YR\",\n\
-FontSlant->\"Italic\"]\)", 
-                 "\!\(\*\nStyleBox[\"K\",\n\
-FontSlant->\"Italic\"]\)"]^$CellContext`unit, Bold, Blue, 
-               FontSize -> $CellContext`Size, 
+                "Non Normal Klein four group \
+\!\(\*StyleBox[\"YR\",FontSlant->\"Italic\"]\)", 
+                 "\!\(\*StyleBox[\"K\",FontSlant->\"Italic\"]\)"]^$\
+CellContext`unit, Bold, Blue, FontSize -> $CellContext`Size, 
                FontFamily -> $CellContext`family], 
               Map[
               Style[#, Underlined, Bold, Blue, FontSize -> $CellContext`Size, 
@@ -25384,11 +25354,10 @@ FontSlant->\"Italic\"]\)"]^$CellContext`unit, Bold, Blue,
              MemberQ[$CellContext`YR2, $CellContext`unit], {
               Style[
               Subscript[
-                "Non Normal Klein four group \!\(\*\nStyleBox[\"YR\",\n\
-FontSlant->\"Italic\"]\)", 
-                 "\!\(\*\nStyleBox[\"K\",\n\
-FontSlant->\"Italic\"]\)"]^$CellContext`unit, Bold, Blue, 
-               FontSize -> $CellContext`Size, 
+                "Non Normal Klein four group \
+\!\(\*StyleBox[\"YR\",FontSlant->\"Italic\"]\)", 
+                 "\!\(\*StyleBox[\"K\",FontSlant->\"Italic\"]\)"]^$\
+CellContext`unit, Bold, Blue, FontSize -> $CellContext`Size, 
                FontFamily -> $CellContext`family], 
               Map[
               Style[#, Bold, Blue, FontSize -> $CellContext`Size, 
@@ -25396,11 +25365,10 @@ FontSlant->\"Italic\"]\)"]^$CellContext`unit, Bold, Blue,
              MemberQ[$CellContext`MK1, $CellContext`unit], {
               Style[
               Subscript[
-                "Non Normal Klein four group \!\(\*\nStyleBox[\"MK\",\n\
-FontSlant->\"Italic\"]\)", 
-                 "\!\(\*\nStyleBox[\"K\",\n\
-FontSlant->\"Italic\"]\)"]^$CellContext`unit, Bold, Magenta, 
-               FontSize -> $CellContext`Size, 
+                "Non Normal Klein four group \
+\!\(\*StyleBox[\"MK\",FontSlant->\"Italic\"]\)", 
+                 "\!\(\*StyleBox[\"K\",FontSlant->\"Italic\"]\)"]^$\
+CellContext`unit, Bold, Magenta, FontSize -> $CellContext`Size, 
                FontFamily -> $CellContext`family], 
               Map[
               Style[#, Underlined, Bold, Magenta, 
@@ -25409,11 +25377,10 @@ FontSlant->\"Italic\"]\)"]^$CellContext`unit, Bold, Magenta,
              MemberQ[$CellContext`MK2, $CellContext`unit], {
               Style[
               Subscript[
-                "Non Normal Klein four group \!\(\*\nStyleBox[\"MK\",\n\
-FontSlant->\"Italic\"]\)", 
-                 "\!\(\*\nStyleBox[\"K\",\n\
-FontSlant->\"Italic\"]\)"]^$CellContext`unit, Bold, Magenta, 
-               FontSize -> $CellContext`Size, 
+                "Non Normal Klein four group \
+\!\(\*StyleBox[\"MK\",FontSlant->\"Italic\"]\)", 
+                 "\!\(\*StyleBox[\"K\",FontSlant->\"Italic\"]\)"]^$\
+CellContext`unit, Bold, Magenta, FontSize -> $CellContext`Size, 
                FontFamily -> $CellContext`family], 
               Map[
               Style[#, Bold, Magenta, FontSize -> $CellContext`Size, 
@@ -25423,11 +25390,10 @@ FontSlant->\"Italic\"]\)"]^$CellContext`unit, Bold, Magenta,
              MemberQ[$CellContext`SW, $CellContext`unit], {
               Style[
               Subscript[
-                "Normal Klein four group \!\(\*\nStyleBox[\"SW\",\n\
-FontSlant->\"Italic\"]\)", 
-                 "\!\(\*\nStyleBox[\"NK\",\n\
-FontSlant->\"Italic\"]\)"]^$CellContext`unit, Bold, Red, 
-               FontSize -> $CellContext`Size, 
+                "Normal Klein four group \
+\!\(\*StyleBox[\"SW\",FontSlant->\"Italic\"]\)", 
+                 "\!\(\*StyleBox[\"NK\",FontSlant->\"Italic\"]\)"]^$\
+CellContext`unit, Bold, Red, FontSize -> $CellContext`Size, 
                FontFamily -> $CellContext`family], 
               Map[
               Style[#, Bold, FontSize -> $CellContext`Size, 
@@ -25435,11 +25401,10 @@ FontSlant->\"Italic\"]\)"]^$CellContext`unit, Bold, Red,
              MemberQ[$CellContext`YR, $CellContext`unit], {
               Style[
               Subscript[
-                "Normal Klein four group \!\(\*\nStyleBox[\"YR\",\n\
-FontSlant->\"Italic\"]\)", 
-                 "\!\(\*\nStyleBox[\"NK\",\n\
-FontSlant->\"Italic\"]\)"]^$CellContext`unit, Bold, Blue, 
-               FontSize -> $CellContext`Size, 
+                "Normal Klein four group \
+\!\(\*StyleBox[\"YR\",FontSlant->\"Italic\"]\)", 
+                 "\!\(\*StyleBox[\"NK\",FontSlant->\"Italic\"]\)"]^$\
+CellContext`unit, Bold, Blue, FontSize -> $CellContext`Size, 
                FontFamily -> $CellContext`family], 
               Map[
               Style[#, Bold, FontSize -> $CellContext`Size, 
@@ -25447,11 +25412,10 @@ FontSlant->\"Italic\"]\)"]^$CellContext`unit, Bold, Blue,
              MemberQ[$CellContext`MK, $CellContext`unit], {
               Style[
               Subscript[
-                "Normal Klein four group \!\(\*\nStyleBox[\"YR\",\n\
-FontSlant->\"Italic\"]\)", 
-                 "\!\(\*\nStyleBox[\"NK\",\n\
-FontSlant->\"Italic\"]\)"]^$CellContext`unit, Bold, Magenta, 
-               FontSize -> $CellContext`Size, 
+                "Normal Klein four group \
+\!\(\*StyleBox[\"YR\",FontSlant->\"Italic\"]\)", 
+                 "\!\(\*StyleBox[\"NK\",FontSlant->\"Italic\"]\)"]^$\
+CellContext`unit, Bold, Magenta, FontSize -> $CellContext`Size, 
                FontFamily -> $CellContext`family], 
               Map[
               Style[#, Bold, FontSize -> $CellContext`Size, 
@@ -25610,7 +25574,6 @@ $CellContext`set], 2]],
            Style[$CellContext`cube, Underlined, Red, Bold, 
             FontFamily -> $CellContext`family, $CellContext`size], 
            MemberQ[$CellContext`SW2, $CellContext`cube], 
-           
            Style[$CellContext`cube, Red, Bold, 
             FontFamily -> $CellContext`family, $CellContext`size], 
            MemberQ[$CellContext`YR1, $CellContext`cube], 
@@ -25634,8 +25597,7 @@ $CellContext`SW1 = {"ACGU", "AGCU", "UCGA", "UGCA"}, $CellContext`SW2 = {
         "ACUG", "AUCG", "GUCA", "GCUA"}, $CellContext`YR2 = {
         "CAGU", "UAGC", "UGAC", "CGAU"}, $CellContext`MK1 = {
         "AGUC", "AUGC", "CGUA", "CUGA"}, $CellContext`MK2 = {
-        "GACU", "GCAU", "UACG", "UCAG"}, 
-       Attributes[Subscript] = {NHoldRest}, $CellContext`SW = {
+        "GACU", "GCAU", "UACG", "UCAG"}, $CellContext`SW = {
         "ACGU", "AGCU", "UCGA", "UGCA", "CAUG", "CUAG", "GAUC", 
          "GUAC"}, $CellContext`YR = {
         "ACUG", "AUCG", "GUCA", "GCUA", "CAGU", "UAGC", "UGAC", 
@@ -25669,9 +25631,10 @@ $CellContext`baseorder]], $CellContext`baseorder], $CellContext`Cube2Cycle[
     UntrackedVariables:>{Typeset`size$$}], "Manipulate",
    Deployed->True,
    StripOnInput->False],
-  Manipulate`InterpretManipulate[1]]], "Output",ExpressionUUID->"aee00eba-\
-23c1-4148-92d9-b36da29d7d4a"]
-}, {2}]],
+  Manipulate`InterpretManipulate[1]]], "Output",
+ CellLabel->
+  "Out[130]=",ExpressionUUID->"9725ff57-ed76-4d8e-b67f-c7abc5fe6c65"]
+}, Open  ]],
 
 Cell[TextData[{
  "As indicated above, ",
@@ -26165,13 +26128,11 @@ Cell[BoxData[
   RowBox[{
    RowBox[{"{", 
     RowBox[{
-     RowBox[{"X", "=", "\"\<\!\(\*FormBox[
-StyleBox[SubsuperscriptBox[
-StyleBox[\"SW\",
-FontSlant->\"Italic\"], \"K\", \"ACGU\"],
-FontWeight->\"Bold\",
-FontColor->RGBColor[1, 0, 0]],
-TraditionalForm]\)\>\""}], ",", 
+     RowBox[{
+     "X", "=", 
+      "\"\<\!\(\*FormBox[StyleBox[SubsuperscriptBox[StyleBox[\"SW\",FontSlant-\
+>\"Italic\"], \"K\", \"ACGU\"],FontWeight->\"Bold\",FontColor->RGBColor[1, 0, \
+0]],TraditionalForm]\)\>\""}], ",", 
      RowBox[{"Y", "=", 
       RowBox[{"Style", "[", 
        RowBox[{"\"\<ACGU\>\"", ",", "Underlined", ",", "Red", ",", "Bold"}], 
@@ -26180,162 +26141,100 @@ TraditionalForm]\)\>\""}], ",",
     RowBox[{
      RowBox[{"group", "[", "x_", "]"}], ":=", 
      RowBox[{"Switch", "[", 
-      RowBox[{"x", ",", "\[IndentingNewLine]", "\"\<\!\(\*FormBox[
-StyleBox[SubsuperscriptBox[
-StyleBox[\"SW\",
-FontSlant->\"Italic\"], \"K\", \"ACGU\"],
-FontWeight->\"Bold\",
-FontColor->RGBColor[1, 0, 0]],
-TraditionalForm]\)\>\"", ",", 
+      RowBox[{
+      "x", ",", "\[IndentingNewLine]", 
+       "\"\<\!\(\*FormBox[StyleBox[SubsuperscriptBox[StyleBox[\"SW\",\
+FontSlant->\"Italic\"], \"K\", \
+\"ACGU\"],FontWeight->\"Bold\",FontColor->RGBColor[1, 0, 0]],TraditionalForm]\
+\)\>\"", ",", 
        RowBox[{"{", 
         RowBox[{
         "\"\<ACGU\>\"", ",", "\"\<AGCU\>\"", ",", "\"\<UCGA\>\"", ",", 
          "\"\<UGCA\>\""}], "}"}], ",", "\[IndentingNewLine]", 
-       "\"\<\!\(\*FormBox[
-StyleBox[SubsuperscriptBox[
-StyleBox[\"SW\",
-FontSlant->\"Italic\"], \"K\", \"CAUG\"],
-FontWeight->\"Bold\",
-FontColor->RGBColor[1, 0, 0]],
-TraditionalForm]\)\>\"", ",", 
+       "\"\<\!\(\*FormBox[StyleBox[SubsuperscriptBox[StyleBox[\"SW\",\
+FontSlant->\"Italic\"], \"K\", \
+\"CAUG\"],FontWeight->\"Bold\",FontColor->RGBColor[1, 0, 0]],TraditionalForm]\
+\)\>\"", ",", 
        RowBox[{"{", 
         RowBox[{
         "\"\<CAUG\>\"", ",", "\"\<CUAG\>\"", ",", "\"\<GAUC\>\"", ",", 
          "\"\<GUAC\>\""}], "}"}], ",", "\[IndentingNewLine]", 
-       "\"\<\!\(\*FormBox[
-StyleBox[SubsuperscriptBox[
-StyleBox[\"SW\",
-FontSlant->\"Italic\"], 
-StyleBox[\"NK\",
-FontSlant->\"Italic\"], \"ACGU\"],
-FontWeight->\"Bold\",
-FontColor->RGBColor[1, 0, 0]],
-TraditionalForm]\)\>\"", ",", 
+       "\"\<\!\(\*FormBox[StyleBox[SubsuperscriptBox[StyleBox[\"SW\",\
+FontSlant->\"Italic\"], StyleBox[\"NK\",FontSlant->\"Italic\"], \
+\"ACGU\"],FontWeight->\"Bold\",FontColor->RGBColor[1, 0, 0]],TraditionalForm]\
+\)\>\"", ",", 
        RowBox[{"{", 
         RowBox[{
         "\"\<ACGU\>\"", ",", "\"\<UGCA\>\"", ",", "\"\<CAUG\>\"", ",", 
          "\"\<GUAC\>\""}], "}"}], ",", "\[IndentingNewLine]", 
-       "\"\<\!\(\*FormBox[
-StyleBox[SubsuperscriptBox[
-StyleBox[\"SW\",
-FontSlant->\"Italic\"], 
-StyleBox[\"NK\",
-FontSlant->\"Italic\"], \"AGCU\"],
-FontWeight->\"Bold\",
-FontColor->RGBColor[1, 0, 0]],
-TraditionalForm]\)\>\"", ",", 
+       "\"\<\!\(\*FormBox[StyleBox[SubsuperscriptBox[StyleBox[\"SW\",\
+FontSlant->\"Italic\"], StyleBox[\"NK\",FontSlant->\"Italic\"], \
+\"AGCU\"],FontWeight->\"Bold\",FontColor->RGBColor[1, 0, 0]],TraditionalForm]\
+\)\>\"", ",", 
        RowBox[{"{", 
         RowBox[{
         "\"\<AGCU\>\"", ",", "\"\<CUAG\>\"", ",", "\"\<GAUC\>\"", ",", 
          "\"\<UCGA\>\""}], "}"}], ",", "\[IndentingNewLine]", 
-       "\"\<\!\(\*FormBox[
-StyleBox[SubsuperscriptBox[
-StyleBox[\"YR\",
-FontSlant->\"Italic\"], \"K\", 
-StyleBox[\"ACUG\",
-FontSlant->\"Plain\"]],
-FontWeight->\"Bold\",
-FontSlant->\"Italic\",
-FontColor->RGBColor[0., 0., 1.]],
-TraditionalForm]\)\>\"", ",", 
+       "\"\<\!\(\*FormBox[StyleBox[SubsuperscriptBox[StyleBox[\"YR\",\
+FontSlant->\"Italic\"], \"K\", \
+StyleBox[\"ACUG\",FontSlant->\"Plain\"]],FontWeight->\"Bold\",FontSlant->\"\
+Italic\",FontColor->RGBColor[0., 0., 1.]],TraditionalForm]\)\>\"", ",", 
        RowBox[{"{", 
         RowBox[{
         "\"\<ACUG\>\"", ",", "\"\<AUCG\>\"", ",", "\"\<GUCA\>\"", ",", 
          "\"\<GCUA\>\""}], "}"}], ",", "\[IndentingNewLine]", 
-       "\"\<\!\(\*FormBox[
-StyleBox[SubsuperscriptBox[
-StyleBox[\"YR\",
-FontSlant->\"Italic\"], \"K\", 
-StyleBox[\"CAGU\",
-FontSlant->\"Plain\"]],
-FontWeight->\"Bold\",
-FontSlant->\"Italic\",
-FontColor->RGBColor[0., 0., 1.]],
-TraditionalForm]\)\>\"", ",", 
+       "\"\<\!\(\*FormBox[StyleBox[SubsuperscriptBox[StyleBox[\"YR\",\
+FontSlant->\"Italic\"], \"K\", \
+StyleBox[\"CAGU\",FontSlant->\"Plain\"]],FontWeight->\"Bold\",FontSlant->\"\
+Italic\",FontColor->RGBColor[0., 0., 1.]],TraditionalForm]\)\>\"", ",", 
        RowBox[{"{", 
         RowBox[{
         "\"\<CAGU\>\"", ",", "\"\<UAGC\>\"", ",", "\"\<UGAC\>\"", ",", 
          "\"\<CGAU\>\""}], "}"}], ",", "\[IndentingNewLine]", 
-       "\"\<\!\(\*FormBox[
-StyleBox[SubsuperscriptBox[
-StyleBox[\"YR\",
-FontSlant->\"Italic\"], \"NK\", 
-StyleBox[\"ACUG\",
-FontSlant->\"Plain\"]],
-FontWeight->\"Bold\",
-FontSlant->\"Italic\",
-FontColor->RGBColor[0., 0., 1.]],
-TraditionalForm]\)\>\"", ",", 
+       "\"\<\!\(\*FormBox[StyleBox[SubsuperscriptBox[StyleBox[\"YR\",\
+FontSlant->\"Italic\"], \"NK\", \
+StyleBox[\"ACUG\",FontSlant->\"Plain\"]],FontWeight->\"Bold\",FontSlant->\"\
+Italic\",FontColor->RGBColor[0., 0., 1.]],TraditionalForm]\)\>\"", ",", 
        RowBox[{"{", 
         RowBox[{
         "\"\<ACUG\>\"", ",", "\"\<GUCA\>\"", ",", "\"\<CAGU\>\"", ",", 
          "\"\<UGAC\>\""}], "}"}], ",", "\[IndentingNewLine]", 
-       "\"\<\!\(\*FormBox[
-StyleBox[SubsuperscriptBox[
-StyleBox[\"YR\",
-FontSlant->\"Italic\"], \"NK\", 
-StyleBox[\"AUCG\",
-FontSlant->\"Plain\"]],
-FontWeight->\"Bold\",
-FontSlant->\"Italic\",
-FontColor->RGBColor[0., 0., 1.]],
-TraditionalForm]\)\>\"", ",", 
+       "\"\<\!\(\*FormBox[StyleBox[SubsuperscriptBox[StyleBox[\"YR\",\
+FontSlant->\"Italic\"], \"NK\", \
+StyleBox[\"AUCG\",FontSlant->\"Plain\"]],FontWeight->\"Bold\",FontSlant->\"\
+Italic\",FontColor->RGBColor[0., 0., 1.]],TraditionalForm]\)\>\"", ",", 
        RowBox[{"{", 
         RowBox[{
         "\"\<AUCG\>\"", ",", "\"\<CGAU\>\"", ",", "\"\<GCUA\>\"", ",", 
          "\"\<UAGC\>\""}], "}"}], ",", "\[IndentingNewLine]", 
-       "\"\<\!\(\*FormBox[
-StyleBox[SubsuperscriptBox[
-StyleBox[\"MK\",
-FontSlant->\"Italic\"], \"K\", 
-StyleBox[\"AGUC\",
-FontSlant->\"Plain\"]],
-FontWeight->\"Bold\",
-FontSlant->\"Italic\",
-FontColor->RGBColor[1., 0., 1.]],
-TraditionalForm]\)\>\"", ",", 
+       "\"\<\!\(\*FormBox[StyleBox[SubsuperscriptBox[StyleBox[\"MK\",\
+FontSlant->\"Italic\"], \"K\", \
+StyleBox[\"AGUC\",FontSlant->\"Plain\"]],FontWeight->\"Bold\",FontSlant->\"\
+Italic\",FontColor->RGBColor[1., 0., 1.]],TraditionalForm]\)\>\"", ",", 
        RowBox[{"{", 
         RowBox[{
         "\"\<AGUC\>\"", ",", "\"\<AUGC\>\"", ",", "\"\<CGUA\>\"", ",", 
          "\"\<CUGA\>\""}], "}"}], ",", "\[IndentingNewLine]", 
-       "\"\<\!\(\*FormBox[
-StyleBox[SubsuperscriptBox[
-StyleBox[\"MK\",
-FontSlant->\"Italic\"], \"K\", 
-StyleBox[\"GACU\",
-FontSlant->\"Plain\"]],
-FontWeight->\"Bold\",
-FontSlant->\"Italic\",
-FontColor->RGBColor[1., 0., 1.]],
-TraditionalForm]\)\>\"", ",", 
+       "\"\<\!\(\*FormBox[StyleBox[SubsuperscriptBox[StyleBox[\"MK\",\
+FontSlant->\"Italic\"], \"K\", \
+StyleBox[\"GACU\",FontSlant->\"Plain\"]],FontWeight->\"Bold\",FontSlant->\"\
+Italic\",FontColor->RGBColor[1., 0., 1.]],TraditionalForm]\)\>\"", ",", 
        RowBox[{"{", 
         RowBox[{
         "\"\<GACU\>\"", ",", "\"\<GCAU\>\"", ",", "\"\<UACG\>\"", ",", 
          "\"\<UCAG\>\""}], "}"}], ",", "\[IndentingNewLine]", 
-       "\"\<\!\(\*FormBox[
-StyleBox[SubsuperscriptBox[
-StyleBox[\"MK\",
-FontSlant->\"Italic\"], \"NK\", 
-StyleBox[\"AGUC\",
-FontSlant->\"Plain\"]],
-FontWeight->\"Bold\",
-FontSlant->\"Italic\",
-FontColor->RGBColor[1., 0., 1.]],
-TraditionalForm]\)\>\"", ",", 
+       "\"\<\!\(\*FormBox[StyleBox[SubsuperscriptBox[StyleBox[\"MK\",\
+FontSlant->\"Italic\"], \"NK\", \
+StyleBox[\"AGUC\",FontSlant->\"Plain\"]],FontWeight->\"Bold\",FontSlant->\"\
+Italic\",FontColor->RGBColor[1., 0., 1.]],TraditionalForm]\)\>\"", ",", 
        RowBox[{"{", 
         RowBox[{
         "\"\<AGUC\>\"", ",", "\"\<CUGA\>\"", ",", "\"\<GACU\>\"", ",", 
          "\"\<UCAG\>\""}], "}"}], ",", "\[IndentingNewLine]", 
-       "\"\<\!\(\*FormBox[
-StyleBox[SubsuperscriptBox[
-StyleBox[\"MK\",
-FontSlant->\"Italic\"], \"NK\", 
-StyleBox[\"AUGC\",
-FontSlant->\"Plain\"]],
-FontWeight->\"Bold\",
-FontSlant->\"Italic\",
-FontColor->RGBColor[1., 0., 1.]],
-TraditionalForm]\)\>\"", ",", 
+       "\"\<\!\(\*FormBox[StyleBox[SubsuperscriptBox[StyleBox[\"MK\",\
+FontSlant->\"Italic\"], \"NK\", \
+StyleBox[\"AUGC\",FontSlant->\"Plain\"]],FontWeight->\"Bold\",FontSlant->\"\
+Italic\",FontColor->RGBColor[1., 0., 1.]],TraditionalForm]\)\>\"", ",", 
        RowBox[{"{", 
         RowBox[{
         "\"\<AUGC\>\"", ",", "\"\<CGUA\>\"", ",", "\"\<GCAU\>\"", ",", 
@@ -26379,107 +26278,56 @@ TraditionalForm]\)\>\"", ",",
             RowBox[{"Dynamic", "[", 
              RowBox[{"X", ",", "Automatic"}], "]"}], ",", 
             RowBox[{"{", 
-             RowBox[{"\"\<\!\(\*FormBox[
-StyleBox[SubsuperscriptBox[
-StyleBox[\"SW\",
-FontSlant->\"Italic\"], \"K\", \"ACGU\"],
-FontWeight->\"Bold\",
-FontColor->RGBColor[1, 0, 0]],
-TraditionalForm]\)\>\"", ",", "\"\<\!\(\*FormBox[
-StyleBox[SubsuperscriptBox[
-StyleBox[\"SW\",
-FontSlant->\"Italic\"], \"K\", \"CAUG\"],
-FontWeight->\"Bold\",
-FontColor->RGBColor[1, 0, 0]],
-TraditionalForm]\)\>\"", ",", "\"\<\!\(\*FormBox[
-StyleBox[SubsuperscriptBox[
-StyleBox[\"SW\",
-FontSlant->\"Italic\"], 
-StyleBox[\"NK\",
-FontSlant->\"Italic\"], \"ACGU\"],
-FontWeight->\"Bold\",
-FontColor->RGBColor[1, 0, 0]],
-TraditionalForm]\)\>\"", ",", "\"\<\!\(\*FormBox[
-StyleBox[SubsuperscriptBox[
-StyleBox[\"SW\",
-FontSlant->\"Italic\"], 
-StyleBox[\"NK\",
-FontSlant->\"Italic\"], \"AGCU\"],
-FontWeight->\"Bold\",
-FontColor->RGBColor[1, 0, 0]],
-TraditionalForm]\)\>\"", ",", "\"\<\!\(\*FormBox[
-StyleBox[SubsuperscriptBox[
-StyleBox[\"YR\",
-FontSlant->\"Italic\"], \"K\", 
-StyleBox[\"ACUG\",
-FontSlant->\"Plain\"]],
-FontWeight->\"Bold\",
-FontSlant->\"Italic\",
-FontColor->RGBColor[0., 0., 1.]],
-TraditionalForm]\)\>\"", ",", "\"\<\!\(\*FormBox[
-StyleBox[SubsuperscriptBox[
-StyleBox[\"YR\",
-FontSlant->\"Italic\"], \"K\", 
-StyleBox[\"CAGU\",
-FontSlant->\"Plain\"]],
-FontWeight->\"Bold\",
-FontSlant->\"Italic\",
-FontColor->RGBColor[0., 0., 1.]],
-TraditionalForm]\)\>\"", ",", "\"\<\!\(\*FormBox[
-StyleBox[SubsuperscriptBox[
-StyleBox[\"YR\",
-FontSlant->\"Italic\"], \"NK\", 
-StyleBox[\"ACUG\",
-FontSlant->\"Plain\"]],
-FontWeight->\"Bold\",
-FontSlant->\"Italic\",
-FontColor->RGBColor[0., 0., 1.]],
-TraditionalForm]\)\>\"", ",", "\"\<\!\(\*FormBox[
-StyleBox[SubsuperscriptBox[
-StyleBox[\"YR\",
-FontSlant->\"Italic\"], \"NK\", 
-StyleBox[\"AUCG\",
-FontSlant->\"Plain\"]],
-FontWeight->\"Bold\",
-FontSlant->\"Italic\",
-FontColor->RGBColor[0., 0., 1.]],
-TraditionalForm]\)\>\"", ",", "\"\<\!\(\*FormBox[
-StyleBox[SubsuperscriptBox[
-StyleBox[\"MK\",
-FontSlant->\"Italic\"], \"K\", 
-StyleBox[\"AGUC\",
-FontSlant->\"Plain\"]],
-FontWeight->\"Bold\",
-FontSlant->\"Italic\",
-FontColor->RGBColor[1., 0., 1.]],
-TraditionalForm]\)\>\"", ",", "\"\<\!\(\*FormBox[
-StyleBox[SubsuperscriptBox[
-StyleBox[\"MK\",
-FontSlant->\"Italic\"], \"K\", 
-StyleBox[\"GACU\",
-FontSlant->\"Plain\"]],
-FontWeight->\"Bold\",
-FontSlant->\"Italic\",
-FontColor->RGBColor[1., 0., 1.]],
-TraditionalForm]\)\>\"", ",", "\"\<\!\(\*FormBox[
-StyleBox[SubsuperscriptBox[
-StyleBox[\"MK\",
-FontSlant->\"Italic\"], \"NK\", 
-StyleBox[\"AGUC\",
-FontSlant->\"Plain\"]],
-FontWeight->\"Bold\",
-FontSlant->\"Italic\",
-FontColor->RGBColor[1., 0., 1.]],
-TraditionalForm]\)\>\"", ",", "\"\<\!\(\*FormBox[
-StyleBox[SubsuperscriptBox[
-StyleBox[\"MK\",
-FontSlant->\"Italic\"], \"NK\", 
-StyleBox[\"AUGC\",
-FontSlant->\"Plain\"]],
-FontWeight->\"Bold\",
-FontSlant->\"Italic\",
-FontColor->RGBColor[1., 0., 1.]],
-TraditionalForm]\)\>\""}], "}"}], ",", 
+             RowBox[{
+             "\"\<\!\(\*FormBox[StyleBox[SubsuperscriptBox[StyleBox[\"SW\",\
+FontSlant->\"Italic\"], \"K\", \
+\"ACGU\"],FontWeight->\"Bold\",FontColor->RGBColor[1, 0, 0]],TraditionalForm]\
+\)\>\"", ",", 
+              "\"\<\!\(\*FormBox[StyleBox[SubsuperscriptBox[StyleBox[\"SW\",\
+FontSlant->\"Italic\"], \"K\", \
+\"CAUG\"],FontWeight->\"Bold\",FontColor->RGBColor[1, 0, 0]],TraditionalForm]\
+\)\>\"", ",", 
+              "\"\<\!\(\*FormBox[StyleBox[SubsuperscriptBox[StyleBox[\"SW\",\
+FontSlant->\"Italic\"], StyleBox[\"NK\",FontSlant->\"Italic\"], \
+\"ACGU\"],FontWeight->\"Bold\",FontColor->RGBColor[1, 0, 0]],TraditionalForm]\
+\)\>\"", ",", 
+              "\"\<\!\(\*FormBox[StyleBox[SubsuperscriptBox[StyleBox[\"SW\",\
+FontSlant->\"Italic\"], StyleBox[\"NK\",FontSlant->\"Italic\"], \
+\"AGCU\"],FontWeight->\"Bold\",FontColor->RGBColor[1, 0, 0]],TraditionalForm]\
+\)\>\"", ",", 
+              "\"\<\!\(\*FormBox[StyleBox[SubsuperscriptBox[StyleBox[\"YR\",\
+FontSlant->\"Italic\"], \"K\", \
+StyleBox[\"ACUG\",FontSlant->\"Plain\"]],FontWeight->\"Bold\",FontSlant->\"\
+Italic\",FontColor->RGBColor[0., 0., 1.]],TraditionalForm]\)\>\"", ",", 
+              "\"\<\!\(\*FormBox[StyleBox[SubsuperscriptBox[StyleBox[\"YR\",\
+FontSlant->\"Italic\"], \"K\", \
+StyleBox[\"CAGU\",FontSlant->\"Plain\"]],FontWeight->\"Bold\",FontSlant->\"\
+Italic\",FontColor->RGBColor[0., 0., 1.]],TraditionalForm]\)\>\"", ",", 
+              "\"\<\!\(\*FormBox[StyleBox[SubsuperscriptBox[StyleBox[\"YR\",\
+FontSlant->\"Italic\"], \"NK\", \
+StyleBox[\"ACUG\",FontSlant->\"Plain\"]],FontWeight->\"Bold\",FontSlant->\"\
+Italic\",FontColor->RGBColor[0., 0., 1.]],TraditionalForm]\)\>\"", ",", 
+              "\"\<\!\(\*FormBox[StyleBox[SubsuperscriptBox[StyleBox[\"YR\",\
+FontSlant->\"Italic\"], \"NK\", \
+StyleBox[\"AUCG\",FontSlant->\"Plain\"]],FontWeight->\"Bold\",FontSlant->\"\
+Italic\",FontColor->RGBColor[0., 0., 1.]],TraditionalForm]\)\>\"", ",", 
+              "\"\<\!\(\*FormBox[StyleBox[SubsuperscriptBox[StyleBox[\"MK\",\
+FontSlant->\"Italic\"], \"K\", \
+StyleBox[\"AGUC\",FontSlant->\"Plain\"]],FontWeight->\"Bold\",FontSlant->\"\
+Italic\",FontColor->RGBColor[1., 0., 1.]],TraditionalForm]\)\>\"", ",", 
+              "\"\<\!\(\*FormBox[StyleBox[SubsuperscriptBox[StyleBox[\"MK\",\
+FontSlant->\"Italic\"], \"K\", \
+StyleBox[\"GACU\",FontSlant->\"Plain\"]],FontWeight->\"Bold\",FontSlant->\"\
+Italic\",FontColor->RGBColor[1., 0., 1.]],TraditionalForm]\)\>\"", ",", 
+              "\"\<\!\(\*FormBox[StyleBox[SubsuperscriptBox[StyleBox[\"MK\",\
+FontSlant->\"Italic\"], \"NK\", \
+StyleBox[\"AGUC\",FontSlant->\"Plain\"]],FontWeight->\"Bold\",FontSlant->\"\
+Italic\",FontColor->RGBColor[1., 0., 1.]],TraditionalForm]\)\>\"", ",", 
+              "\"\<\!\(\*FormBox[StyleBox[SubsuperscriptBox[StyleBox[\"MK\",\
+FontSlant->\"Italic\"], \"NK\", \
+StyleBox[\"AUGC\",FontSlant->\"Plain\"]],FontWeight->\"Bold\",FontSlant->\"\
+Italic\",FontColor->RGBColor[1., 0., 1.]],TraditionalForm]\)\>\""}], "}"}], 
+            ",", 
             RowBox[{"ImageSize", "\[Rule]", 
              RowBox[{"{", 
               RowBox[{"92", ",", "50"}], "}"}]}], ",", 
@@ -26519,15 +26367,15 @@ TraditionalForm]\)\>\""}], "}"}], ",",
        RowBox[{"{", 
         RowBox[{"Automatic", ",", "Automatic"}], "}"}]}]}], "]"}]}]}], 
   "\[IndentingNewLine]", "]"}]], "Input",
- InitializationCell->
-  True,ExpressionUUID->"6bb25f52-3ced-46c3-bdd3-e1a68a476a41"],
+ InitializationCell->True,
+ CellLabel->
+  "In[131]:=",ExpressionUUID->"6bb25f52-3ced-46c3-bdd3-e1a68a476a41"],
 
 Cell[BoxData[
  DynamicModuleBox[{$CellContext`X$$ = 
-  "\!\(\*FormBox[\n StyleBox[SubsuperscriptBox[\n   StyleBox[\"SW\",\n\
-FontSlant->\"Italic\"], \"K\", \"ACGU\"],\nFontWeight->\"Bold\",\n\
-FontColor->RGBColor[1, 0, 0]],\n TraditionalForm]\)", $CellContext`Y$$ = 
-  Style["ACGU", Underlined, 
+  "\!\(\*FormBox[StyleBox[SubsuperscriptBox[StyleBox[\"SW\",FontSlant->\"\
+Italic\"], \"K\", \"ACGU\"],FontWeight->\"Bold\",FontColor->RGBColor[1, 0, \
+0]],TraditionalForm]\)", $CellContext`Y$$ = Style["ACGU", Underlined, 
    RGBColor[1, 0, 0], Bold], $CellContext`group$$}, 
   TagBox[GridBox[{
      {
@@ -26776,108 +26624,96 @@ FontColor->RGBColor[1, 0, 0]],\n TraditionalForm]\)", $CellContext`Y$$ =
         FontSize -> 14, FontFamily -> 
          "Times New Roman"}], "\<\"\[SmallCircle]\"\>", 
       PopupMenuBox[Dynamic[$CellContext`X$$, Automatic], {
-       "\!\(\*FormBox[\n StyleBox[SubsuperscriptBox[\n   StyleBox[\"SW\",\n\
-FontSlant->\"Italic\"], \"K\", \"ACGU\"],\nFontWeight->\"Bold\",\n\
-FontColor->RGBColor[1, 0, 0]],\n \
-TraditionalForm]\)"->"\<\"\\!\\(\\*FormBox[\\n StyleBox[SubsuperscriptBox[\\n \
-  StyleBox[\\\"SW\\\",\\nFontSlant->\\\"Italic\\\"], \\\"K\\\", \
-\\\"ACGU\\\"],\\nFontWeight->\\\"Bold\\\",\\nFontColor->RGBColor[1, 0, \
-0]],\\n TraditionalForm]\\)\"\>", 
-       "\!\(\*FormBox[\n StyleBox[SubsuperscriptBox[\n   StyleBox[\"SW\",\n\
-FontSlant->\"Italic\"], \"K\", \"CAUG\"],\nFontWeight->\"Bold\",\n\
-FontColor->RGBColor[1, 0, 0]],\n \
-TraditionalForm]\)"->"\<\"\\!\\(\\*FormBox[\\n StyleBox[SubsuperscriptBox[\\n \
-  StyleBox[\\\"SW\\\",\\nFontSlant->\\\"Italic\\\"], \\\"K\\\", \
-\\\"CAUG\\\"],\\nFontWeight->\\\"Bold\\\",\\nFontColor->RGBColor[1, 0, \
-0]],\\n TraditionalForm]\\)\"\>", 
-       "\!\(\*FormBox[\n StyleBox[SubsuperscriptBox[\n   StyleBox[\"SW\",\n\
-FontSlant->\"Italic\"], \n   StyleBox[\"NK\",\nFontSlant->\"Italic\"], \"ACGU\
-\"],\nFontWeight->\"Bold\",\nFontColor->RGBColor[1, 0, 0]],\n \
-TraditionalForm]\)"->"\<\"\\!\\(\\*FormBox[\\n StyleBox[SubsuperscriptBox[\\n \
-  StyleBox[\\\"SW\\\",\\nFontSlant->\\\"Italic\\\"], \\n   \
-StyleBox[\\\"NK\\\",\\nFontSlant->\\\"Italic\\\"], \
-\\\"ACGU\\\"],\\nFontWeight->\\\"Bold\\\",\\nFontColor->RGBColor[1, 0, \
-0]],\\n TraditionalForm]\\)\"\>", 
-       "\!\(\*FormBox[\n StyleBox[SubsuperscriptBox[\n   StyleBox[\"SW\",\n\
-FontSlant->\"Italic\"], \n   StyleBox[\"NK\",\nFontSlant->\"Italic\"], \"AGCU\
-\"],\nFontWeight->\"Bold\",\nFontColor->RGBColor[1, 0, 0]],\n \
-TraditionalForm]\)"->"\<\"\\!\\(\\*FormBox[\\n StyleBox[SubsuperscriptBox[\\n \
-  StyleBox[\\\"SW\\\",\\nFontSlant->\\\"Italic\\\"], \\n   \
-StyleBox[\\\"NK\\\",\\nFontSlant->\\\"Italic\\\"], \
-\\\"AGCU\\\"],\\nFontWeight->\\\"Bold\\\",\\nFontColor->RGBColor[1, 0, \
-0]],\\n TraditionalForm]\\)\"\>", 
-       "\!\(\*FormBox[\n StyleBox[SubsuperscriptBox[\n   StyleBox[\"YR\",\n\
-FontSlant->\"Italic\"], \"K\", \n   StyleBox[\"ACUG\",\n\
-FontSlant->\"Plain\"]],\nFontWeight->\"Bold\",\nFontSlant->\"Italic\",\n\
-FontColor->RGBColor[0., 0., 1.]],\n \
-TraditionalForm]\)"->"\<\"\\!\\(\\*FormBox[\\n StyleBox[SubsuperscriptBox[\\n \
-  StyleBox[\\\"YR\\\",\\nFontSlant->\\\"Italic\\\"], \\\"K\\\", \\n   \
-StyleBox[\\\"ACUG\\\",\\nFontSlant->\\\"Plain\\\"]],\\nFontWeight->\\\"Bold\\\
-\",\\nFontSlant->\\\"Italic\\\",\\nFontColor->RGBColor[0., 0., 1.]],\\n \
-TraditionalForm]\\)\"\>", 
-       "\!\(\*FormBox[\n StyleBox[SubsuperscriptBox[\n   StyleBox[\"YR\",\n\
-FontSlant->\"Italic\"], \"K\", \n   StyleBox[\"CAGU\",\n\
-FontSlant->\"Plain\"]],\nFontWeight->\"Bold\",\nFontSlant->\"Italic\",\n\
-FontColor->RGBColor[0., 0., 1.]],\n \
-TraditionalForm]\)"->"\<\"\\!\\(\\*FormBox[\\n StyleBox[SubsuperscriptBox[\\n \
-  StyleBox[\\\"YR\\\",\\nFontSlant->\\\"Italic\\\"], \\\"K\\\", \\n   \
-StyleBox[\\\"CAGU\\\",\\nFontSlant->\\\"Plain\\\"]],\\nFontWeight->\\\"Bold\\\
-\",\\nFontSlant->\\\"Italic\\\",\\nFontColor->RGBColor[0., 0., 1.]],\\n \
-TraditionalForm]\\)\"\>", 
-       "\!\(\*FormBox[\n StyleBox[SubsuperscriptBox[\n   StyleBox[\"YR\",\n\
-FontSlant->\"Italic\"], \"NK\", \n   StyleBox[\"ACUG\",\n\
-FontSlant->\"Plain\"]],\nFontWeight->\"Bold\",\nFontSlant->\"Italic\",\n\
-FontColor->RGBColor[0., 0., 1.]],\n \
-TraditionalForm]\)"->"\<\"\\!\\(\\*FormBox[\\n StyleBox[SubsuperscriptBox[\\n \
-  StyleBox[\\\"YR\\\",\\nFontSlant->\\\"Italic\\\"], \\\"NK\\\", \\n   \
-StyleBox[\\\"ACUG\\\",\\nFontSlant->\\\"Plain\\\"]],\\nFontWeight->\\\"Bold\\\
-\",\\nFontSlant->\\\"Italic\\\",\\nFontColor->RGBColor[0., 0., 1.]],\\n \
-TraditionalForm]\\)\"\>", 
-       "\!\(\*FormBox[\n StyleBox[SubsuperscriptBox[\n   StyleBox[\"YR\",\n\
-FontSlant->\"Italic\"], \"NK\", \n   StyleBox[\"AUCG\",\n\
-FontSlant->\"Plain\"]],\nFontWeight->\"Bold\",\nFontSlant->\"Italic\",\n\
-FontColor->RGBColor[0., 0., 1.]],\n \
-TraditionalForm]\)"->"\<\"\\!\\(\\*FormBox[\\n StyleBox[SubsuperscriptBox[\\n \
-  StyleBox[\\\"YR\\\",\\nFontSlant->\\\"Italic\\\"], \\\"NK\\\", \\n   \
-StyleBox[\\\"AUCG\\\",\\nFontSlant->\\\"Plain\\\"]],\\nFontWeight->\\\"Bold\\\
-\",\\nFontSlant->\\\"Italic\\\",\\nFontColor->RGBColor[0., 0., 1.]],\\n \
-TraditionalForm]\\)\"\>", 
-       "\!\(\*FormBox[\n StyleBox[SubsuperscriptBox[\n   StyleBox[\"MK\",\n\
-FontSlant->\"Italic\"], \"K\", \n   StyleBox[\"AGUC\",\n\
-FontSlant->\"Plain\"]],\nFontWeight->\"Bold\",\nFontSlant->\"Italic\",\n\
-FontColor->RGBColor[1., 0., 1.]],\n \
-TraditionalForm]\)"->"\<\"\\!\\(\\*FormBox[\\n StyleBox[SubsuperscriptBox[\\n \
-  StyleBox[\\\"MK\\\",\\nFontSlant->\\\"Italic\\\"], \\\"K\\\", \\n   \
-StyleBox[\\\"AGUC\\\",\\nFontSlant->\\\"Plain\\\"]],\\nFontWeight->\\\"Bold\\\
-\",\\nFontSlant->\\\"Italic\\\",\\nFontColor->RGBColor[1., 0., 1.]],\\n \
-TraditionalForm]\\)\"\>", 
-       "\!\(\*FormBox[\n StyleBox[SubsuperscriptBox[\n   StyleBox[\"MK\",\n\
-FontSlant->\"Italic\"], \"K\", \n   StyleBox[\"GACU\",\n\
-FontSlant->\"Plain\"]],\nFontWeight->\"Bold\",\nFontSlant->\"Italic\",\n\
-FontColor->RGBColor[1., 0., 1.]],\n \
-TraditionalForm]\)"->"\<\"\\!\\(\\*FormBox[\\n StyleBox[SubsuperscriptBox[\\n \
-  StyleBox[\\\"MK\\\",\\nFontSlant->\\\"Italic\\\"], \\\"K\\\", \\n   \
-StyleBox[\\\"GACU\\\",\\nFontSlant->\\\"Plain\\\"]],\\nFontWeight->\\\"Bold\\\
-\",\\nFontSlant->\\\"Italic\\\",\\nFontColor->RGBColor[1., 0., 1.]],\\n \
-TraditionalForm]\\)\"\>", 
-       "\!\(\*FormBox[\n StyleBox[SubsuperscriptBox[\n   StyleBox[\"MK\",\n\
-FontSlant->\"Italic\"], \"NK\", \n   StyleBox[\"AGUC\",\n\
-FontSlant->\"Plain\"]],\nFontWeight->\"Bold\",\nFontSlant->\"Italic\",\n\
-FontColor->RGBColor[1., 0., 1.]],\n \
-TraditionalForm]\)"->"\<\"\\!\\(\\*FormBox[\\n StyleBox[SubsuperscriptBox[\\n \
-  StyleBox[\\\"MK\\\",\\nFontSlant->\\\"Italic\\\"], \\\"NK\\\", \\n   \
-StyleBox[\\\"AGUC\\\",\\nFontSlant->\\\"Plain\\\"]],\\nFontWeight->\\\"Bold\\\
-\",\\nFontSlant->\\\"Italic\\\",\\nFontColor->RGBColor[1., 0., 1.]],\\n \
-TraditionalForm]\\)\"\>", 
-       "\!\(\*FormBox[\n StyleBox[SubsuperscriptBox[\n   StyleBox[\"MK\",\n\
-FontSlant->\"Italic\"], \"NK\", \n   StyleBox[\"AUGC\",\n\
-FontSlant->\"Plain\"]],\nFontWeight->\"Bold\",\nFontSlant->\"Italic\",\n\
-FontColor->RGBColor[1., 0., 1.]],\n \
-TraditionalForm]\)"->"\<\"\\!\\(\\*FormBox[\\n StyleBox[SubsuperscriptBox[\\n \
-  StyleBox[\\\"MK\\\",\\nFontSlant->\\\"Italic\\\"], \\\"NK\\\", \\n   \
-StyleBox[\\\"AUGC\\\",\\nFontSlant->\\\"Plain\\\"]],\\nFontWeight->\\\"Bold\\\
-\",\\nFontSlant->\\\"Italic\\\",\\nFontColor->RGBColor[1., 0., 1.]],\\n \
-TraditionalForm]\\)\"\>"},
+       "\!\(\*FormBox[StyleBox[SubsuperscriptBox[StyleBox[\"SW\",FontSlant->\"\
+Italic\"], \"K\", \"ACGU\"],FontWeight->\"Bold\",FontColor->RGBColor[1, 0, \
+0]],TraditionalForm]\)"->"\<\"\\!\\(\\*FormBox[StyleBox[SubsuperscriptBox[\
+StyleBox[\\\"SW\\\",FontSlant->\\\"Italic\\\"], \\\"K\\\", \
+\\\"ACGU\\\"],FontWeight->\\\"Bold\\\",FontColor->RGBColor[1, 0, \
+0]],TraditionalForm]\\)\"\>", 
+       "\!\(\*FormBox[StyleBox[SubsuperscriptBox[StyleBox[\"SW\",FontSlant->\"\
+Italic\"], \"K\", \"CAUG\"],FontWeight->\"Bold\",FontColor->RGBColor[1, 0, \
+0]],TraditionalForm]\)"->"\<\"\\!\\(\\*FormBox[StyleBox[SubsuperscriptBox[\
+StyleBox[\\\"SW\\\",FontSlant->\\\"Italic\\\"], \\\"K\\\", \
+\\\"CAUG\\\"],FontWeight->\\\"Bold\\\",FontColor->RGBColor[1, 0, \
+0]],TraditionalForm]\\)\"\>", 
+       "\!\(\*FormBox[StyleBox[SubsuperscriptBox[StyleBox[\"SW\",FontSlant->\"\
+Italic\"], StyleBox[\"NK\",FontSlant->\"Italic\"], \
+\"ACGU\"],FontWeight->\"Bold\",FontColor->RGBColor[1, 0, 0]],TraditionalForm]\
+\)"->"\<\"\\!\\(\\*FormBox[StyleBox[SubsuperscriptBox[StyleBox[\\\"SW\\\",\
+FontSlant->\\\"Italic\\\"], StyleBox[\\\"NK\\\",FontSlant->\\\"Italic\\\"], \
+\\\"ACGU\\\"],FontWeight->\\\"Bold\\\",FontColor->RGBColor[1, 0, \
+0]],TraditionalForm]\\)\"\>", 
+       "\!\(\*FormBox[StyleBox[SubsuperscriptBox[StyleBox[\"SW\",FontSlant->\"\
+Italic\"], StyleBox[\"NK\",FontSlant->\"Italic\"], \
+\"AGCU\"],FontWeight->\"Bold\",FontColor->RGBColor[1, 0, 0]],TraditionalForm]\
+\)"->"\<\"\\!\\(\\*FormBox[StyleBox[SubsuperscriptBox[StyleBox[\\\"SW\\\",\
+FontSlant->\\\"Italic\\\"], StyleBox[\\\"NK\\\",FontSlant->\\\"Italic\\\"], \
+\\\"AGCU\\\"],FontWeight->\\\"Bold\\\",FontColor->RGBColor[1, 0, \
+0]],TraditionalForm]\\)\"\>", 
+       "\!\(\*FormBox[StyleBox[SubsuperscriptBox[StyleBox[\"YR\",FontSlant->\"\
+Italic\"], \"K\", StyleBox[\"ACUG\",FontSlant->\"Plain\"]],FontWeight->\"Bold\
+\",FontSlant->\"Italic\",FontColor->RGBColor[0., 0., \
+1.]],TraditionalForm]\)"->"\<\"\\!\\(\\*FormBox[StyleBox[SubsuperscriptBox[\
+StyleBox[\\\"YR\\\",FontSlant->\\\"Italic\\\"], \\\"K\\\", \
+StyleBox[\\\"ACUG\\\",FontSlant->\\\"Plain\\\"]],FontWeight->\\\"Bold\\\",\
+FontSlant->\\\"Italic\\\",FontColor->RGBColor[0., 0., \
+1.]],TraditionalForm]\\)\"\>", 
+       "\!\(\*FormBox[StyleBox[SubsuperscriptBox[StyleBox[\"YR\",FontSlant->\"\
+Italic\"], \"K\", StyleBox[\"CAGU\",FontSlant->\"Plain\"]],FontWeight->\"Bold\
+\",FontSlant->\"Italic\",FontColor->RGBColor[0., 0., \
+1.]],TraditionalForm]\)"->"\<\"\\!\\(\\*FormBox[StyleBox[SubsuperscriptBox[\
+StyleBox[\\\"YR\\\",FontSlant->\\\"Italic\\\"], \\\"K\\\", \
+StyleBox[\\\"CAGU\\\",FontSlant->\\\"Plain\\\"]],FontWeight->\\\"Bold\\\",\
+FontSlant->\\\"Italic\\\",FontColor->RGBColor[0., 0., \
+1.]],TraditionalForm]\\)\"\>", 
+       "\!\(\*FormBox[StyleBox[SubsuperscriptBox[StyleBox[\"YR\",FontSlant->\"\
+Italic\"], \"NK\", \
+StyleBox[\"ACUG\",FontSlant->\"Plain\"]],FontWeight->\"Bold\",FontSlant->\"\
+Italic\",FontColor->RGBColor[0., 0., \
+1.]],TraditionalForm]\)"->"\<\"\\!\\(\\*FormBox[StyleBox[SubsuperscriptBox[\
+StyleBox[\\\"YR\\\",FontSlant->\\\"Italic\\\"], \\\"NK\\\", StyleBox[\\\"ACUG\
+\\\",FontSlant->\\\"Plain\\\"]],FontWeight->\\\"Bold\\\",FontSlant->\\\"\
+Italic\\\",FontColor->RGBColor[0., 0., 1.]],TraditionalForm]\\)\"\>", 
+       "\!\(\*FormBox[StyleBox[SubsuperscriptBox[StyleBox[\"YR\",FontSlant->\"\
+Italic\"], \"NK\", \
+StyleBox[\"AUCG\",FontSlant->\"Plain\"]],FontWeight->\"Bold\",FontSlant->\"\
+Italic\",FontColor->RGBColor[0., 0., \
+1.]],TraditionalForm]\)"->"\<\"\\!\\(\\*FormBox[StyleBox[SubsuperscriptBox[\
+StyleBox[\\\"YR\\\",FontSlant->\\\"Italic\\\"], \\\"NK\\\", StyleBox[\\\"AUCG\
+\\\",FontSlant->\\\"Plain\\\"]],FontWeight->\\\"Bold\\\",FontSlant->\\\"\
+Italic\\\",FontColor->RGBColor[0., 0., 1.]],TraditionalForm]\\)\"\>", 
+       "\!\(\*FormBox[StyleBox[SubsuperscriptBox[StyleBox[\"MK\",FontSlant->\"\
+Italic\"], \"K\", StyleBox[\"AGUC\",FontSlant->\"Plain\"]],FontWeight->\"Bold\
+\",FontSlant->\"Italic\",FontColor->RGBColor[1., 0., \
+1.]],TraditionalForm]\)"->"\<\"\\!\\(\\*FormBox[StyleBox[SubsuperscriptBox[\
+StyleBox[\\\"MK\\\",FontSlant->\\\"Italic\\\"], \\\"K\\\", \
+StyleBox[\\\"AGUC\\\",FontSlant->\\\"Plain\\\"]],FontWeight->\\\"Bold\\\",\
+FontSlant->\\\"Italic\\\",FontColor->RGBColor[1., 0., \
+1.]],TraditionalForm]\\)\"\>", 
+       "\!\(\*FormBox[StyleBox[SubsuperscriptBox[StyleBox[\"MK\",FontSlant->\"\
+Italic\"], \"K\", StyleBox[\"GACU\",FontSlant->\"Plain\"]],FontWeight->\"Bold\
+\",FontSlant->\"Italic\",FontColor->RGBColor[1., 0., \
+1.]],TraditionalForm]\)"->"\<\"\\!\\(\\*FormBox[StyleBox[SubsuperscriptBox[\
+StyleBox[\\\"MK\\\",FontSlant->\\\"Italic\\\"], \\\"K\\\", \
+StyleBox[\\\"GACU\\\",FontSlant->\\\"Plain\\\"]],FontWeight->\\\"Bold\\\",\
+FontSlant->\\\"Italic\\\",FontColor->RGBColor[1., 0., \
+1.]],TraditionalForm]\\)\"\>", 
+       "\!\(\*FormBox[StyleBox[SubsuperscriptBox[StyleBox[\"MK\",FontSlant->\"\
+Italic\"], \"NK\", \
+StyleBox[\"AGUC\",FontSlant->\"Plain\"]],FontWeight->\"Bold\",FontSlant->\"\
+Italic\",FontColor->RGBColor[1., 0., \
+1.]],TraditionalForm]\)"->"\<\"\\!\\(\\*FormBox[StyleBox[SubsuperscriptBox[\
+StyleBox[\\\"MK\\\",FontSlant->\\\"Italic\\\"], \\\"NK\\\", StyleBox[\\\"AGUC\
+\\\",FontSlant->\\\"Plain\\\"]],FontWeight->\\\"Bold\\\",FontSlant->\\\"\
+Italic\\\",FontColor->RGBColor[1., 0., 1.]],TraditionalForm]\\)\"\>", 
+       "\!\(\*FormBox[StyleBox[SubsuperscriptBox[StyleBox[\"MK\",FontSlant->\"\
+Italic\"], \"NK\", \
+StyleBox[\"AUGC\",FontSlant->\"Plain\"]],FontWeight->\"Bold\",FontSlant->\"\
+Italic\",FontColor->RGBColor[1., 0., \
+1.]],TraditionalForm]\)"->"\<\"\\!\\(\\*FormBox[StyleBox[SubsuperscriptBox[\
+StyleBox[\\\"MK\\\",FontSlant->\\\"Italic\\\"], \\\"NK\\\", StyleBox[\\\"AUGC\
+\\\",FontSlant->\\\"Plain\\\"]],FontWeight->\\\"Bold\\\",FontSlant->\\\"\
+Italic\\\",FontColor->RGBColor[1., 0., 1.]],TraditionalForm]\\)\"\>"},
        ImageSize->{92, 50},
        MenuStyle->{
         FontSize -> 14, FontFamily -> "Times New Roman"}], "\<\"=\"\>", 
@@ -26887,7 +26723,7 @@ TraditionalForm]\\)\"\>"},
           Part[
            $CellContext`group$$[$CellContext`X$$], 1]]& , 
          $CellContext`group$$[$CellContext`X$$]], StandardForm], Automatic,
-       ImageSizeCache->{187., {3., 10.}}]}
+       ImageSizeCache->{173.50195312220603`, {3., 9.}}]}
     },
     AutoDelete->False,
     GridBoxAlignment->{"Columns" -> {{Center}}},
@@ -26907,64 +26743,63 @@ TraditionalForm]\\)\"\>"},
           Pattern[$CellContext`x, 
            Blank[]]]] :> 
        Switch[$CellContext`x, 
-         "\!\(\*FormBox[\n StyleBox[SubsuperscriptBox[\n   StyleBox[\"SW\",\n\
-FontSlant->\"Italic\"], \"K\", \"ACGU\"],\nFontWeight->\"Bold\",\n\
-FontColor->RGBColor[1, 0, 0]],\n TraditionalForm]\)", {
-         "ACGU", "AGCU", "UCGA", "UGCA"}, 
-         "\!\(\*FormBox[\n StyleBox[SubsuperscriptBox[\n   StyleBox[\"SW\",\n\
-FontSlant->\"Italic\"], \"K\", \"CAUG\"],\nFontWeight->\"Bold\",\n\
-FontColor->RGBColor[1, 0, 0]],\n TraditionalForm]\)", {
-         "CAUG", "CUAG", "GAUC", "GUAC"}, 
-         "\!\(\*FormBox[\n StyleBox[SubsuperscriptBox[\n   StyleBox[\"SW\",\n\
-FontSlant->\"Italic\"], \n   StyleBox[\"NK\",\nFontSlant->\"Italic\"], \"ACGU\
-\"],\nFontWeight->\"Bold\",\nFontColor->RGBColor[1, 0, 0]],\n \
-TraditionalForm]\)", {"ACGU", "UGCA", "CAUG", "GUAC"}, 
-         "\!\(\*FormBox[\n StyleBox[SubsuperscriptBox[\n   StyleBox[\"SW\",\n\
-FontSlant->\"Italic\"], \n   StyleBox[\"NK\",\nFontSlant->\"Italic\"], \"AGCU\
-\"],\nFontWeight->\"Bold\",\nFontColor->RGBColor[1, 0, 0]],\n \
-TraditionalForm]\)", {"AGCU", "CUAG", "GAUC", "UCGA"}, 
-         "\!\(\*FormBox[\n StyleBox[SubsuperscriptBox[\n   StyleBox[\"YR\",\n\
-FontSlant->\"Italic\"], \"K\", \n   StyleBox[\"ACUG\",\n\
-FontSlant->\"Plain\"]],\nFontWeight->\"Bold\",\nFontSlant->\"Italic\",\n\
-FontColor->RGBColor[0., 0., 1.]],\n TraditionalForm]\)", {
+         "\!\(\*FormBox[StyleBox[SubsuperscriptBox[StyleBox[\"SW\",FontSlant->\
+\"Italic\"], \"K\", \"ACGU\"],FontWeight->\"Bold\",FontColor->RGBColor[1, 0, \
+0]],TraditionalForm]\)", {"ACGU", "AGCU", "UCGA", "UGCA"}, 
+         "\!\(\*FormBox[StyleBox[SubsuperscriptBox[StyleBox[\"SW\",FontSlant->\
+\"Italic\"], \"K\", \"CAUG\"],FontWeight->\"Bold\",FontColor->RGBColor[1, 0, \
+0]],TraditionalForm]\)", {"CAUG", "CUAG", "GAUC", "GUAC"}, 
+         "\!\(\*FormBox[StyleBox[SubsuperscriptBox[StyleBox[\"SW\",FontSlant->\
+\"Italic\"], StyleBox[\"NK\",FontSlant->\"Italic\"], \
+\"ACGU\"],FontWeight->\"Bold\",FontColor->RGBColor[1, 0, 0]],TraditionalForm]\
+\)", {"ACGU", "UGCA", "CAUG", "GUAC"}, 
+         "\!\(\*FormBox[StyleBox[SubsuperscriptBox[StyleBox[\"SW\",FontSlant->\
+\"Italic\"], StyleBox[\"NK\",FontSlant->\"Italic\"], \
+\"AGCU\"],FontWeight->\"Bold\",FontColor->RGBColor[1, 0, 0]],TraditionalForm]\
+\)", {"AGCU", "CUAG", "GAUC", "UCGA"}, 
+         "\!\(\*FormBox[StyleBox[SubsuperscriptBox[StyleBox[\"YR\",FontSlant->\
+\"Italic\"], \"K\", \
+StyleBox[\"ACUG\",FontSlant->\"Plain\"]],FontWeight->\"Bold\",FontSlant->\"\
+Italic\",FontColor->RGBColor[0., 0., 1.]],TraditionalForm]\)", {
          "ACUG", "AUCG", "GUCA", "GCUA"}, 
-         "\!\(\*FormBox[\n StyleBox[SubsuperscriptBox[\n   StyleBox[\"YR\",\n\
-FontSlant->\"Italic\"], \"K\", \n   StyleBox[\"CAGU\",\n\
-FontSlant->\"Plain\"]],\nFontWeight->\"Bold\",\nFontSlant->\"Italic\",\n\
-FontColor->RGBColor[0., 0., 1.]],\n TraditionalForm]\)", {
+         "\!\(\*FormBox[StyleBox[SubsuperscriptBox[StyleBox[\"YR\",FontSlant->\
+\"Italic\"], \"K\", \
+StyleBox[\"CAGU\",FontSlant->\"Plain\"]],FontWeight->\"Bold\",FontSlant->\"\
+Italic\",FontColor->RGBColor[0., 0., 1.]],TraditionalForm]\)", {
          "CAGU", "UAGC", "UGAC", "CGAU"}, 
-         "\!\(\*FormBox[\n StyleBox[SubsuperscriptBox[\n   StyleBox[\"YR\",\n\
-FontSlant->\"Italic\"], \"NK\", \n   StyleBox[\"ACUG\",\n\
-FontSlant->\"Plain\"]],\nFontWeight->\"Bold\",\nFontSlant->\"Italic\",\n\
-FontColor->RGBColor[0., 0., 1.]],\n TraditionalForm]\)", {
+         "\!\(\*FormBox[StyleBox[SubsuperscriptBox[StyleBox[\"YR\",FontSlant->\
+\"Italic\"], \"NK\", \
+StyleBox[\"ACUG\",FontSlant->\"Plain\"]],FontWeight->\"Bold\",FontSlant->\"\
+Italic\",FontColor->RGBColor[0., 0., 1.]],TraditionalForm]\)", {
          "ACUG", "GUCA", "CAGU", "UGAC"}, 
-         "\!\(\*FormBox[\n StyleBox[SubsuperscriptBox[\n   StyleBox[\"YR\",\n\
-FontSlant->\"Italic\"], \"NK\", \n   StyleBox[\"AUCG\",\n\
-FontSlant->\"Plain\"]],\nFontWeight->\"Bold\",\nFontSlant->\"Italic\",\n\
-FontColor->RGBColor[0., 0., 1.]],\n TraditionalForm]\)", {
+         "\!\(\*FormBox[StyleBox[SubsuperscriptBox[StyleBox[\"YR\",FontSlant->\
+\"Italic\"], \"NK\", \
+StyleBox[\"AUCG\",FontSlant->\"Plain\"]],FontWeight->\"Bold\",FontSlant->\"\
+Italic\",FontColor->RGBColor[0., 0., 1.]],TraditionalForm]\)", {
          "AUCG", "CGAU", "GCUA", "UAGC"}, 
-         "\!\(\*FormBox[\n StyleBox[SubsuperscriptBox[\n   StyleBox[\"MK\",\n\
-FontSlant->\"Italic\"], \"K\", \n   StyleBox[\"AGUC\",\n\
-FontSlant->\"Plain\"]],\nFontWeight->\"Bold\",\nFontSlant->\"Italic\",\n\
-FontColor->RGBColor[1., 0., 1.]],\n TraditionalForm]\)", {
+         "\!\(\*FormBox[StyleBox[SubsuperscriptBox[StyleBox[\"MK\",FontSlant->\
+\"Italic\"], \"K\", \
+StyleBox[\"AGUC\",FontSlant->\"Plain\"]],FontWeight->\"Bold\",FontSlant->\"\
+Italic\",FontColor->RGBColor[1., 0., 1.]],TraditionalForm]\)", {
          "AGUC", "AUGC", "CGUA", "CUGA"}, 
-         "\!\(\*FormBox[\n StyleBox[SubsuperscriptBox[\n   StyleBox[\"MK\",\n\
-FontSlant->\"Italic\"], \"K\", \n   StyleBox[\"GACU\",\n\
-FontSlant->\"Plain\"]],\nFontWeight->\"Bold\",\nFontSlant->\"Italic\",\n\
-FontColor->RGBColor[1., 0., 1.]],\n TraditionalForm]\)", {
+         "\!\(\*FormBox[StyleBox[SubsuperscriptBox[StyleBox[\"MK\",FontSlant->\
+\"Italic\"], \"K\", \
+StyleBox[\"GACU\",FontSlant->\"Plain\"]],FontWeight->\"Bold\",FontSlant->\"\
+Italic\",FontColor->RGBColor[1., 0., 1.]],TraditionalForm]\)", {
          "GACU", "GCAU", "UACG", "UCAG"}, 
-         "\!\(\*FormBox[\n StyleBox[SubsuperscriptBox[\n   StyleBox[\"MK\",\n\
-FontSlant->\"Italic\"], \"NK\", \n   StyleBox[\"AGUC\",\n\
-FontSlant->\"Plain\"]],\nFontWeight->\"Bold\",\nFontSlant->\"Italic\",\n\
-FontColor->RGBColor[1., 0., 1.]],\n TraditionalForm]\)", {
+         "\!\(\*FormBox[StyleBox[SubsuperscriptBox[StyleBox[\"MK\",FontSlant->\
+\"Italic\"], \"NK\", \
+StyleBox[\"AGUC\",FontSlant->\"Plain\"]],FontWeight->\"Bold\",FontSlant->\"\
+Italic\",FontColor->RGBColor[1., 0., 1.]],TraditionalForm]\)", {
          "AGUC", "CUGA", "GACU", "UCAG"}, 
-         "\!\(\*FormBox[\n StyleBox[SubsuperscriptBox[\n   StyleBox[\"MK\",\n\
-FontSlant->\"Italic\"], \"NK\", \n   StyleBox[\"AUGC\",\n\
-FontSlant->\"Plain\"]],\nFontWeight->\"Bold\",\nFontSlant->\"Italic\",\n\
-FontColor->RGBColor[1., 0., 1.]],\n TraditionalForm]\)", {
-         "AUGC", "CGUA", "GCAU", "UACG"}]}}}]], "Output",ExpressionUUID->\
-"ee6461fc-cb26-4b40-a953-3db82916cd23"]
-}, {2}]],
+         "\!\(\*FormBox[StyleBox[SubsuperscriptBox[StyleBox[\"MK\",FontSlant->\
+\"Italic\"], \"NK\", \
+StyleBox[\"AUGC\",FontSlant->\"Plain\"]],FontWeight->\"Bold\",FontSlant->\"\
+Italic\",FontColor->RGBColor[1., 0., 1.]],TraditionalForm]\)", {
+         "AUGC", "CGUA", "GCAU", "UACG"}]}}}]], "Output",
+ CellLabel->
+  "Out[131]=",ExpressionUUID->"605297a5-45db-440b-9b42-b41eb6942da4"]
+}, Open  ]],
 
 Cell[CellGroupData[{
 
@@ -27008,8 +26843,9 @@ cubes\>\"", ",", "\"\<6. Dihedral groups\>\"", ",",
        ",", "\"\<References\>\""}], "}"}]}], "}"}], ",", 
    RowBox[{"Paneled", "\[Rule]", "False"}], ",", 
    RowBox[{"SaveDefinitions", "\[Rule]", "True"}]}], "]"}]}], "Input",
- InitializationCell->
-  True,ExpressionUUID->"9993c7e5-2884-44f9-bb3f-1ef7b3c3c11e"],
+ InitializationCell->True,
+ CellLabel->
+  "In[132]:=",ExpressionUUID->"9993c7e5-2884-44f9-bb3f-1ef7b3c3c11e"],
 
 Cell[BoxData[
  TagBox[
@@ -27031,13 +26867,11 @@ Cell[BoxData[
        "5.2. Cayley multiplications table for all pairs of cubes", 
        "6. Dihedral groups", "7. Klein four groups", "8. Concluding remarks", 
        "References"}}}, Typeset`size$$ = {0., {0., 7.}}, Typeset`update$$ = 0,
-     Typeset`initDone$$, Typeset`skipInitDone$$ = 
-    False, $CellContext`tag$44495$$ = 0}, 
+     Typeset`initDone$$, Typeset`skipInitDone$$ = False}, 
     DynamicBox[Manipulate`ManipulateBoxes[
      1, StandardForm, 
       "Variables" :> {$CellContext`tag$$ = "8. Concluding remarks"}, 
-      "ControllerVariables" :> {
-        Hold[$CellContext`tag$$, $CellContext`tag$44495$$, 0]}, 
+      "ControllerVariables" :> {}, 
       "OtherVariables" :> {
        Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
         Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
@@ -27058,13 +26892,13 @@ Cell[BoxData[
           "6. Dihedral groups", "7. Klein four groups", 
           "8. Concluding remarks", "References"}}}, 
       "Options" :> {Paneled -> False}, "DefaultOptions" :> {}],
-     ImageSizeCache->{474., {45., 52.}},
+     ImageSizeCache->{335., {41.134033098001964`, 46.865966901998036`}},
      SingleEvaluation->True],
     Deinitialization:>None,
     DynamicModuleValues:>{},
-    Initialization:>({$CellContext`content[
-         Pattern[$CellContext`tag, 
-          Blank[]]] := Module[{}, NotebookLocate[$CellContext`tag]; ""]}; 
+    Initialization:>($CellContext`content[
+        Pattern[$CellContext`tag, 
+         Blank[]]] := Module[{}, NotebookLocate[$CellContext`tag]; ""]; 
      Typeset`initDone$$ = True),
     SynchronousInitialization->True,
     UndoTrackedVariables:>{Typeset`show$$, Typeset`bookmarkMode$$},
@@ -27072,9 +26906,10 @@ Cell[BoxData[
     UntrackedVariables:>{Typeset`size$$}], "Manipulate",
    Deployed->True,
    StripOnInput->False],
-  Manipulate`InterpretManipulate[1]]], "Output",ExpressionUUID->"a4740db7-\
-7fb7-464c-9dab-483fb727a4f4"]
-}, {2}]]
+  Manipulate`InterpretManipulate[1]]], "Output",
+ CellLabel->
+  "Out[133]=",ExpressionUUID->"4c60e7eb-b972-4c93-8680-41efdc451ed4"]
+}, Open  ]]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -27148,6 +26983,8 @@ Cell["References", "Section",
  Background->RGBColor[0.88, 1, 0.88],
  CellTags->
   "References",ExpressionUUID->"95bece2f-8dac-431e-9283-61e27cf9a947"],
+
+Cell[CellGroupData[{
 
 Cell[BoxData[{
  RowBox[{
@@ -27401,8 +27238,9 @@ cubes\>\"", ",", "\"\<6. Dihedral groups\>\"", ",",
        ",", "\"\<References\>\""}], "}"}]}], "}"}], ",", 
    RowBox[{"Paneled", "\[Rule]", "False"}], ",", 
    RowBox[{"SaveDefinitions", "\[Rule]", "True"}]}], "]"}]}], "Input",
- InitializationCell->
-  True,ExpressionUUID->"67accb3d-1b75-45a1-a494-83ec4d590cd9"],
+ InitializationCell->True,
+ CellLabel->
+  "In[134]:=",ExpressionUUID->"67accb3d-1b75-45a1-a494-83ec4d590cd9"],
 
 Cell[BoxData[
  TagBox[
@@ -27424,12 +27262,10 @@ Cell[BoxData[
        "5.2. Cayley multiplications table for all pairs of cubes", 
        "6. Dihedral groups", "7. Klein four groups", "8. Concluding remarks", 
        "References"}}}, Typeset`size$$ = {0., {0., 7.}}, Typeset`update$$ = 0,
-     Typeset`initDone$$, Typeset`skipInitDone$$ = 
-    False, $CellContext`tag$44518$$ = 0}, 
+     Typeset`initDone$$, Typeset`skipInitDone$$ = False}, 
     DynamicBox[Manipulate`ManipulateBoxes[
      1, StandardForm, "Variables" :> {$CellContext`tag$$ = "References"}, 
-      "ControllerVariables" :> {
-        Hold[$CellContext`tag$$, $CellContext`tag$44518$$, 0]}, 
+      "ControllerVariables" :> {}, 
       "OtherVariables" :> {
        Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
         Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
@@ -27450,13 +27286,13 @@ Cell[BoxData[
           "6. Dihedral groups", "7. Klein four groups", 
           "8. Concluding remarks", "References"}}}, 
       "Options" :> {Paneled -> False}, "DefaultOptions" :> {}],
-     ImageSizeCache->{474., {45., 52.}},
+     ImageSizeCache->{335., {41.134033098001964`, 46.865966901998036`}},
      SingleEvaluation->True],
     Deinitialization:>None,
     DynamicModuleValues:>{},
-    Initialization:>({$CellContext`content[
-         Pattern[$CellContext`tag, 
-          Blank[]]] := Module[{}, NotebookLocate[$CellContext`tag]; ""]}; 
+    Initialization:>($CellContext`content[
+        Pattern[$CellContext`tag, 
+         Blank[]]] := Module[{}, NotebookLocate[$CellContext`tag]; ""]; 
      Typeset`initDone$$ = True),
     SynchronousInitialization->True,
     UndoTrackedVariables:>{Typeset`show$$, Typeset`bookmarkMode$$},
@@ -27464,15 +27300,17 @@ Cell[BoxData[
     UntrackedVariables:>{Typeset`size$$}], "Manipulate",
    Deployed->True,
    StripOnInput->False],
-  Manipulate`InterpretManipulate[1]]], "Output",ExpressionUUID->"7c3575f2-\
-8b94-4b86-9916-63df6556aa11"]
-}, {2}]]
+  Manipulate`InterpretManipulate[1]]], "Output",
+ CellLabel->
+  "Out[135]=",ExpressionUUID->"3008cbf8-7a63-4c53-ac69-b8fc58fcfadf"]
+}, Open  ]]
+}, Open  ]]
 }, Open  ]]
 }, Open  ]]
 },
 WindowToolbars->{"RulerBar", "EditBar"},
-WindowSize->{1858, 1037},
-WindowMargins->{{3832, Automatic}, {Automatic, -8}},
+WindowSize->{1140., 770.25},
+WindowMargins->{{1488.75, Automatic}, {Automatic, 0}},
 Visible->True,
 ScrollingOptions->{"VerticalScrollRange"->Fit},
 PrintingCopies->1,
@@ -27483,8 +27321,8 @@ PrintingOptions->{"Magnification"->1.,
 ShowCellBracket->Automatic,
 CellContext->Notebook,
 TrackCellChangeTimes->False,
-Magnification:>1.1 Inherited,
-FrontEndVersion->"11.2 for Microsoft Windows (64-bit) (September 10, 2017)",
+Magnification:>0.75 Inherited,
+FrontEndVersion->"12.3 for Microsoft Windows (64-bit) (June 19, 2021)",
 StyleDefinitions->Notebook[{
    Cell[
     StyleData[StyleDefinitions -> "Default.nb"]], 
@@ -27503,8 +27341,9 @@ StyleDefinitions->Notebook[{
     FontWeight -> "Bold", FontSlant -> "Plain", 
     FontVariations -> {"StrikeThrough" -> False, "Underline" -> False}]}, 
   Visible -> False, FrontEndVersion -> 
-  "11.2 for Microsoft Windows (64-bit) (September 10, 2017)", 
-  StyleDefinitions -> "Default.nb"]
+  "12.3 for Microsoft Windows (64-bit) (June 19, 2021)", StyleDefinitions -> 
+  "Default.nb"],
+ExpressionUUID->"aff0a3e6-0fea-4ed4-a16b-e6b586ab4a0e"
 ]
 (* End of Notebook Content *)
 
@@ -27512,406 +27351,412 @@ StyleDefinitions->Notebook[{
 (*CellTagsOutline
 CellTagsIndex->{
  "1. Introduction"->{
-  Cell[181964, 4406, 333, 9, 63, "Section",ExpressionUUID->"24025ffb-98c6-4aa6-8e80-2a0fe2f3fe25",
+  Cell[183103, 4433, 333, 9, 43, "Section",ExpressionUUID->"24025ffb-98c6-4aa6-8e80-2a0fe2f3fe25",
    CellTags->"1. Introduction"]},
  "genetic code"->{
-  Cell[189150, 4618, 14802, 508, 524, "Text",ExpressionUUID->"45b6839a-8d8f-407d-83bf-7160d81881d7",
+  Cell[190289, 4645, 14802, 508, 371, "Text",ExpressionUUID->"45b6839a-8d8f-407d-83bf-7160d81881d7",
    CellTags->"genetic code"]},
  "1.1. Biological - Algebraic Background"->{
-  Cell[209372, 5243, 389, 8, 66, "Subsection",ExpressionUUID->"396e1d31-3868-48ee-ac76-f2ace28b8377",
+  Cell[210491, 5269, 389, 8, 45, "Subsection",ExpressionUUID->"396e1d31-3868-48ee-ac76-f2ace28b8377",
    CellTags->"1.1. Biological - Algebraic Background"]},
  "sets"->{
-  Cell[248290, 6229, 9536, 239, 212, "Text",ExpressionUUID->"514a9902-12a9-4a53-a8bb-58a4da99dd20",
+  Cell[249613, 6256, 9536, 239, 154, "Text",ExpressionUUID->"514a9902-12a9-4a53-a8bb-58a4da99dd20",
    CellTags->{"sets", "group of bases"}]},
  "group of bases"->{
-  Cell[248290, 6229, 9536, 239, 212, "Text",ExpressionUUID->"514a9902-12a9-4a53-a8bb-58a4da99dd20",
+  Cell[249613, 6256, 9536, 239, 154, "Text",ExpressionUUID->"514a9902-12a9-4a53-a8bb-58a4da99dd20",
    CellTags->{"sets", "group of bases"}]},
  "1.2. Physicochemical classification of DNA bases"->{
-  Cell[263293, 6588, 333, 6, 66, "Subsection",ExpressionUUID->"a152a6cd-f49b-4b2f-8576-8316e0cd77f6",
+  Cell[264627, 6614, 333, 6, 45, "Subsection",ExpressionUUID->"a152a6cd-f49b-4b2f-8576-8316e0cd77f6",
    CellTags->"1.2. Physicochemical classification of DNA bases"]},
  "2. The 24 possible algebraic structures"->{
-  Cell[273277, 6843, 324, 6, 70, "Section",ExpressionUUID->"3708874e-2c14-4bbc-bc78-d3890c6287d2",
+  Cell[274591, 6868, 324, 6, 47, "Section",ExpressionUUID->"3708874e-2c14-4bbc-bc78-d3890c6287d2",
    CellTags->"2. The 24 possible algebraic structures"]},
  "3. Algebraic operations on the cubes"->{
-  Cell[510851, 12843, 327, 8, 92, "Section",ExpressionUUID->"7a4966e8-92f4-4e58-bd7f-68852b19a9a7",
+  Cell[574092, 13886, 327, 8, 62, "Section",ExpressionUUID->"7a4966e8-92f4-4e58-bd7f-68852b19a9a7",
    CellTags->"3. Algebraic operations on the cubes"]},
  "4. The inner product of two codons and codon norm on R^3"->{
-  Cell[626334, 15099, 596, 14, 92, "Section",ExpressionUUID->"bd0951a1-b630-4644-8350-ec459d8211a7",
+  Cell[634022, 15088, 596, 14, 63, "Section",ExpressionUUID->"bd0951a1-b630-4644-8350-ec459d8211a7",
    CellTags->"4. The inner product of two codons and codon norm on R^3"]},
  "4.1. Inner product of two codons"->{
-  Cell[657565, 15903, 303, 6, 66, "Subsection",ExpressionUUID->"f6a8c8aa-649a-47d8-a698-2e0617f0fdcf",
+  Cell[665030, 15891, 303, 6, 45, "Subsection",ExpressionUUID->"f6a8c8aa-649a-47d8-a698-2e0617f0fdcf",
    CellTags->"4.1. Inner product of two codons"]},
  "4.2. Codon norm"->{
-  Cell[690605, 16735, 269, 5, 66, "Subsection",ExpressionUUID->"11dffd17-9845-46e6-9bab-7864545c7864",
+  Cell[697968, 16724, 269, 5, 45, "Subsection",ExpressionUUID->"11dffd17-9845-46e6-9bab-7864545c7864",
    CellTags->"4.2. Codon norm"]},
  "norm preservation"->{
-  Cell[690877, 16742, 4847, 161, 200, "Text",ExpressionUUID->"72ec0d87-d167-4529-864d-6fc33e6d28ff",
+  Cell[698240, 16731, 4847, 161, 137, "Text",ExpressionUUID->"72ec0d87-d167-4529-864d-6fc33e6d28ff",
    CellTags->"norm preservation"],
-  Cell[717227, 17419, 255, 7, 66, "Text",ExpressionUUID->"268df3da-279a-4486-8dc1-ff6d598ac34a",
+  Cell[724497, 17410, 255, 7, 46, "Text",ExpressionUUID->"268df3da-279a-4486-8dc1-ff6d598ac34a",
    CellTags->"norm preservation"]},
  "5. Symmetric group defined over the set of genetic code cubes"->{
-  Cell[724168, 17589, 456, 13, 77, "Section",ExpressionUUID->"746d7f62-7688-4e65-b0aa-4b16b146ffa7",
+  Cell[731419, 17580, 456, 13, 52, "Section",ExpressionUUID->"746d7f62-7688-4e65-b0aa-4b16b146ffa7",
    CellTags->"5. Symmetric group defined over the set of genetic code cubes"]},
  "symmetric group"->{
-  Cell[724627, 17604, 9884, 264, 282, "Text",ExpressionUUID->"d2580cb2-d014-4dd4-b7a2-ba378598a4a8",
+  Cell[731878, 17595, 9884, 264, 217, "Text",ExpressionUUID->"d2580cb2-d014-4dd4-b7a2-ba378598a4a8",
    CellTags->"symmetric group"],
-  Cell[784276, 19030, 3147, 113, 186, "Text",ExpressionUUID->"a269c8e1-092a-4cfc-84a2-e180687b69ae",
+  Cell[791517, 19023, 3147, 113, 150, "Text",ExpressionUUID->"a269c8e1-092a-4cfc-84a2-e180687b69ae",
    CellTags->"symmetric group"]},
  "5.1. The multiplication of two genetic-code cubes"->{
-  Cell[734536, 17872, 318, 6, 66, "Subsection",ExpressionUUID->"baa61fa2-dbd0-4c0c-93f2-39ebaca67671",
+  Cell[741787, 17863, 318, 6, 45, "Subsection",ExpressionUUID->"baa61fa2-dbd0-4c0c-93f2-39ebaca67671",
    CellTags->"5.1. The multiplication of two genetic-code cubes"]},
  "5.2. Cayley multiplications table for all pairs of cubes"->{
-  Cell[792976, 19265, 368, 8, 66, "Subsection",ExpressionUUID->"876ff132-7347-4e47-907e-7a2f8d354ca6",
+  Cell[800198, 19258, 368, 8, 45, "Subsection",ExpressionUUID->"876ff132-7347-4e47-907e-7a2f8d354ca6",
    CellTags->"5.2. Cayley multiplications table for all pairs of cubes"]},
  "6. Dihedral groups"->{
-  Cell[879012, 21371, 394, 13, 77, "Section",ExpressionUUID->"f6c59ff7-5054-429c-9b60-dc9763e162aa",
+  Cell[885234, 21353, 394, 13, 51, "Section",ExpressionUUID->"f6c59ff7-5054-429c-9b60-dc9763e162aa",
    CellTags->"6. Dihedral groups"]},
  "7. Klein four groups"->{
-  Cell[971586, 23842, 401, 14, 77, "Section",ExpressionUUID->"8faddbb6-6013-4460-b771-221c6f9e4f03",
+  Cell[977610, 23811, 401, 14, 51, "Section",ExpressionUUID->"8faddbb6-6013-4460-b771-221c6f9e4f03",
    CellTags->"7. Klein four groups"]},
  "8. Concluding remarks"->{
-  Cell[1095729, 27081, 338, 9, 77, "Section",ExpressionUUID->"de0d5ca0-151b-4ade-8ab0-79c453ae9100",
+  Cell[1100883, 26916, 338, 9, 52, "Section",ExpressionUUID->"de0d5ca0-151b-4ade-8ab0-79c453ae9100",
    CellTags->"8. Concluding remarks"]},
  "References"->{
-  Cell[1097960, 27141, 314, 8, 77, "Section",ExpressionUUID->"95bece2f-8dac-431e-9283-61e27cf9a947",
+  Cell[1103114, 26976, 314, 8, 52, "Section",ExpressionUUID->"95bece2f-8dac-431e-9283-61e27cf9a947",
    CellTags->"References"]},
  "[1]"->{
-  Cell[1098277, 27151, 7383, 208, 220, "ItemParagraph",ExpressionUUID->"a24289e6-e637-4fdc-8a50-5657bcb442df",
+  Cell[1103453, 26988, 7383, 208, 254, "ItemParagraph",ExpressionUUID->"a24289e6-e637-4fdc-8a50-5657bcb442df",
    CellTags->{"[1]", "[2]", "[3]", "[4]"}]},
  "[2]"->{
-  Cell[1098277, 27151, 7383, 208, 220, "ItemParagraph",ExpressionUUID->"a24289e6-e637-4fdc-8a50-5657bcb442df",
+  Cell[1103453, 26988, 7383, 208, 254, "ItemParagraph",ExpressionUUID->"a24289e6-e637-4fdc-8a50-5657bcb442df",
    CellTags->{"[1]", "[2]", "[3]", "[4]"}]},
  "[3]"->{
-  Cell[1098277, 27151, 7383, 208, 220, "ItemParagraph",ExpressionUUID->"a24289e6-e637-4fdc-8a50-5657bcb442df",
+  Cell[1103453, 26988, 7383, 208, 254, "ItemParagraph",ExpressionUUID->"a24289e6-e637-4fdc-8a50-5657bcb442df",
    CellTags->{"[1]", "[2]", "[3]", "[4]"}]},
  "[4]"->{
-  Cell[1098277, 27151, 7383, 208, 220, "ItemParagraph",ExpressionUUID->"a24289e6-e637-4fdc-8a50-5657bcb442df",
+  Cell[1103453, 26988, 7383, 208, 254, "ItemParagraph",ExpressionUUID->"a24289e6-e637-4fdc-8a50-5657bcb442df",
    CellTags->{"[1]", "[2]", "[3]", "[4]"}]}
  }
 *)
 (*CellTagsIndex
 CellTagsIndex->{
- {"1. Introduction", 1112465, 27513},
- {"genetic code", 1112617, 27516},
- {"1.1. Biological - Algebraic Background", 1112794, 27519},
- {"sets", 1112964, 27522},
- {"group of bases", 1113128, 27525},
- {"1.2. Physicochemical classification of DNA bases", 1113326, 27528},
- {"2. The 24 possible algebraic structures", 1113541, 27531},
- {"3. Algebraic operations on the cubes", 1113741, 27534},
- {"4. The inner product of two codons and codon norm on R^3", 1113959, 27537},
- {"4.1. Inner product of two codons", 1114174, 27540},
- {"4.2. Codon norm", 1114350, 27543},
- {"norm preservation", 1114511, 27546},
- {"5. Symmetric group defined over the set of genetic code cubes", 1114848, 27551},
- {"symmetric group", 1115051, 27554},
- {"5.1. The multiplication of two genetic-code cubes", 1115376, 27559},
- {"5.2. Cayley multiplications table for all pairs of cubes", 1115610, 27562},
- {"6. Dihedral groups", 1115813, 27565},
- {"7. Klein four groups", 1115978, 27568},
- {"8. Concluding remarks", 1116146, 27571},
- {"References", 1116304, 27574},
- {"[1]", 1116444, 27577},
- {"[2]", 1116610, 27580},
- {"[3]", 1116776, 27583},
- {"[4]", 1116942, 27586}
+ {"1. Introduction", 1117690, 27352},
+ {"genetic code", 1117842, 27355},
+ {"1.1. Biological - Algebraic Background", 1118019, 27358},
+ {"sets", 1118189, 27361},
+ {"group of bases", 1118353, 27364},
+ {"1.2. Physicochemical classification of DNA bases", 1118551, 27367},
+ {"2. The 24 possible algebraic structures", 1118766, 27370},
+ {"3. Algebraic operations on the cubes", 1118966, 27373},
+ {"4. The inner product of two codons and codon norm on R^3", 1119184, 27376},
+ {"4.1. Inner product of two codons", 1119399, 27379},
+ {"4.2. Codon norm", 1119575, 27382},
+ {"norm preservation", 1119736, 27385},
+ {"5. Symmetric group defined over the set of genetic code cubes", 1120073, 27390},
+ {"symmetric group", 1120276, 27393},
+ {"5.1. The multiplication of two genetic-code cubes", 1120601, 27398},
+ {"5.2. Cayley multiplications table for all pairs of cubes", 1120835, 27401},
+ {"6. Dihedral groups", 1121038, 27404},
+ {"7. Klein four groups", 1121203, 27407},
+ {"8. Concluding remarks", 1121371, 27410},
+ {"References", 1121529, 27413},
+ {"[1]", 1121669, 27416},
+ {"[2]", 1121835, 27419},
+ {"[3]", 1122001, 27422},
+ {"[4]", 1122167, 27425}
  }
 *)
 (*NotebookFileOutline
 Notebook[{
 Cell[CellGroupData[{
-Cell[1486, 35, 420, 12, 105, "Title",ExpressionUUID->"0364c9af-ea71-4906-b12c-f26580b338b3"],
-Cell[1909, 49, 323, 9, 92, "Text",ExpressionUUID->"997a0dde-c1c6-4d41-ae6c-fdb1c0e51286"],
-Cell[2235, 60, 706, 17, 136, "Text",ExpressionUUID->"732063f0-145b-4ae7-be79-3defac85e349"],
-Cell[2944, 79, 2139, 44, 248, "Text",ExpressionUUID->"116ca039-cce9-4169-9a85-4ec9812ec68f"],
-Cell[5086, 125, 2489, 66, 396, "Text",ExpressionUUID->"5045e23d-849b-457a-9520-f5669db1d324"],
+Cell[1486, 35, 420, 12, 71, "Title",ExpressionUUID->"0364c9af-ea71-4906-b12c-f26580b338b3"],
+Cell[1909, 49, 323, 9, 63, "Text",ExpressionUUID->"997a0dde-c1c6-4d41-ae6c-fdb1c0e51286"],
+Cell[2235, 60, 706, 17, 94, "Text",ExpressionUUID->"732063f0-145b-4ae7-be79-3defac85e349"],
+Cell[2944, 79, 2139, 44, 210, "Text",ExpressionUUID->"116ca039-cce9-4169-9a85-4ec9812ec68f"],
+Cell[5086, 125, 2489, 66, 277, "Text",ExpressionUUID->"5045e23d-849b-457a-9520-f5669db1d324"],
 Cell[CellGroupData[{
-Cell[7600, 195, 258, 7, 64, "Section",ExpressionUUID->"fea28968-fcd1-45ae-9ef4-de85052ca192",
+Cell[7600, 195, 258, 7, 44, "Section",ExpressionUUID->"fea28968-fcd1-45ae-9ef4-de85052ca192",
  InitializationGroup->True],
 Cell[CellGroupData[{
-Cell[7883, 206, 163, 3, 85, "Subsection",ExpressionUUID->"a73546af-7882-42cf-a33d-16b042f8c39e",
+Cell[7883, 206, 163, 3, 57, "Subsection",ExpressionUUID->"a73546af-7882-42cf-a33d-16b042f8c39e",
  InitializationGroup->True],
-Cell[8049, 211, 93793, 2197, 11584, "Input",ExpressionUUID->"45c31a99-b229-4293-b591-cff3dcd8a534",
+Cell[8049, 211, 93913, 2202, 7898, "Input",ExpressionUUID->"45c31a99-b229-4293-b591-cff3dcd8a534",
  InitializationCell->True,
  InitializationGroup->True]
 }, Closed]],
 Cell[CellGroupData[{
-Cell[101879, 2413, 130, 2, 49, "Subsection",ExpressionUUID->"7a7ed36a-8772-4350-930a-2fadaa6a933d",
+Cell[101999, 2418, 130, 2, 33, "Subsection",ExpressionUUID->"7a7ed36a-8772-4350-930a-2fadaa6a933d",
  InitializationGroup->True],
-Cell[102012, 2417, 21037, 584, 1207, "Input",ExpressionUUID->"15477c73-8a2a-4ba7-ad8d-56b6d42271d0",
+Cell[102132, 2422, 21074, 584, 822, "Input",ExpressionUUID->"15477c73-8a2a-4ba7-ad8d-56b6d42271d0",
  InitializationCell->True,
  InitializationGroup->True]
 }, Closed]],
 Cell[CellGroupData[{
-Cell[123086, 3006, 121, 2, 49, "Subsection",ExpressionUUID->"b63f003b-ad32-4d74-bb20-8736087e9fc1",
+Cell[123243, 3011, 121, 2, 33, "Subsection",ExpressionUUID->"b63f003b-ad32-4d74-bb20-8736087e9fc1",
  InitializationGroup->True],
-Cell[123210, 3010, 32383, 721, 4716, "Input",ExpressionUUID->"a0eab6a0-3a66-4907-a710-100314d0c3e5",
+Cell[CellGroupData[{
+Cell[123389, 3017, 32404, 721, 3215, "Input",ExpressionUUID->"a0eab6a0-3a66-4907-a710-100314d0c3e5",
  InitializationCell->True,
- InitializationGroup->True]
+ InitializationGroup->True],
+Cell[155796, 3740, 751, 14, 47, "Message",ExpressionUUID->"8c90b959-7add-49ab-9e44-1e3363c9013d"],
+Cell[156550, 3756, 113, 1, 47, "Output",ExpressionUUID->"e7ce2e09-1ddf-4fa8-837c-5f63f6ddb6c0"]
+}, Open  ]]
 }, Closed]],
 Cell[CellGroupData[{
-Cell[155630, 3736, 133, 2, 49, "Subsection",ExpressionUUID->"a3d39b67-151e-497c-9304-0a8dca14545f",
+Cell[156712, 3763, 133, 2, 33, "Subsection",ExpressionUUID->"a3d39b67-151e-497c-9304-0a8dca14545f",
  InitializationGroup->True],
-Cell[155766, 3740, 26149, 660, 3313, "Input",ExpressionUUID->"04fa6d37-7ce8-4524-a3a1-816fe7119b17",
+Cell[156848, 3767, 26206, 660, 2258, "Input",ExpressionUUID->"04fa6d37-7ce8-4524-a3a1-816fe7119b17",
  InitializationCell->True,
  InitializationGroup->True]
 }, Closed]]
 }, Closed]],
 Cell[CellGroupData[{
-Cell[181964, 4406, 333, 9, 63, "Section",ExpressionUUID->"24025ffb-98c6-4aa6-8e80-2a0fe2f3fe25",
+Cell[183103, 4433, 333, 9, 43, "Section",ExpressionUUID->"24025ffb-98c6-4aa6-8e80-2a0fe2f3fe25",
  CellTags->"1. Introduction"],
-Cell[182300, 4417, 6847, 199, 249, "Text",ExpressionUUID->"28adc83d-ad93-4a4d-9a94-2df4e0d79127"],
-Cell[189150, 4618, 14802, 508, 524, "Text",ExpressionUUID->"45b6839a-8d8f-407d-83bf-7160d81881d7",
+Cell[183439, 4444, 6847, 199, 203, "Text",ExpressionUUID->"28adc83d-ad93-4a4d-9a94-2df4e0d79127"],
+Cell[190289, 4645, 14802, 508, 371, "Text",ExpressionUUID->"45b6839a-8d8f-407d-83bf-7160d81881d7",
  CellTags->"genetic code"],
 Cell[CellGroupData[{
-Cell[203977, 5130, 1874, 42, 324, "Input",ExpressionUUID->"bafee5ed-c01e-4994-b411-ddea599a6d14",
+Cell[205116, 5157, 1895, 42, 106, "Input",ExpressionUUID->"bafee5ed-c01e-4994-b411-ddea599a6d14",
  InitializationCell->True],
-Cell[205854, 5174, 3484, 64, 120, "Output",ExpressionUUID->"a31deb6c-9253-48a7-a175-550fe5523a6f"]
-}, {2}]],
+Cell[207014, 5201, 3440, 63, 83, "Output",ExpressionUUID->"21fb0caa-0a59-47a0-9f25-1dc4cdaaa800"]
+}, Open  ]],
 Cell[CellGroupData[{
-Cell[209372, 5243, 389, 8, 66, "Subsection",ExpressionUUID->"396e1d31-3868-48ee-ac76-f2ace28b8377",
+Cell[210491, 5269, 389, 8, 45, "Subsection",ExpressionUUID->"396e1d31-3868-48ee-ac76-f2ace28b8377",
  CellTags->"1.1. Biological - Algebraic Background"],
-Cell[209764, 5253, 7973, 204, 577, "Text",ExpressionUUID->"8f5a64e4-f4d6-4335-b02a-20ea3205c2f8"],
+Cell[210883, 5279, 7973, 204, 468, "Text",ExpressionUUID->"8f5a64e4-f4d6-4335-b02a-20ea3205c2f8"],
 Cell[CellGroupData[{
-Cell[217762, 5461, 16413, 421, 1416, "Input",ExpressionUUID->"b0854210-1da7-43a4-b110-77aa15fed720",
+Cell[218881, 5487, 16470, 421, 510, "Input",ExpressionUUID->"b0854210-1da7-43a4-b110-77aa15fed720",
  InitializationCell->True],
-Cell[234178, 5884, 14100, 342, 92, "Output",ExpressionUUID->"a43192c6-0b6f-4860-90bd-f0872cfce86b"]
-}, {2}]],
-Cell[248290, 6229, 9536, 239, 212, "Text",ExpressionUUID->"514a9902-12a9-4a53-a8bb-58a4da99dd20",
+Cell[235354, 5910, 14244, 343, 62, "Output",ExpressionUUID->"418eb805-f222-4f59-bffa-1dab4929fa5f"]
+}, Open  ]],
+Cell[249613, 6256, 9536, 239, 154, "Text",ExpressionUUID->"514a9902-12a9-4a53-a8bb-58a4da99dd20",
  CellTags->{"sets", "group of bases"}],
 Cell[CellGroupData[{
-Cell[257851, 6472, 1892, 43, 324, "Input",ExpressionUUID->"8cf4a4af-c2fd-437a-bf4b-141fd4efe628",
+Cell[259174, 6499, 1913, 43, 106, "Input",ExpressionUUID->"8cf4a4af-c2fd-437a-bf4b-141fd4efe628",
  InitializationCell->True],
-Cell[259746, 6517, 3501, 65, 120, "Output",ExpressionUUID->"cd81976c-5ac1-4622-994a-7ba7b9075b99"]
-}, {2}]]
-}, Open  ]],
-Cell[CellGroupData[{
-Cell[263293, 6588, 333, 6, 66, "Subsection",ExpressionUUID->"a152a6cd-f49b-4b2f-8576-8316e0cd77f6",
- CellTags->"1.2. Physicochemical classification of DNA bases"],
-Cell[263629, 6596, 4199, 128, 836, "Text",ExpressionUUID->"9be38524-78b2-4818-bdc9-13686f37fa36"],
-Cell[CellGroupData[{
-Cell[267853, 6728, 1875, 42, 324, "Input",ExpressionUUID->"05728f89-aaeb-492b-8043-4d6d2cc0e171",
- InitializationCell->True],
-Cell[269731, 6772, 3488, 64, 118, "Output",ExpressionUUID->"37ec6e7a-8ddc-4970-97ac-dcb1e0cfd464"]
-}, {2}]]
+Cell[261090, 6544, 3488, 64, 83, "Output",ExpressionUUID->"93344a73-6051-448d-bd7b-592030ed8fd5"]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[273277, 6843, 324, 6, 70, "Section",ExpressionUUID->"3708874e-2c14-4bbc-bc78-d3890c6287d2",
- CellTags->"2. The 24 possible algebraic structures"],
-Cell[273604, 6851, 4712, 118, 93, "Text",ExpressionUUID->"e64f51a0-affa-4c09-8fce-624c15de5c1e"],
-Cell[278319, 6971, 960, 35, 40, "Text",ExpressionUUID->"26959cda-17f3-4a3f-8438-af77c4cb15d6"],
-Cell[279282, 7008, 193546, 4911, 441, "Input",ExpressionUUID->"21750fde-6ca4-4040-9794-0640dd990a2b",
- Evaluatable->False],
-Cell[472831, 11921, 1229, 30, 64, "Text",ExpressionUUID->"fabbe1a3-9d81-421c-aeeb-3695073bcd09"],
+Cell[264627, 6614, 333, 6, 45, "Subsection",ExpressionUUID->"a152a6cd-f49b-4b2f-8576-8316e0cd77f6",
+ CellTags->"1.2. Physicochemical classification of DNA bases"],
+Cell[264963, 6622, 4199, 128, 597, "Text",ExpressionUUID->"9be38524-78b2-4818-bdc9-13686f37fa36"],
 Cell[CellGroupData[{
-Cell[474085, 11955, 16400, 390, 1298, "Input",ExpressionUUID->"d583372c-2a14-4134-9a8d-7cc6c154d812",
+Cell[269187, 6754, 1896, 42, 106, "Input",ExpressionUUID->"05728f89-aaeb-492b-8043-4d6d2cc0e171",
+ InitializationCell->True],
+Cell[271086, 6798, 3444, 63, 83, "Output",ExpressionUUID->"e6c38076-ea01-487e-be64-8b7abd4b9463"]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[274591, 6868, 324, 6, 47, "Section",ExpressionUUID->"3708874e-2c14-4bbc-bc78-d3890c6287d2",
+ CellTags->"2. The 24 possible algebraic structures"],
+Cell[274918, 6876, 4712, 118, 83, "Text",ExpressionUUID->"e64f51a0-affa-4c09-8fce-624c15de5c1e"],
+Cell[279633, 6996, 960, 35, 26, "Text",ExpressionUUID->"26959cda-17f3-4a3f-8438-af77c4cb15d6"],
+Cell[280596, 7033, 255469, 5928, 300, "Input",ExpressionUUID->"21750fde-6ca4-4040-9794-0640dd990a2b",
+ Evaluatable->False],
+Cell[536068, 12963, 1229, 30, 44, "Text",ExpressionUUID->"fabbe1a3-9d81-421c-aeeb-3695073bcd09"],
+Cell[CellGroupData[{
+Cell[537322, 12997, 16452, 391, 450, "Input",ExpressionUUID->"d583372c-2a14-4134-9a8d-7cc6c154d812",
  InitializationCell->True,
  InitializationGroup->True],
-Cell[490488, 12347, 13286, 327, 257, "Output",ExpressionUUID->"76de9f26-d046-4f8a-8529-11f20d67a625"]
-}, {2}]],
-Cell[503786, 12677, 1650, 49, 177, "Text",ExpressionUUID->"fbf1150c-7f07-4029-97ab-c4a76c7f46cd"],
-Cell[CellGroupData[{
-Cell[505461, 12730, 1865, 41, 324, "Input",ExpressionUUID->"37aa9907-e90c-4744-a8a7-0b7433942e5c",
- InitializationCell->True],
-Cell[507329, 12773, 3476, 64, 120, "Output",ExpressionUUID->"51a61a09-1d40-4b95-9c72-9487ce7357d5"]
-}, {2}]]
+Cell[553777, 13390, 13254, 327, 179, "Output",ExpressionUUID->"70c007e9-46f1-4a38-9c7d-1ad183ba05f1"]
 }, Open  ]],
+Cell[567046, 13720, 1650, 49, 151, "Text",ExpressionUUID->"fbf1150c-7f07-4029-97ab-c4a76c7f46cd"],
 Cell[CellGroupData[{
-Cell[510851, 12843, 327, 8, 92, "Section",ExpressionUUID->"7a4966e8-92f4-4e58-bd7f-68852b19a9a7",
- CellTags->"3. Algebraic operations on the cubes"],
-Cell[511181, 12853, 850, 21, 139, "Text",ExpressionUUID->"948b71be-4ec1-45b2-9211-ada8a7184f50"],
-Cell[CellGroupData[{
-Cell[512056, 12878, 27592, 576, 3808, "Input",ExpressionUUID->"619a8ea6-375a-47cf-bc58-0295442f479a",
+Cell[568721, 13773, 1890, 42, 106, "Input",ExpressionUUID->"37aa9907-e90c-4744-a8a7-0b7433942e5c",
  InitializationCell->True],
-Cell[539651, 13456, 81121, 1520, 648, "Output",ExpressionUUID->"0c2de3fa-adea-4959-93d9-eac70f0143f1"]
-}, {2}]],
-Cell[CellGroupData[{
-Cell[620806, 14981, 1908, 44, 324, "Input",ExpressionUUID->"52807ff4-0faa-42b9-8e34-397217fd2c39",
- InitializationCell->True],
-Cell[622717, 15027, 3571, 66, 120, "Output",ExpressionUUID->"694a10c2-7b4b-4bf9-ad7a-925f1862cc3b"]
-}, {2}]]
-}, Open  ]],
-Cell[CellGroupData[{
-Cell[626334, 15099, 596, 14, 92, "Section",ExpressionUUID->"bd0951a1-b630-4644-8350-ec459d8211a7",
- CellTags->"4. The inner product of two codons and codon norm on R^3"],
-Cell[626933, 15115, 10541, 345, 261, "Figure",ExpressionUUID->"d8a39d4f-58ff-4bed-93d4-3e83929f3cc7"],
-Cell[CellGroupData[{
-Cell[637499, 15464, 9159, 192, 1034, "Input",ExpressionUUID->"f2b6ab2e-0476-4eb8-bc81-9faca02b61e0",
- InitializationCell->True],
-Cell[646661, 15658, 10870, 240, 254, "Output",ExpressionUUID->"6969a582-1dce-4143-bf95-c4a6785648bc"]
-}, {2}]],
-Cell[CellGroupData[{
-Cell[657565, 15903, 303, 6, 66, "Subsection",ExpressionUUID->"f6a8c8aa-649a-47d8-a698-2e0617f0fdcf",
- CellTags->"4.1. Inner product of two codons"],
-Cell[657871, 15911, 5718, 189, 153, "Text",ExpressionUUID->"0761f7c2-f1b1-4243-98ec-78536bcc37e3"],
-Cell[CellGroupData[{
-Cell[663614, 16104, 14836, 336, 1098, "Input",ExpressionUUID->"53922b45-c824-4bb7-9d37-ff150a60e18a",
- InitializationCell->True],
-Cell[678453, 16442, 12106, 287, 289, "Output",ExpressionUUID->"10198156-3f40-44f7-a110-aee9471d9e7d"]
-}, {2}]]
-}, Open  ]],
-Cell[CellGroupData[{
-Cell[690605, 16735, 269, 5, 66, "Subsection",ExpressionUUID->"11dffd17-9845-46e6-9bab-7864545c7864",
- CellTags->"4.2. Codon norm"],
-Cell[690877, 16742, 4847, 161, 200, "Text",ExpressionUUID->"72ec0d87-d167-4529-864d-6fc33e6d28ff",
- CellTags->"norm preservation"],
-Cell[CellGroupData[{
-Cell[695749, 16907, 10731, 247, 672, "Input",ExpressionUUID->"127c25c7-d3ea-4cb8-a6e9-852857d05db8",
- InitializationCell->True],
-Cell[706483, 17156, 10732, 260, 264, "Output",ExpressionUUID->"6b5cbe2d-c2b1-406e-b663-e467a4f8d40b"]
-}, {2}]],
-Cell[717227, 17419, 255, 7, 66, "Text",ExpressionUUID->"268df3da-279a-4486-8dc1-ff6d598ac34a",
- CellTags->"norm preservation"],
-Cell[717485, 17428, 1099, 38, 30, "Text",ExpressionUUID->"847b76df-6fed-4633-88d1-e9ee45072a52"],
-Cell[CellGroupData[{
-Cell[718609, 17470, 1907, 44, 324, "Input",ExpressionUUID->"70b7a87e-3e95-46d4-9417-763b45fa9dbb",
- InitializationCell->True],
-Cell[720519, 17516, 3591, 66, 120, "Output",ExpressionUUID->"dc869ec9-4722-46df-8214-c0a5875381fe"]
-}, {2}]]
+Cell[570614, 13817, 3429, 63, 83, "Output",ExpressionUUID->"752e7e67-8e34-4bca-91ca-2d0f6b2adae8"]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[724168, 17589, 456, 13, 77, "Section",ExpressionUUID->"746d7f62-7688-4e65-b0aa-4b16b146ffa7",
- CellTags->"5. Symmetric group defined over the set of genetic code cubes"],
-Cell[724627, 17604, 9884, 264, 282, "Text",ExpressionUUID->"d2580cb2-d014-4dd4-b7a2-ba378598a4a8",
- CellTags->"symmetric group"],
+Cell[574092, 13886, 327, 8, 62, "Section",ExpressionUUID->"7a4966e8-92f4-4e58-bd7f-68852b19a9a7",
+ CellTags->"3. Algebraic operations on the cubes"],
+Cell[574422, 13896, 850, 21, 98, "Text",ExpressionUUID->"948b71be-4ec1-45b2-9211-ada8a7184f50"],
 Cell[CellGroupData[{
-Cell[734536, 17872, 318, 6, 66, "Subsection",ExpressionUUID->"baa61fa2-dbd0-4c0c-93f2-39ebaca67671",
- CellTags->"5.1. The multiplication of two genetic-code cubes"],
-Cell[734857, 17880, 11692, 212, 387, "Text",ExpressionUUID->"35fb6b8a-0b3e-4277-be5d-1661ad2ae7b6"],
-Cell[CellGroupData[{
-Cell[746574, 18096, 7332, 173, 752, "Input",ExpressionUUID->"c69468dd-0f68-44b5-8873-2cfb8f5c8a03",
+Cell[575297, 13921, 27617, 577, 1319, "Input",ExpressionUUID->"619a8ea6-375a-47cf-bc58-0295442f479a",
  InitializationCell->True],
-Cell[753909, 18271, 11663, 289, 228, "Output",ExpressionUUID->"f609573a-161d-4259-8238-1a3d9b3f20a8"]
-}, {2}]],
-Cell[765584, 18563, 138, 1, 39, "Text",ExpressionUUID->"03d89a9b-7f8b-4971-96e7-cbb7392b9a56"],
-Cell[CellGroupData[{
-Cell[765747, 18568, 7081, 171, 752, "Input",ExpressionUUID->"dbf6b001-1caf-4555-b1ea-15ee4e860250",
- InitializationCell->True],
-Cell[772831, 18741, 11433, 286, 198, "Output",ExpressionUUID->"f67ff4f3-ce4b-4eb8-b65d-701dd1a9d844"]
-}, {2}]],
-Cell[784276, 19030, 3147, 113, 186, "Text",ExpressionUUID->"a269c8e1-092a-4cfc-84a2-e180687b69ae",
- CellTags->"symmetric group"],
-Cell[CellGroupData[{
-Cell[787448, 19147, 1908, 44, 324, "Input",ExpressionUUID->"8d5190ce-463d-434f-b4e8-ee0c2d9f9772",
- InitializationCell->True],
-Cell[789359, 19193, 3571, 66, 120, "Output",ExpressionUUID->"4ac5e7e1-372d-4f8a-bcd4-d263773bb847"]
-}, {2}]]
+Cell[602917, 14500, 25559, 465, 418, "Output",ExpressionUUID->"f88a78d6-d4a8-41ad-877d-800e4546e16e"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[792976, 19265, 368, 8, 66, "Subsection",ExpressionUUID->"876ff132-7347-4e47-907e-7a2f8d354ca6",
+Cell[628513, 14970, 1933, 45, 106, "Input",ExpressionUUID->"52807ff4-0faa-42b9-8e34-397217fd2c39",
+ InitializationCell->True],
+Cell[630449, 15017, 3524, 65, 83, "Output",ExpressionUUID->"b687fbfc-e5e3-48c1-86cc-00fe6c28fc22"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[634022, 15088, 596, 14, 63, "Section",ExpressionUUID->"bd0951a1-b630-4644-8350-ec459d8211a7",
+ CellTags->"4. The inner product of two codons and codon norm on R^3"],
+Cell[634621, 15104, 10541, 345, 214, "Figure",ExpressionUUID->"d8a39d4f-58ff-4bed-93d4-3e83929f3cc7"],
+Cell[CellGroupData[{
+Cell[645187, 15453, 9184, 193, 375, "Input",ExpressionUUID->"f2b6ab2e-0476-4eb8-bc81-9faca02b61e0",
+ InitializationCell->True],
+Cell[654374, 15648, 10619, 238, 170, "Output",ExpressionUUID->"1eba62d2-aff3-4eec-9305-32c335f56292"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[665030, 15891, 303, 6, 45, "Subsection",ExpressionUUID->"f6a8c8aa-649a-47d8-a698-2e0617f0fdcf",
+ CellTags->"4.1. Inner product of two codons"],
+Cell[665336, 15899, 5718, 189, 105, "Text",ExpressionUUID->"0761f7c2-f1b1-4243-98ec-78536bcc37e3"],
+Cell[CellGroupData[{
+Cell[671079, 16092, 14868, 338, 378, "Input",ExpressionUUID->"53922b45-c824-4bb7-9d37-ff150a60e18a",
+ InitializationCell->True],
+Cell[685950, 16432, 11969, 286, 190, "Output",ExpressionUUID->"83f237a9-cc59-4dbb-8d43-721d33d2503f"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[697968, 16724, 269, 5, 45, "Subsection",ExpressionUUID->"11dffd17-9845-46e6-9bab-7864545c7864",
+ CellTags->"4.2. Codon norm"],
+Cell[698240, 16731, 4847, 161, 137, "Text",ExpressionUUID->"72ec0d87-d167-4529-864d-6fc33e6d28ff",
+ CellTags->"norm preservation"],
+Cell[CellGroupData[{
+Cell[703112, 16896, 10763, 249, 314, "Input",ExpressionUUID->"127c25c7-d3ea-4cb8-a6e9-852857d05db8",
+ InitializationCell->True],
+Cell[713878, 17147, 10604, 260, 172, "Output",ExpressionUUID->"bd78163f-a929-4987-b2d2-3b72722e257f"]
+}, Open  ]],
+Cell[724497, 17410, 255, 7, 46, "Text",ExpressionUUID->"268df3da-279a-4486-8dc1-ff6d598ac34a",
+ CellTags->"norm preservation"],
+Cell[724755, 17419, 1099, 38, 22, "Text",ExpressionUUID->"847b76df-6fed-4633-88d1-e9ee45072a52"],
+Cell[CellGroupData[{
+Cell[725879, 17461, 1932, 45, 106, "Input",ExpressionUUID->"70b7a87e-3e95-46d4-9417-763b45fa9dbb",
+ InitializationCell->True],
+Cell[727814, 17508, 3544, 65, 83, "Output",ExpressionUUID->"49b5cfde-5dd5-4757-abc9-e2363ffee3d0"]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[731419, 17580, 456, 13, 52, "Section",ExpressionUUID->"746d7f62-7688-4e65-b0aa-4b16b146ffa7",
+ CellTags->"5. Symmetric group defined over the set of genetic code cubes"],
+Cell[731878, 17595, 9884, 264, 217, "Text",ExpressionUUID->"d2580cb2-d014-4dd4-b7a2-ba378598a4a8",
+ CellTags->"symmetric group"],
+Cell[CellGroupData[{
+Cell[741787, 17863, 318, 6, 45, "Subsection",ExpressionUUID->"baa61fa2-dbd0-4c0c-93f2-39ebaca67671",
+ CellTags->"5.1. The multiplication of two genetic-code cubes"],
+Cell[742108, 17871, 11692, 212, 262, "Text",ExpressionUUID->"35fb6b8a-0b3e-4277-be5d-1661ad2ae7b6"],
+Cell[CellGroupData[{
+Cell[753825, 18087, 7357, 174, 263, "Input",ExpressionUUID->"c69468dd-0f68-44b5-8873-2cfb8f5c8a03",
+ InitializationCell->True],
+Cell[761185, 18263, 11637, 290, 158, "Output",ExpressionUUID->"d83ddd87-dbf9-4c1b-acd4-deef8e88ca73"]
+}, Open  ]],
+Cell[772837, 18556, 138, 1, 27, "Text",ExpressionUUID->"03d89a9b-7f8b-4971-96e7-cbb7392b9a56"],
+Cell[CellGroupData[{
+Cell[773000, 18561, 7106, 172, 248, "Input",ExpressionUUID->"dbf6b001-1caf-4555-b1ea-15ee4e860250",
+ InitializationCell->True],
+Cell[780109, 18735, 11393, 285, 138, "Output",ExpressionUUID->"b7a4b270-214f-4f38-bc91-cb7ec818cd37"]
+}, Open  ]],
+Cell[791517, 19023, 3147, 113, 150, "Text",ExpressionUUID->"a269c8e1-092a-4cfc-84a2-e180687b69ae",
+ CellTags->"symmetric group"],
+Cell[CellGroupData[{
+Cell[794689, 19140, 1933, 45, 106, "Input",ExpressionUUID->"8d5190ce-463d-434f-b4e8-ee0c2d9f9772",
+ InitializationCell->True],
+Cell[796625, 19187, 3524, 65, 83, "Output",ExpressionUUID->"c12e8846-6724-4fd2-8e50-8b113af99173"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[800198, 19258, 368, 8, 45, "Subsection",ExpressionUUID->"876ff132-7347-4e47-907e-7a2f8d354ca6",
  CellTags->"5.2. Cayley multiplications table for all pairs of cubes"],
 Cell[CellGroupData[{
-Cell[793369, 19277, 20480, 490, 1570, "Input",ExpressionUUID->"f759a55f-5e49-4d30-a0a4-8e25b9b9e298",
+Cell[800591, 19270, 20508, 492, 534, "Input",ExpressionUUID->"f759a55f-5e49-4d30-a0a4-8e25b9b9e298",
  InitializationCell->True],
-Cell[813852, 19769, 15792, 362, 744, "Output",ExpressionUUID->"f1710267-ac8d-4b1b-93e3-694f10236be4"]
-}, {2}]],
-Cell[829656, 20134, 3178, 96, 134, "Text",ExpressionUUID->"a2436d0f-e012-434c-a620-878e51de085b"],
-Cell[832837, 20232, 949, 28, 30, "Text",ExpressionUUID->"249cd30b-fc7c-4476-81a1-7198e6e30e6a"],
-Cell[CellGroupData[{
-Cell[833811, 20264, 9080, 218, 986, "Input",ExpressionUUID->"514af99e-e8e8-4460-b58b-a2002d7a52bc",
- InitializationCell->True],
-Cell[842894, 20484, 16918, 355, 822, "Output",ExpressionUUID->"b148172c-bca8-4f89-852e-69ae0af6cb87"]
-}, {2}]],
-Cell[859824, 20842, 1656, 45, 91, "Text",ExpressionUUID->"d052338f-57b0-4eda-a7b4-8378b3e18087"],
-Cell[CellGroupData[{
-Cell[861505, 20891, 928, 26, 32, "Input",ExpressionUUID->"7959891a-0ed6-4432-9931-88b5f4c20e51"],
-Cell[862436, 20919, 733, 14, 36, "Output",ExpressionUUID->"d269fafb-4f0b-4294-a6cb-4dd286b73760"]
+Cell[821102, 19764, 15448, 357, 531, "Output",ExpressionUUID->"0e7c2e43-b8a6-4da7-88fb-7db4acf9c38b"]
 }, Open  ]],
-Cell[863184, 20936, 131, 2, 38, "Text",ExpressionUUID->"8744caea-668b-4bfb-8fec-4d90bf1984d1"],
+Cell[836565, 20124, 3178, 96, 115, "Text",ExpressionUUID->"a2436d0f-e012-434c-a620-878e51de085b"],
+Cell[839746, 20222, 949, 28, 22, "Text",ExpressionUUID->"249cd30b-fc7c-4476-81a1-7198e6e30e6a"],
 Cell[CellGroupData[{
-Cell[863340, 20942, 628, 17, 32, "Input",ExpressionUUID->"71525cda-1baf-4db8-9585-698d937495e4"],
-Cell[863971, 20961, 8672, 259, 36, "Output",ExpressionUUID->"9e8cc20a-a913-4cc8-9b16-6965f4179d43"]
-}, Open  ]],
-Cell[872658, 21223, 1035, 32, 44, "Text",ExpressionUUID->"517fad26-b0bc-4cf5-a45c-2aeca6928ef0"],
-Cell[CellGroupData[{
-Cell[873718, 21259, 1847, 41, 324, "Input",ExpressionUUID->"a53cee15-7b14-4475-ab6b-96b478ce3fe4",
+Cell[840720, 20254, 9105, 219, 305, "Input",ExpressionUUID->"514af99e-e8e8-4460-b58b-a2002d7a52bc",
  InitializationCell->True],
-Cell[875568, 21302, 3386, 62, 118, "Output",ExpressionUUID->"5f6ffd54-fb2b-4ee8-aa37-77b56c5872cb"]
-}, {2}]]
+Cell[849828, 20475, 16222, 346, 558, "Output",ExpressionUUID->"a1184ad3-89e7-46ea-9874-804a7872747f"]
+}, Open  ]],
+Cell[866065, 20824, 1656, 45, 99, "Text",ExpressionUUID->"d052338f-57b0-4eda-a7b4-8378b3e18087"],
+Cell[CellGroupData[{
+Cell[867746, 20873, 928, 26, 78, "Input",ExpressionUUID->"7959891a-0ed6-4432-9931-88b5f4c20e51"],
+Cell[868677, 20901, 733, 14, 39, "Output",ExpressionUUID->"d269fafb-4f0b-4294-a6cb-4dd286b73760"]
+}, Open  ]],
+Cell[869425, 20918, 131, 2, 26, "Text",ExpressionUUID->"8744caea-668b-4bfb-8fec-4d90bf1984d1"],
+Cell[CellGroupData[{
+Cell[869581, 20924, 628, 17, 50, "Input",ExpressionUUID->"71525cda-1baf-4db8-9585-698d937495e4"],
+Cell[870212, 20943, 8672, 259, 39, "Output",ExpressionUUID->"9e8cc20a-a913-4cc8-9b16-6965f4179d43"]
+}, Open  ]],
+Cell[878899, 21205, 1035, 32, 49, "Text",ExpressionUUID->"517fad26-b0bc-4cf5-a45c-2aeca6928ef0"],
+Cell[CellGroupData[{
+Cell[879959, 21241, 1872, 42, 176, "Input",ExpressionUUID->"a53cee15-7b14-4475-ab6b-96b478ce3fe4",
+ InitializationCell->True],
+Cell[881834, 21285, 3339, 61, 79, "Output",ExpressionUUID->"df95e18a-0624-447e-a671-6e7a4636850f"]
+}, Open  ]]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[879012, 21371, 394, 13, 77, "Section",ExpressionUUID->"f6c59ff7-5054-429c-9b60-dc9763e162aa",
+Cell[885234, 21353, 394, 13, 51, "Section",ExpressionUUID->"f6c59ff7-5054-429c-9b60-dc9763e162aa",
  CellTags->"6. Dihedral groups"],
-Cell[879409, 21386, 1490, 51, 70, "Text",ExpressionUUID->"35b9b668-f237-4b67-8698-fc7c4ba7f119"],
+Cell[885631, 21368, 1490, 51, 46, "Text",ExpressionUUID->"35b9b668-f237-4b67-8698-fc7c4ba7f119"],
 Cell[CellGroupData[{
-Cell[880924, 21441, 344, 8, 32, "Input",ExpressionUUID->"18c7fb5a-c016-464f-8f73-93a30b7804f4"],
-Cell[881271, 21451, 24886, 740, 187, "Output",ExpressionUUID->"553278eb-e183-435e-905e-389a071ae374"]
+Cell[887146, 21423, 344, 8, 21, "Input",ExpressionUUID->"18c7fb5a-c016-464f-8f73-93a30b7804f4"],
+Cell[887493, 21433, 24886, 740, 125, "Output",ExpressionUUID->"553278eb-e183-435e-905e-389a071ae374"]
 }, Open  ]],
-Cell[906172, 22194, 3667, 144, 68, "Text",ExpressionUUID->"e449f8f0-efa9-452c-b622-73db2c6f3cd2"],
-Cell[909842, 22340, 1924, 67, 92, "Text",ExpressionUUID->"a27cdefb-799b-4fcd-bbbe-c8ac4209d53a"],
+Cell[912394, 22176, 3667, 144, 62, "Text",ExpressionUUID->"e449f8f0-efa9-452c-b622-73db2c6f3cd2"],
+Cell[916064, 22322, 1924, 67, 79, "Text",ExpressionUUID->"a27cdefb-799b-4fcd-bbbe-c8ac4209d53a"],
 Cell[CellGroupData[{
-Cell[911791, 22411, 18279, 435, 1727, "Input",ExpressionUUID->"32f3bf9a-f3a0-4166-8b25-9fc2fe24d00f",
+Cell[918013, 22393, 18394, 440, 690, "Input",ExpressionUUID->"32f3bf9a-f3a0-4166-8b25-9fc2fe24d00f",
  InitializationCell->True],
-Cell[930073, 22848, 16421, 373, 432, "Output",ExpressionUUID->"e922cc18-7468-47de-aba9-6ff09892fd32"]
-}, {2}]],
-Cell[946506, 23224, 1247, 40, 44, "Text",ExpressionUUID->"4040c143-c70f-4139-8e05-e9b79c972dc7"],
+Cell[936410, 22835, 16115, 371, 292, "Output",ExpressionUUID->"721ef2e9-702a-4430-a6a5-56304e278c65"]
+}, Open  ]],
+Cell[952540, 23209, 1247, 40, 30, "Text",ExpressionUUID->"4040c143-c70f-4139-8e05-e9b79c972dc7"],
 Cell[CellGroupData[{
-Cell[947778, 23268, 5652, 146, 501, "Input",ExpressionUUID->"e93902fc-8609-43a3-836c-e29f23eaa70c",
+Cell[953812, 23253, 5751, 132, 238, "Input",ExpressionUUID->"e93902fc-8609-43a3-836c-e29f23eaa70c",
  InitializationCell->True],
-Cell[953433, 23416, 12827, 310, 105, "Output",ExpressionUUID->"6e4e336f-c9a7-45a8-8278-548fe16d3d7b"]
-}, {2}]],
-Cell[CellGroupData[{
-Cell[966294, 23731, 1849, 41, 324, "Input",ExpressionUUID->"47bf7476-9e84-4e06-8262-01b8cbbe2c81",
- InitializationCell->True],
-Cell[968146, 23774, 3394, 62, 118, "Output",ExpressionUUID->"485ba012-94cc-4d07-8a94-1cae98fd18b0"]
-}, {2}]]
+Cell[959566, 23387, 12734, 308, 71, "Output",ExpressionUUID->"4b89c800-01f7-40ee-ba5b-cc5cc7e95a7f"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[971586, 23842, 401, 14, 77, "Section",ExpressionUUID->"8faddbb6-6013-4460-b771-221c6f9e4f03",
+Cell[972337, 23700, 1874, 42, 134, "Input",ExpressionUUID->"47bf7476-9e84-4e06-8262-01b8cbbe2c81",
+ InitializationCell->True],
+Cell[974214, 23744, 3347, 61, 79, "Output",ExpressionUUID->"056d8394-6b14-43d9-9759-659e6aa00ee2"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[977610, 23811, 401, 14, 51, "Section",ExpressionUUID->"8faddbb6-6013-4460-b771-221c6f9e4f03",
  CellTags->"7. Klein four groups"],
-Cell[971990, 23858, 8862, 330, 101, "Text",ExpressionUUID->"36e1aeea-90c4-47d0-ad09-a258efebf319"],
-Cell[980855, 24190, 9129, 302, 135, "Text",ExpressionUUID->"edff0827-69cb-45b2-ac81-f989683d4499"],
+Cell[978014, 23827, 8862, 330, 125, "Text",ExpressionUUID->"36e1aeea-90c4-47d0-ad09-a258efebf319"],
+Cell[986879, 24159, 9129, 302, 148, "Text",ExpressionUUID->"edff0827-69cb-45b2-ac81-f989683d4499"],
 Cell[CellGroupData[{
-Cell[990009, 24496, 27502, 644, 2282, "Input",ExpressionUUID->"ee5c1e0e-38d3-459c-8128-47e0b4ccd76e",
+Cell[996033, 24465, 28155, 655, 1228, "Input",ExpressionUUID->"ee5c1e0e-38d3-459c-8128-47e0b4ccd76e",
  InitializationCell->True],
-Cell[1017514, 25142, 23798, 530, 384, "Output",ExpressionUUID->"aee00eba-23c1-4148-92d9-b36da29d7d4a"]
-}, {2}]],
-Cell[1041324, 25675, 1741, 42, 89, "Text",ExpressionUUID->"0e41fbbe-d913-4677-9560-2df095f4b5c9"],
-Cell[CellGroupData[{
-Cell[1043090, 25721, 834, 23, 32, "Input",ExpressionUUID->"1b75738d-2d88-4248-b279-70557300dd05"],
-Cell[1043927, 25746, 884, 21, 36, "Output",ExpressionUUID->"9e5f089f-6fed-41ea-aa17-08df05fd76c5"]
+Cell[1024191, 25122, 23091, 513, 260, "Output",ExpressionUUID->"9725ff57-ed76-4d8e-b67f-c7abc5fe6c65"]
 }, Open  ]],
-Cell[1044826, 25770, 131, 2, 38, "Text",ExpressionUUID->"ba894b85-09da-453e-8831-8aebaa721c8e"],
+Cell[1047297, 25638, 1741, 42, 116, "Text",ExpressionUUID->"0e41fbbe-d913-4677-9560-2df095f4b5c9"],
 Cell[CellGroupData[{
-Cell[1044982, 25776, 620, 17, 32, "Input",ExpressionUUID->"5d388e18-647c-44c4-aafe-65d2d99cff60"],
-Cell[1045605, 25795, 8828, 267, 36, "Output",ExpressionUUID->"90e80c60-4562-47bf-8401-b94de1d964cc"]
+Cell[1049063, 25684, 834, 23, 64, "Input",ExpressionUUID->"1b75738d-2d88-4248-b279-70557300dd05"],
+Cell[1049900, 25709, 884, 21, 39, "Output",ExpressionUUID->"9e5f089f-6fed-41ea-aa17-08df05fd76c5"]
 }, Open  ]],
-Cell[1054448, 26065, 1486, 48, 44, "Text",ExpressionUUID->"5ba942b7-d94e-4b1d-8e3e-c9dbddb157b4"],
-Cell[1055937, 26115, 1350, 43, 44, "Text",ExpressionUUID->"4c4f329f-8dbd-4cb6-9f66-b4a169c95acf"],
+Cell[1050799, 25733, 131, 2, 26, "Text",ExpressionUUID->"ba894b85-09da-453e-8831-8aebaa721c8e"],
 Cell[CellGroupData[{
-Cell[1057312, 26162, 11800, 360, 855, "Input",ExpressionUUID->"6bb25f52-3ced-46c3-bdd3-e1a68a476a41",
- InitializationCell->True],
-Cell[1069115, 26524, 21283, 441, 105, "Output",ExpressionUUID->"ee6461fc-cb26-4b40-a953-3db82916cd23"]
-}, {2}]],
+Cell[1050955, 25739, 620, 17, 50, "Input",ExpressionUUID->"5d388e18-647c-44c4-aafe-65d2d99cff60"],
+Cell[1051578, 25758, 8828, 267, 39, "Output",ExpressionUUID->"90e80c60-4562-47bf-8401-b94de1d964cc"]
+}, Open  ]],
+Cell[1060421, 26028, 1486, 48, 68, "Text",ExpressionUUID->"5ba942b7-d94e-4b1d-8e3e-c9dbddb157b4"],
+Cell[1061910, 26078, 1350, 43, 46, "Text",ExpressionUUID->"4c4f329f-8dbd-4cb6-9f66-b4a169c95acf"],
 Cell[CellGroupData[{
-Cell[1090432, 26970, 1850, 41, 324, "Input",ExpressionUUID->"9993c7e5-2884-44f9-bb3f-1ef7b3c3c11e",
+Cell[1063285, 26125, 11987, 246, 414, "Input",ExpressionUUID->"6bb25f52-3ced-46c3-bdd3-e1a68a476a41",
  InitializationCell->True],
-Cell[1092285, 27013, 3398, 62, 118, "Output",ExpressionUUID->"a4740db7-7fb7-464c-9dab-483fb727a4f4"]
-}, {2}]]
+Cell[1075275, 26373, 20289, 427, 71, "Output",ExpressionUUID->"605297a5-45db-440b-9b42-b41eb6942da4"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[1095729, 27081, 338, 9, 77, "Section",ExpressionUUID->"de0d5ca0-151b-4ade-8ab0-79c453ae9100",
+Cell[1095601, 26805, 1875, 42, 176, "Input",ExpressionUUID->"9993c7e5-2884-44f9-bb3f-1ef7b3c3c11e",
+ InitializationCell->True],
+Cell[1097479, 26849, 3355, 61, 80, "Output",ExpressionUUID->"4c60e7eb-b972-4c93-8680-41efdc451ed4"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[1100883, 26916, 338, 9, 52, "Section",ExpressionUUID->"de0d5ca0-151b-4ade-8ab0-79c453ae9100",
  CellTags->"8. Concluding remarks"],
-Cell[1096070, 27092, 745, 11, 81, "Text",ExpressionUUID->"1788beeb-e4d2-43af-bb48-560f8831ccde"],
-Cell[1096818, 27105, 1105, 31, 82, "Text",ExpressionUUID->"6e1b218e-a4c9-4680-b71d-758d6acd7614"]
+Cell[1101224, 26927, 745, 11, 111, "Text",ExpressionUUID->"1788beeb-e4d2-43af-bb48-560f8831ccde"],
+Cell[1101972, 26940, 1105, 31, 111, "Text",ExpressionUUID->"6e1b218e-a4c9-4680-b71d-758d6acd7614"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[1097960, 27141, 314, 8, 77, "Section",ExpressionUUID->"95bece2f-8dac-431e-9283-61e27cf9a947",
+Cell[1103114, 26976, 314, 8, 52, "Section",ExpressionUUID->"95bece2f-8dac-431e-9283-61e27cf9a947",
  CellTags->"References"],
-Cell[1098277, 27151, 7383, 208, 220, "ItemParagraph",ExpressionUUID->"a24289e6-e637-4fdc-8a50-5657bcb442df",
+Cell[CellGroupData[{
+Cell[1103453, 26988, 7383, 208, 254, "ItemParagraph",ExpressionUUID->"a24289e6-e637-4fdc-8a50-5657bcb442df",
  CellTags->{"[1]", "[2]", "[3]", "[4]"}],
 Cell[CellGroupData[{
-Cell[1105685, 27363, 1839, 41, 324, "Input",ExpressionUUID->"67accb3d-1b75-45a1-a494-83ec4d590cd9",
+Cell[1110861, 27200, 1864, 42, 162, "Input",ExpressionUUID->"67accb3d-1b75-45a1-a494-83ec4d590cd9",
  InitializationCell->True],
-Cell[1107527, 27406, 3347, 61, 118, "Output",ExpressionUUID->"7c3575f2-8b94-4b86-9916-63df6556aa11"]
-}, {2}]]
+Cell[1112728, 27244, 3304, 60, 80, "Output",ExpressionUUID->"3008cbf8-7a63-4c53-ac69-b8fc58fcfadf"]
+}, Open  ]]
+}, Open  ]]
 }, Open  ]]
 }, Open  ]]
 }
 ]
 *)
 
-(* NotebookSignature tvDm8I0wzRkURCK@y7vwJX@o *)
+(* NotebookSignature vvD66x8pEdbUUAgBlQO#J5m3 *)
