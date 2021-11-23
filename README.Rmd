@@ -2,9 +2,10 @@
 date: "`r format(Sys.time(), '%d %B %Y')`"
 fontsize: 11pt
 bibliography: biblio.bib
+fontfamily: "serif"
 output: md_document
-
 ---
+
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 
@@ -69,7 +70,7 @@ straightforward.
 
 # 2. Introduction to $Z_5$-Genetic-Code vector space
 An interactive introduction to $Z_5$-Genetic-Code vector space is given in the
-notebook: _IntroductionToZ5GeneticCodeVectorSpace.nb_.  This CDF would be useful
+notebook: _IntroductionToZ5GeneticCodeVectorSpace.nb_.  This notebook would be useful
 for the undergraduate students cursing Abstract Algebra, since several basic
 abstract concepts and mathematical operations are now visualized in the concret
 scenario of the genetic code cubes. However, no specialized knowledge is
@@ -80,9 +81,9 @@ for $Z_5$-Genetic-Code vector space is given in [@Sanchez2009].
 
 # 3. Genetic-Code-Scales of Aminoacids
 The application of the theory developed in the paper [@Sanchez2018] is
-illustrated in the CDF:   _Genetic-Code-Scales_of_Amino-Acids.nb_. This is a
-Mathematica notebook containing an interactive graphical user interface tool to
-generate genetic code based PC-scales. File
+illustrated in the notebook:   _Genetic-Code-Scales_of_Amino-Acids.nb_. This is
+a Mathematica notebook containing an interactive graphical user interface tool
+to generate genetic code based PC-scales. File
 GeneticCodePC-scales&Weibull-fit_snapshots.pdf on how to use the notebook and
 file _GeneticCodeScales.wl_ is required to run
 _Genetic-Code-Scales_of_Amino-Acids.nb_ and both files must be in the same
@@ -105,6 +106,50 @@ folder.
   For each scale created by the user, the notebook will estimate the cumulative
   distribution function to estimate probability of fixation of a given mutation
   in the population of selected protein.
+
+# Introductory Snapshots to the Genetic-Code-Scales of Amino-Acids Notebook
+
+Two sets of weight (blue arrow) can be selected to evaluated Eq. 5 from the main
+text. The subset of genetic-code cubes where Eq. 5 will be evaluated can be
+selected as well (red arrow). By default, all the statistics (Min, Max, Mean and
+Median) of codon norms are selected, but the user could choose between them
+(green arrow).
+
+<img src="fig/snapshot_1.png" align="center" />
+
+If “Optimal weights” is selected (below, blue arrow), then weights are
+automatically changed to the best values found for the selected set of
+genetic-code cubes (green arrow) and on the set of protein sequence alignments
+of the protein selected (red arrow).  In general, these weights are local
+optima, which can be found by applying genetic algorithm (in the present case)
+or any other suitable optimization algorithm.  If the “Mutation Frequency” tab
+is selected in the “Analysis” menu, some fitting details of Weibull distribution
+model estimated for the given set of protein sequence alignment are given, as
+well as, the amino acid PC-scale and its correlations with amino acid
+physicochemical indexes found in AAindex.
+
+<img src="fig/snapshot_2.png" align="center" />
+
+If Monte Carlo KS-test is selected (below, blue arrow), then a table with the
+test results is shown. We can choose between Kolmogorov-Smirnov and Kuiper tests
+(magenta arrow), the number of bootstrap (green arrow) samplings and sample size
+(orange arrow). Parametric and non-parametric bootstrap options are available as
+well.
+
+<img src="fig/snapshot_3.png" align="center" />
+
+The “Nonlinear regression” tab from “Analysis” menu summarize the fitting of
+Weibull model on the set of protein sequence alignment selected.  Different
+setting for weight values can be given unselecting “Optimal weights” and
+selecting a distinct set of genetic-code cubes. Additional “cosmetic” features
+are added. It is worthy to notice that the computation could take variable time
+for each protein selected. The processing time will vary depending on the
+computer processor power used to run the notebook. Unfortunately, I could not
+find the way to add a progress indicator that could work inside of the
+“Manipulate” function from Wolfram Mathematica.
+
+<img src="fig/snapshot_4.png" align="center" />
+
 
 # References
 
