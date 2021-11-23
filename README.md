@@ -129,7 +129,7 @@ the given set of protein sequence alignment are given, as well as, the
 amino acid PC-scale and its correlations with amino acid physicochemical
 indexes found in AAindex.
 
-<img src="fig/snapshot_2.png" align="center" />
+[<img src="fig/snapshot_2.png" align="center" />](https://github.com/genomaths/GenomeAlgebra_SymmetricGroup/blob/master/GeneticCodePC-scales%26Weibull-fit_snapshots.pdf)
 
 If Monte Carlo KS-test is selected (below, blue arrow), then a table
 with the test results is shown. We can choose between Kolmogorov-Smirnov
@@ -137,7 +137,7 @@ and Kuiper tests (magenta arrow), the number of bootstrap (green arrow)
 samplings and sample size (orange arrow). Parametric and non-parametric
 bootstrap options are available as well.
 
-<img src="fig/snapshot_3.png" align="center" />
+[<img src="fig/snapshot_3.png" align="center" />](https://github.com/genomaths/GenomeAlgebra_SymmetricGroup/blob/master/GeneticCodePC-scales%26Weibull-fit_snapshots.pdf)
 
 The “Nonlinear regression” tab from “Analysis” menu summarize the
 fitting of Weibull model on the set of protein sequence alignment
@@ -150,7 +150,7 @@ to run the notebook. Unfortunately, I could not find the way to add a
 progress indicator that could work inside of the “Manipulate” function
 from Wolfram Mathematica.
 
-<img src="fig/snapshot_4.png" align="center" />
+[<img src="fig/snapshot_4.png" align="center" />](https://github.com/genomaths/GenomeAlgebra_SymmetricGroup/blob/master/GeneticCodePC-scales%26Weibull-fit_snapshots.pdf)
 
 # References
 
