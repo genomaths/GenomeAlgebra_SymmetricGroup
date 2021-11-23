@@ -115,7 +115,7 @@ selected as well (red arrow). By default, all the statistics (Min, Max, Mean and
 Median) of codon norms are selected, but the user could choose between them
 (green arrow).
 
-<img src="fig/snapshot_1.png" align="center" />
+[<img src="fig/snapshot_1.png" align="center" />](https://github.com/genomaths/GenomeAlgebra_SymmetricGroup/blob/master/GeneticCodePC-scales%26Weibull-fit_snapshots.pdf)
 
 If “Optimal weights” is selected (below, blue arrow), then weights are
 automatically changed to the best values found for the selected set of
